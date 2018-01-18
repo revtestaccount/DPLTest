@@ -1,0 +1,746 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schema attributeFormDefault="unqualified"
+    elementFormDefault="qualified"
+    targetNamespace="http://www.revenue.ie/schemas/ct/IE-DPL/2017-09-01"
+    xmlns="http://www.w3.org/2001/XMLSchema"
+    xmlns:ie-dpl="http://www.revenue.ie/schemas/ct/IE-DPL/2017-09-01"
+    xmlns:link="http://www.xbrl.org/2003/linkbase"
+    xmlns:nonnum="http://www.xbrl.org/dtr/type/non-numeric"
+    xmlns:xbrldt="http://xbrl.org/2005/xbrldt"
+    xmlns:xbrli="http://www.xbrl.org/2003/instance" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <annotation>
+        <appinfo>
+            <link:linkbaseRef
+                xlink:arcrole="http://www.w3.org/1999/xlink/properties/linkbase"
+                xlink:href="IE-DPL-2017-09-01-label.xml"
+                xlink:role="http://www.xbrl.org/2003/role/labelLinkbaseRef" xlink:type="simple"/>
+            <link:linkbaseRef
+                xlink:arcrole="http://www.w3.org/1999/xlink/properties/linkbase"
+                xlink:href="IE-DPL-2017-09-01-definition.xml"
+                xlink:role="http://www.xbrl.org/2003/role/definitionLinkbaseRef" xlink:type="simple"/>
+            <link:roleType id="role_Dimension-Activity" roleURI="http://www.revenue.ie/schemas/ct/IE-DPL/2017-09-01/role/Dimension-Activity">
+                <link:definition>550 - Dimension - Activity</link:definition>
+                <link:usedOn>link:definitionLink</link:usedOn>
+            </link:roleType>
+            <link:roleType id="role_Dimension-ExpenseType" roleURI="http://www.revenue.ie/schemas/ct/IE-DPL/2017-09-01/role/Dimension-ExpenseType">
+                <link:definition>551 - Dimension - Expense Type</link:definition>
+                <link:usedOn>link:definitionLink</link:usedOn>
+            </link:roleType>
+            <link:roleType
+                id="role_Dimension-ExceptionalNonExceptionaltems" roleURI="http://www.revenue.ie/schemas/ct/IE-DPL/2017-09-01/role/Dimension-ExceptionalNonExceptionaltems">
+                <link:definition>552 - Dimension - Exceptional and Non-Exceptional Items</link:definition>
+                <link:usedOn>link:definitionLink</link:usedOn>
+            </link:roleType>
+            <link:roleType id="role_Dimension-DetailedAnalysis" roleURI="http://www.revenue.ie/schemas/ct/IE-DPL/2017-09-01/role/Dimension-DetailedAnalysis">
+                <link:definition>553 - Dimension - Detailed Analysis</link:definition>
+                <link:usedOn>link:definitionLink</link:usedOn>
+            </link:roleType>
+            <link:roleType
+                id="role_Dimension-IntraExtraGroupTransactions" roleURI="http://www.revenue.ie/schemas/ct/IE-DPL/2017-09-01/role/Dimension-IntraExtraGroupTransactions">
+                <link:definition>554 - Dimension - Intra / extra group transactions</link:definition>
+                <link:usedOn>link:definitionLink</link:usedOn>
+            </link:roleType>
+            <link:roleType id="role_Hypercube-DetailedProfitAndLoss" roleURI="http://www.revenue.ie/schemas/ct/IE-DPL/2017-09-01/role/Hypercube-DetailedProfitAndLoss">
+                <link:definition>850 - Hypercube - Detailed Profit and Loss</link:definition>
+                <link:usedOn>link:definitionLink</link:usedOn>
+            </link:roleType>
+            <link:linkbaseRef
+                xlink:arcrole="http://www.w3.org/1999/xlink/properties/linkbase"
+                xlink:href="IE-DPL-2017-09-01-presentation.xml"
+                xlink:role="http://www.xbrl.org/2003/role/presentationLinkbaseRef" xlink:type="simple"/>
+            <link:roleType id="role_FullDetailedProfitandLoss" roleURI="http://www.revenue.ie/schemas/ct/IE-DPL/2017-09-01/role/FullDetailedProfitandLoss">
+                <link:definition>031 - Full Detailed Profit and Loss</link:definition>
+                <link:usedOn>link:presentationLink</link:usedOn>
+            </link:roleType>
+        </appinfo>
+    </annotation>
+    <import namespace="http://www.xbrl.org/2003/instance" schemaLocation="http://www.xbrl.org/2003/xbrl-instance-2003-12-31.xsd"/>
+    <import namespace="http://xbrl.org/2005/xbrldt" schemaLocation="http://www.xbrl.org/2005/xbrldt-2005.xsd"/>
+    <import namespace="http://www.xbrl.org/dtr/type/non-numeric" schemaLocation="http://www.xbrl.org/dtr/type/nonNumeric-2009-12-16.xsd"/>
+    <element id="ie-dpl_CharitableDonations" name="CharitableDonations"
+        nillable="true" substitutionGroup="xbrli:item"
+        type="xbrli:monetaryItemType" xbrli:balance="debit" xbrli:periodType="duration"/>
+    <element
+        id="ie-dpl_GainLossOnNegativeGoodwillbargainPurchasesReleasedToIncome"
+        name="GainLossOnNegativeGoodwillbargainPurchasesReleasedToIncome"
+        nillable="true" substitutionGroup="xbrli:item"
+        type="xbrli:monetaryItemType" xbrli:balance="credit" xbrli:periodType="duration"/>
+    <element id="ie-dpl_IncomeFromOtherInvestments"
+        name="IncomeFromOtherInvestments" nillable="true"
+        substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"
+        xbrli:balance="credit" xbrli:periodType="duration"/>
+    <element id="ie-dpl_RedundancyCostsExcludingDirectors"
+        name="RedundancyCostsExcludingDirectors" nillable="true"
+        substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"
+        xbrli:balance="debit" xbrli:periodType="duration"/>
+    <element abstract="true"
+        id="ie-dpl_Sub-totalsNotIncludedElsewhereHeading"
+        name="Sub-totalsNotIncludedElsewhereHeading" nillable="true"
+        substitutionGroup="xbrli:item" type="xbrli:stringItemType" xbrli:periodType="duration"/>
+    <element abstract="true" id="ie-dpl_ActivityDimension"
+        name="ActivityDimension" nillable="true"
+        substitutionGroup="xbrldt:dimensionItem"
+        type="xbrli:stringItemType" xbrli:periodType="duration"/>
+    <element abstract="true" id="ie-dpl_AdministrativeExpenses"
+        name="AdministrativeExpenses" nillable="true"
+        substitutionGroup="xbrli:item" type="nonnum:domainItemType" xbrli:periodType="duration"/>
+    <element id="ie-dpl_AdvertisingPromotionsMarketingCosts"
+        name="AdvertisingPromotionsMarketingCosts" nillable="true"
+        substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"
+        xbrli:balance="debit" xbrli:periodType="duration"/>
+    <element abstract="true" id="ie-dpl_Associates" name="Associates"
+        nillable="true" substitutionGroup="xbrli:item"
+        type="nonnum:domainItemType" xbrli:periodType="duration"/>
+    <element id="ie-dpl_AuditAccountancyAuditCosts"
+        name="AuditAccountancyAuditCosts" nillable="true"
+        substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"
+        xbrli:balance="debit" xbrli:periodType="duration"/>
+    <element id="ie-dpl_AuditAccountancyCosts"
+        name="AuditAccountancyCosts" nillable="true"
+        substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"
+        xbrli:balance="debit" xbrli:periodType="duration"/>
+    <element id="ie-dpl_AuditAccountancyOtherServices"
+        name="AuditAccountancyOtherServices" nillable="true"
+        substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"
+        xbrli:balance="debit" xbrli:periodType="duration"/>
+    <element id="ie-dpl_AuditAccountancyTaxServices"
+        name="AuditAccountancyTaxServices" nillable="true"
+        substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"
+        xbrli:balance="debit" xbrli:periodType="duration"/>
+    <element id="ie-dpl_BadDebtsImpairmentLosses"
+        name="BadDebtsImpairmentLosses" nillable="true"
+        substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"
+        xbrli:balance="debit" xbrli:periodType="duration"/>
+    <element id="ie-dpl_BankCharges" name="BankCharges" nillable="true"
+        substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"
+        xbrli:balance="debit" xbrli:periodType="duration"/>
+    <element id="ie-dpl_BankInterestSimilarIncomeReceivable"
+        name="BankInterestSimilarIncomeReceivable" nillable="true"
+        substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"
+        xbrli:balance="credit" xbrli:periodType="duration"/>
+    <element id="ie-dpl_Bonuses" name="Bonuses" nillable="true"
+        substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"
+        xbrli:balance="debit" xbrli:periodType="duration"/>
+    <element id="ie-dpl_BonusesExcludingDirectors"
+        name="BonusesExcludingDirectors" nillable="true"
+        substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"
+        xbrli:balance="debit" xbrli:periodType="duration"/>
+    <element id="ie-dpl_CleaningCosts" name="CleaningCosts"
+        nillable="true" substitutionGroup="xbrli:item"
+        type="xbrli:monetaryItemType" xbrli:balance="debit" xbrli:periodType="duration"/>
+    <element id="ie-dpl_ClientEntertainingCosts"
+        name="ClientEntertainingCosts" nillable="true"
+        substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"
+        xbrli:balance="debit" xbrli:periodType="duration"/>
+    <element abstract="true" id="ie-dpl_CombinedCross-sectorActivities1"
+        name="CombinedCross-sectorActivities1" nillable="true"
+        substitutionGroup="xbrli:item" type="nonnum:domainItemType" xbrli:periodType="duration"/>
+    <element abstract="true" id="ie-dpl_CombinedCross-sectorActivities2"
+        name="CombinedCross-sectorActivities2" nillable="true"
+        substitutionGroup="xbrli:item" type="nonnum:domainItemType" xbrli:periodType="duration"/>
+    <element abstract="true" id="ie-dpl_CombinedCross-sectorActivities3"
+        name="CombinedCross-sectorActivities3" nillable="true"
+        substitutionGroup="xbrli:item" type="nonnum:domainItemType" xbrli:periodType="duration"/>
+    <element abstract="true" id="ie-dpl_CombinedCross-sectorActivities4"
+        name="CombinedCross-sectorActivities4" nillable="true"
+        substitutionGroup="xbrli:item" type="nonnum:domainItemType" xbrli:periodType="duration"/>
+    <element id="ie-dpl_ConsultancyCosts" name="ConsultancyCosts"
+        nillable="true" substitutionGroup="xbrli:item"
+        type="xbrli:monetaryItemType" xbrli:balance="debit" xbrli:periodType="duration"/>
+    <element abstract="true" id="ie-dpl_CostSales" name="CostSales"
+        nillable="true" substitutionGroup="xbrli:item"
+        type="nonnum:domainItemType" xbrli:periodType="duration"/>
+    <element abstract="true"
+        id="ie-dpl_DepreciationAmortisationImpairmentCostsHeading"
+        name="DepreciationAmortisationImpairmentCostsHeading"
+        nillable="true" substitutionGroup="xbrli:item"
+        type="xbrli:stringItemType" xbrli:periodType="duration"/>
+    <element id="ie-dpl_DepreciationExpenseTransferredToBalanceSheet"
+        name="DepreciationExpenseTransferredToBalanceSheet"
+        nillable="true" substitutionGroup="xbrli:item"
+        type="xbrli:monetaryItemType" xbrli:balance="credit" xbrli:periodType="duration"/>
+    <element id="ie-dpl_DescriptionActivity" name="DescriptionActivity"
+        nillable="true" substitutionGroup="xbrli:item"
+        type="xbrli:stringItemType" xbrli:periodType="duration"/>
+    <element abstract="true"
+        id="ie-dpl_DescriptionSpecificActivity-ForUseWithGenericActivityDimensionTagsHeading"
+        name="DescriptionSpecificActivity-ForUseWithGenericActivityDimensionTagsHeading"
+        nillable="true" substitutionGroup="xbrli:item"
+        type="xbrli:stringItemType" xbrli:periodType="duration"/>
+    <element abstract="true" id="ie-dpl_DetailedAnalysisDimension"
+        name="DetailedAnalysisDimension" nillable="true"
+        substitutionGroup="xbrldt:dimensionItem"
+        type="xbrli:stringItemType" xbrli:periodType="duration"/>
+    <element id="ie-dpl_DetailedProfitLossFree-textComment"
+        name="DetailedProfitLossFree-textComment" nillable="true"
+        substitutionGroup="xbrli:item" type="xbrli:stringItemType" xbrli:periodType="duration"/>
+    <element abstract="true" id="ie-dpl_DetailedProfitLossHeading"
+        name="DetailedProfitLossHeading" nillable="true"
+        substitutionGroup="xbrli:item" type="xbrli:stringItemType" xbrli:periodType="duration"/>
+    <element abstract="true" id="ie-dpl_DetailedProfitLossHypercube"
+        name="DetailedProfitLossHypercube" nillable="true"
+        substitutionGroup="xbrldt:hypercubeItem"
+        type="xbrli:stringItemType" xbrli:periodType="duration"/>
+    <element abstract="true"
+        id="ie-dpl_DimensionTagsUsedWithDetailedProfitLossItemsHeading"
+        name="DimensionTagsUsedWithDetailedProfitLossItemsHeading"
+        nillable="true" substitutionGroup="xbrli:item"
+        type="xbrli:stringItemType" xbrli:periodType="duration"/>
+    <element abstract="true" id="ie-dpl_DistributionCosts"
+        name="DistributionCosts" nillable="true"
+        substitutionGroup="xbrli:item" type="nonnum:domainItemType" xbrli:periodType="duration"/>
+    <element id="ie-dpl_EnvironmentalCosts" name="EnvironmentalCosts"
+        nillable="true" substitutionGroup="xbrli:item"
+        type="xbrli:monetaryItemType" xbrli:balance="debit" xbrli:periodType="duration"/>
+    <element abstract="true" id="ie-dpl_Exceptional" name="Exceptional"
+        nillable="true" substitutionGroup="xbrli:item"
+        type="nonnum:domainItemType" xbrli:periodType="duration"/>
+    <element abstract="true"
+        id="ie-dpl_ExceptionalNon-exceptionalItemsDimension"
+        name="ExceptionalNon-exceptionalItemsDimension" nillable="true"
+        substitutionGroup="xbrldt:dimensionItem"
+        type="xbrli:stringItemType" xbrli:periodType="duration"/>
+    <element abstract="true" id="ie-dpl_ExpenseTypeDimension"
+        name="ExpenseTypeDimension" nillable="true"
+        substitutionGroup="xbrldt:dimensionItem"
+        type="xbrli:stringItemType" xbrli:periodType="duration"/>
+    <element id="ie-dpl_ExternalCommissionCosts"
+        name="ExternalCommissionCosts" nillable="true"
+        substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"
+        xbrli:balance="debit" xbrli:periodType="duration"/>
+    <element
+        id="ie-dpl_FairValueGainsLossesOnDistributionNon-cashAssets"
+        name="FairValueGainsLossesOnDistributionNon-cashAssets"
+        nillable="true" substitutionGroup="xbrli:item"
+        type="xbrli:monetaryItemType" xbrli:balance="credit" xbrli:periodType="duration"/>
+    <element abstract="true"
+        id="ie-dpl_Finance-relatedCostsNetItemsHeading"
+        name="Finance-relatedCostsNetItemsHeading" nillable="true"
+        substitutionGroup="xbrli:item" type="xbrli:stringItemType" xbrli:periodType="duration"/>
+    <element abstract="true" id="ie-dpl_FinanceIncomeNetItemsHeading"
+        name="FinanceIncomeNetItemsHeading" nillable="true"
+        substitutionGroup="xbrli:item" type="xbrli:stringItemType" xbrli:periodType="duration"/>
+    <element id="ie-dpl_FinancialInstrumentFairValueGain"
+        name="FinancialInstrumentFairValueGain" nillable="true"
+        substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"
+        xbrli:balance="credit" xbrli:periodType="duration"/>
+    <element id="ie-dpl_FinancialInstrumentFairValueLoss"
+        name="FinancialInstrumentFairValueLoss" nillable="true"
+        substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"
+        xbrli:balance="debit" xbrli:periodType="duration"/>
+    <element id="ie-dpl_FinesPenalties" name="FinesPenalties"
+        nillable="true" substitutionGroup="xbrli:item"
+        type="xbrli:monetaryItemType" xbrli:balance="debit" xbrli:periodType="duration"/>
+    <element abstract="true"
+        id="ie-dpl_ForForeignExchangeCostClassifiedAsNon-operatingSeeNetItemUnderNon-operatingIncomeCross-reference"
+        name="ForForeignExchangeCostClassifiedAsNon-operatingSeeNetItemUnderNon-operatingIncomeCross-reference"
+        nillable="true" substitutionGroup="xbrli:item"
+        type="xbrli:stringItemType" xbrli:periodType="duration"/>
+    <element abstract="true"
+        id="ie-dpl_ForForeignExchangeCostClassifiedAsOperatingSeeNetItemUnderOtherOperatingIncomeCross-reference"
+        name="ForForeignExchangeCostClassifiedAsOperatingSeeNetItemUnderOtherOperatingIncomeCross-reference"
+        nillable="true" substitutionGroup="xbrli:item"
+        type="xbrli:stringItemType" xbrli:periodType="duration"/>
+    <element abstract="true"
+        id="ie-dpl_ForForeignExchangeCostClassifiedUnderFinanceSeeNetItemUnderFinanceIncomeCross-reference"
+        name="ForForeignExchangeCostClassifiedUnderFinanceSeeNetItemUnderFinanceIncomeCross-reference"
+        nillable="true" substitutionGroup="xbrli:item"
+        type="xbrli:stringItemType" xbrli:periodType="duration"/>
+    <element abstract="true"
+        id="ie-dpl_ForOtherForeignExchangeCostSeeNetItemUnderOperationalAdministrationCostsCross-reference"
+        name="ForOtherForeignExchangeCostSeeNetItemUnderOperationalAdministrationCostsCross-reference"
+        nillable="true" substitutionGroup="xbrli:item"
+        type="xbrli:stringItemType" xbrli:periodType="duration"/>
+    <element
+        id="ie-dpl_ForeignExchangeGainLossIncludedInFinancialIncome"
+        name="ForeignExchangeGainLossIncludedInFinancialIncome"
+        nillable="true" substitutionGroup="xbrli:item"
+        type="xbrli:monetaryItemType" xbrli:balance="credit" xbrli:periodType="duration"/>
+    <element
+        id="ie-dpl_ForeignExchangeGainLossIncludedInNon-operatingIncome"
+        name="ForeignExchangeGainLossIncludedInNon-operatingIncome"
+        nillable="true" substitutionGroup="xbrli:item"
+        type="xbrli:monetaryItemType" xbrli:balance="credit" xbrli:periodType="duration"/>
+    <element
+        id="ie-dpl_ForeignExchangeGainLossIncludedInOtherOperatingIncome"
+        name="ForeignExchangeGainLossIncludedInOtherOperatingIncome"
+        nillable="true" substitutionGroup="xbrli:item"
+        type="xbrli:monetaryItemType" xbrli:balance="credit" xbrli:periodType="duration"/>
+    <element id="ie-dpl_FreightHaulageCosts" name="FreightHaulageCosts"
+        nillable="true" substitutionGroup="xbrli:item"
+        type="xbrli:monetaryItemType" xbrli:balance="debit" xbrli:periodType="duration"/>
+    <element abstract="true" id="ie-dpl_GeneralServicesExpensesHeading"
+        name="GeneralServicesExpensesHeading" nillable="true"
+        substitutionGroup="xbrli:item" type="xbrli:stringItemType" xbrli:periodType="duration"/>
+    <element id="ie-dpl_GovernmentGrantIncome"
+        name="GovernmentGrantIncome" nillable="true"
+        substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"
+        xbrli:balance="credit" xbrli:periodType="duration"/>
+    <element id="ie-dpl_DPLGrossProfitLoss" name="DPLGrossProfitLoss"
+        nillable="true" substitutionGroup="xbrli:item"
+        type="xbrli:monetaryItemType" xbrli:balance="credit" xbrli:periodType="duration"/>
+    <element abstract="true" id="ie-dpl_GroupUndertakings"
+        name="GroupUndertakings" nillable="true"
+        substitutionGroup="xbrli:item" type="nonnum:domainItemType" xbrli:periodType="duration"/>
+    <element id="ie-dpl_HealthSafetyCosts" name="HealthSafetyCosts"
+        nillable="true" substitutionGroup="xbrli:item"
+        type="xbrli:monetaryItemType" xbrli:balance="debit" xbrli:periodType="duration"/>
+    <element id="ie-dpl_Hyper-inflationGainsLosses"
+        name="Hyper-inflationGainsLosses" nillable="true"
+        substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"
+        xbrli:balance="credit" xbrli:periodType="duration"/>
+    <element id="ie-dpl_ITComputingCosts" name="ITComputingCosts"
+        nillable="true" substitutionGroup="xbrli:item"
+        type="xbrli:monetaryItemType" xbrli:balance="debit" xbrli:periodType="duration"/>
+    <element id="ie-dpl_IncomeFromShares" name="IncomeFromShares"
+        nillable="true" substitutionGroup="xbrli:item"
+        type="xbrli:monetaryItemType" xbrli:balance="credit" xbrli:periodType="duration"/>
+    <element id="ie-dpl_DPLIncomeTaxExpenseCredit"
+        name="DPLIncomeTaxExpenseCredit" nillable="true"
+        substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"
+        xbrli:balance="debit" xbrli:periodType="duration"/>
+    <element id="ie-dpl_IncreaseDecreaseInStocksInventories"
+        name="IncreaseDecreaseInStocksInventories" nillable="true"
+        substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"
+        xbrli:balance="debit" xbrli:periodType="duration"/>
+    <element id="ie-dpl_InsuranceCosts" name="InsuranceCosts"
+        nillable="true" substitutionGroup="xbrli:item"
+        type="xbrli:monetaryItemType" xbrli:balance="debit" xbrli:periodType="duration"/>
+    <element id="ie-dpl_Inter-companyManagementFees"
+        name="Inter-companyManagementFees" nillable="true"
+        substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"
+        xbrli:balance="debit" xbrli:periodType="duration"/>
+    <element id="ie-dpl_Inter-companyRecharges"
+        name="Inter-companyRecharges" nillable="true"
+        substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"
+        xbrli:balance="debit" xbrli:periodType="duration"/>
+    <element abstract="true"
+        id="ie-dpl_IntraExtraGroupTransactionsDimension"
+        name="IntraExtraGroupTransactionsDimension" nillable="true"
+        substitutionGroup="xbrldt:dimensionItem"
+        type="xbrli:stringItemType" xbrli:periodType="duration"/>
+    <element id="ie-dpl_IrrecoverableVAT" name="IrrecoverableVAT"
+        nillable="true" substitutionGroup="xbrli:item"
+        type="xbrli:monetaryItemType" xbrli:balance="debit" xbrli:periodType="duration"/>
+    <element abstract="true" id="ie-dpl_Item1" name="Item1"
+        nillable="true" substitutionGroup="xbrli:item"
+        type="nonnum:domainItemType" xbrli:periodType="duration"/>
+    <element abstract="true" id="ie-dpl_Item10" name="Item10"
+        nillable="true" substitutionGroup="xbrli:item"
+        type="nonnum:domainItemType" xbrli:periodType="duration"/>
+    <element abstract="true" id="ie-dpl_Item11" name="Item11"
+        nillable="true" substitutionGroup="xbrli:item"
+        type="nonnum:domainItemType" xbrli:periodType="duration"/>
+    <element abstract="true" id="ie-dpl_Item12" name="Item12"
+        nillable="true" substitutionGroup="xbrli:item"
+        type="nonnum:domainItemType" xbrli:periodType="duration"/>
+    <element abstract="true" id="ie-dpl_Item13" name="Item13"
+        nillable="true" substitutionGroup="xbrli:item"
+        type="nonnum:domainItemType" xbrli:periodType="duration"/>
+    <element abstract="true" id="ie-dpl_Item14" name="Item14"
+        nillable="true" substitutionGroup="xbrli:item"
+        type="nonnum:domainItemType" xbrli:periodType="duration"/>
+    <element abstract="true" id="ie-dpl_Item15" name="Item15"
+        nillable="true" substitutionGroup="xbrli:item"
+        type="nonnum:domainItemType" xbrli:periodType="duration"/>
+    <element abstract="true" id="ie-dpl_Item16" name="Item16"
+        nillable="true" substitutionGroup="xbrli:item"
+        type="nonnum:domainItemType" xbrli:periodType="duration"/>
+    <element abstract="true" id="ie-dpl_Item17" name="Item17"
+        nillable="true" substitutionGroup="xbrli:item"
+        type="nonnum:domainItemType" xbrli:periodType="duration"/>
+    <element abstract="true" id="ie-dpl_Item18" name="Item18"
+        nillable="true" substitutionGroup="xbrli:item"
+        type="nonnum:domainItemType" xbrli:periodType="duration"/>
+    <element abstract="true" id="ie-dpl_Item19" name="Item19"
+        nillable="true" substitutionGroup="xbrli:item"
+        type="nonnum:domainItemType" xbrli:periodType="duration"/>
+    <element abstract="true" id="ie-dpl_Item2" name="Item2"
+        nillable="true" substitutionGroup="xbrli:item"
+        type="nonnum:domainItemType" xbrli:periodType="duration"/>
+    <element abstract="true" id="ie-dpl_Item20" name="Item20"
+        nillable="true" substitutionGroup="xbrli:item"
+        type="nonnum:domainItemType" xbrli:periodType="duration"/>
+    <element abstract="true" id="ie-dpl_Item21" name="Item21"
+        nillable="true" substitutionGroup="xbrli:item"
+        type="nonnum:domainItemType" xbrli:periodType="duration"/>
+    <element abstract="true" id="ie-dpl_Item22" name="Item22"
+        nillable="true" substitutionGroup="xbrli:item"
+        type="nonnum:domainItemType" xbrli:periodType="duration"/>
+    <element abstract="true" id="ie-dpl_Item23" name="Item23"
+        nillable="true" substitutionGroup="xbrli:item"
+        type="nonnum:domainItemType" xbrli:periodType="duration"/>
+    <element abstract="true" id="ie-dpl_Item24" name="Item24"
+        nillable="true" substitutionGroup="xbrli:item"
+        type="nonnum:domainItemType" xbrli:periodType="duration"/>
+    <element abstract="true" id="ie-dpl_Item25" name="Item25"
+        nillable="true" substitutionGroup="xbrli:item"
+        type="nonnum:domainItemType" xbrli:periodType="duration"/>
+    <element abstract="true" id="ie-dpl_Item26" name="Item26"
+        nillable="true" substitutionGroup="xbrli:item"
+        type="nonnum:domainItemType" xbrli:periodType="duration"/>
+    <element abstract="true" id="ie-dpl_Item27" name="Item27"
+        nillable="true" substitutionGroup="xbrli:item"
+        type="nonnum:domainItemType" xbrli:periodType="duration"/>
+    <element abstract="true" id="ie-dpl_Item28" name="Item28"
+        nillable="true" substitutionGroup="xbrli:item"
+        type="nonnum:domainItemType" xbrli:periodType="duration"/>
+    <element abstract="true" id="ie-dpl_Item29" name="Item29"
+        nillable="true" substitutionGroup="xbrli:item"
+        type="nonnum:domainItemType" xbrli:periodType="duration"/>
+    <element abstract="true" id="ie-dpl_Item3" name="Item3"
+        nillable="true" substitutionGroup="xbrli:item"
+        type="nonnum:domainItemType" xbrli:periodType="duration"/>
+    <element abstract="true" id="ie-dpl_Item30" name="Item30"
+        nillable="true" substitutionGroup="xbrli:item"
+        type="nonnum:domainItemType" xbrli:periodType="duration"/>
+    <element abstract="true" id="ie-dpl_Item31" name="Item31"
+        nillable="true" substitutionGroup="xbrli:item"
+        type="nonnum:domainItemType" xbrli:periodType="duration"/>
+    <element abstract="true" id="ie-dpl_Item32" name="Item32"
+        nillable="true" substitutionGroup="xbrli:item"
+        type="nonnum:domainItemType" xbrli:periodType="duration"/>
+    <element abstract="true" id="ie-dpl_Item33" name="Item33"
+        nillable="true" substitutionGroup="xbrli:item"
+        type="nonnum:domainItemType" xbrli:periodType="duration"/>
+    <element abstract="true" id="ie-dpl_Item34" name="Item34"
+        nillable="true" substitutionGroup="xbrli:item"
+        type="nonnum:domainItemType" xbrli:periodType="duration"/>
+    <element abstract="true" id="ie-dpl_Item35" name="Item35"
+        nillable="true" substitutionGroup="xbrli:item"
+        type="nonnum:domainItemType" xbrli:periodType="duration"/>
+    <element abstract="true" id="ie-dpl_Item36" name="Item36"
+        nillable="true" substitutionGroup="xbrli:item"
+        type="nonnum:domainItemType" xbrli:periodType="duration"/>
+    <element abstract="true" id="ie-dpl_Item37" name="Item37"
+        nillable="true" substitutionGroup="xbrli:item"
+        type="nonnum:domainItemType" xbrli:periodType="duration"/>
+    <element abstract="true" id="ie-dpl_Item38" name="Item38"
+        nillable="true" substitutionGroup="xbrli:item"
+        type="nonnum:domainItemType" xbrli:periodType="duration"/>
+    <element abstract="true" id="ie-dpl_Item39" name="Item39"
+        nillable="true" substitutionGroup="xbrli:item"
+        type="nonnum:domainItemType" xbrli:periodType="duration"/>
+    <element abstract="true" id="ie-dpl_Item4" name="Item4"
+        nillable="true" substitutionGroup="xbrli:item"
+        type="nonnum:domainItemType" xbrli:periodType="duration"/>
+    <element abstract="true" id="ie-dpl_Item40" name="Item40"
+        nillable="true" substitutionGroup="xbrli:item"
+        type="nonnum:domainItemType" xbrli:periodType="duration"/>
+    <element abstract="true" id="ie-dpl_Item5" name="Item5"
+        nillable="true" substitutionGroup="xbrli:item"
+        type="nonnum:domainItemType" xbrli:periodType="duration"/>
+    <element abstract="true" id="ie-dpl_Item6" name="Item6"
+        nillable="true" substitutionGroup="xbrli:item"
+        type="nonnum:domainItemType" xbrli:periodType="duration"/>
+    <element abstract="true" id="ie-dpl_Item7" name="Item7"
+        nillable="true" substitutionGroup="xbrli:item"
+        type="nonnum:domainItemType" xbrli:periodType="duration"/>
+    <element abstract="true" id="ie-dpl_Item8" name="Item8"
+        nillable="true" substitutionGroup="xbrli:item"
+        type="nonnum:domainItemType" xbrli:periodType="duration"/>
+    <element abstract="true" id="ie-dpl_Item9" name="Item9"
+        nillable="true" substitutionGroup="xbrli:item"
+        type="nonnum:domainItemType" xbrli:periodType="duration"/>
+    <element abstract="true"
+        id="ie-dpl_ItemsInheritingDetailedProfitLossDimensions"
+        name="ItemsInheritingDetailedProfitLossDimensions"
+        nillable="true" substitutionGroup="xbrli:item"
+        type="xbrli:stringItemType" xbrli:periodType="duration"/>
+    <element abstract="true" id="ie-dpl_JointVentures"
+        name="JointVentures" nillable="true"
+        substitutionGroup="xbrli:item" type="nonnum:domainItemType" xbrli:periodType="duration"/>
+    <element id="ie-dpl_LegalProfessionalCosts"
+        name="LegalProfessionalCosts" nillable="true"
+        substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"
+        xbrli:balance="debit" xbrli:periodType="duration"/>
+    <element id="ie-dpl_LoansWrittenOffOrDown"
+        name="LoansWrittenOffOrDown" nillable="true"
+        substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"
+        xbrli:balance="debit" xbrli:periodType="duration"/>
+    <element abstract="true"
+        id="ie-dpl_MarketingClientRelatedCostsHeading"
+        name="MarketingClientRelatedCostsHeading" nillable="true"
+        substitutionGroup="xbrli:item" type="xbrli:stringItemType" xbrli:periodType="duration"/>
+    <element id="ie-dpl_Non-bankInterestSimilarCharges"
+        name="Non-bankInterestSimilarCharges" nillable="true"
+        substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"
+        xbrli:balance="debit" xbrli:periodType="duration"/>
+    <element id="ie-dpl_Non-bankInterestSimilarIncomeReceivable"
+        name="Non-bankInterestSimilarIncomeReceivable" nillable="true"
+        substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"
+        xbrli:balance="credit" xbrli:periodType="duration"/>
+    <element abstract="true" id="ie-dpl_Non-exceptional"
+        name="Non-exceptional" nillable="true"
+        substitutionGroup="xbrli:item" type="nonnum:domainItemType" xbrli:periodType="duration"/>
+    <element abstract="true"
+        id="ie-dpl_Non-operatingIncomeNetItemsHeading"
+        name="Non-operatingIncomeNetItemsHeading" nillable="true"
+        substitutionGroup="xbrli:item" type="xbrli:stringItemType" xbrli:periodType="duration"/>
+    <element abstract="true"
+        id="ie-dpl_OperationalAdministrationCostsHeading"
+        name="OperationalAdministrationCostsHeading" nillable="true"
+        substitutionGroup="xbrli:item" type="xbrli:stringItemType" xbrli:periodType="duration"/>
+    <element id="ie-dpl_OtherCosts" name="OtherCosts" nillable="true"
+        substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"
+        xbrli:balance="debit" xbrli:periodType="duration"/>
+    <element id="ie-dpl_OtherEmploymentCosts"
+        name="OtherEmploymentCosts" nillable="true"
+        substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"
+        xbrli:balance="debit" xbrli:periodType="duration"/>
+    <element id="ie-dpl_OtherEntertainingCosts"
+        name="OtherEntertainingCosts" nillable="true"
+        substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"
+        xbrli:balance="debit" xbrli:periodType="duration"/>
+    <element id="ie-dpl_OtherExpensesTransferredToBalanceSheet"
+        name="OtherExpensesTransferredToBalanceSheet" nillable="true"
+        substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"
+        xbrli:balance="credit" xbrli:periodType="duration"/>
+    <element id="ie-dpl_OtherForeignExchangeLossGain"
+        name="OtherForeignExchangeLossGain" nillable="true"
+        substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"
+        xbrli:balance="debit" xbrli:periodType="duration"/>
+    <element abstract="true" id="ie-dpl_OtherItemsHeading"
+        name="OtherItemsHeading" nillable="true"
+        substitutionGroup="xbrli:item" type="xbrli:stringItemType" xbrli:periodType="duration"/>
+    <element
+        id="ie-dpl_OtherOperatingIncomeExcludingForeignExchangeGainOrLoss"
+        name="OtherOperatingIncomeExcludingForeignExchangeGainOrLoss"
+        nillable="true" substitutionGroup="xbrli:item"
+        type="xbrli:monetaryItemType" xbrli:balance="credit" xbrli:periodType="duration"/>
+    <element abstract="true"
+        id="ie-dpl_OtherOperatingIncomeNetItemsHeading"
+        name="OtherOperatingIncomeNetItemsHeading" nillable="true"
+        substitutionGroup="xbrli:item" type="xbrli:stringItemType" xbrli:periodType="duration"/>
+    <element id="ie-dpl_OtherOperationalAdministrationCosts"
+        name="OtherOperationalAdministrationCosts" nillable="true"
+        substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"
+        xbrli:balance="debit" xbrli:periodType="duration"/>
+    <element id="ie-dpl_OtherRepairsMaintenanceCosts"
+        name="OtherRepairsMaintenanceCosts" nillable="true"
+        substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"
+        xbrli:balance="debit" xbrli:periodType="duration"/>
+    <element abstract="true" id="ie-dpl_OtherSpecificActivity1"
+        name="OtherSpecificActivity1" nillable="true"
+        substitutionGroup="xbrli:item" type="nonnum:domainItemType" xbrli:periodType="duration"/>
+    <element abstract="true" id="ie-dpl_OtherSpecificActivity2"
+        name="OtherSpecificActivity2" nillable="true"
+        substitutionGroup="xbrli:item" type="nonnum:domainItemType" xbrli:periodType="duration"/>
+    <element abstract="true" id="ie-dpl_OtherSpecificActivity3"
+        name="OtherSpecificActivity3" nillable="true"
+        substitutionGroup="xbrli:item" type="nonnum:domainItemType" xbrli:periodType="duration"/>
+    <element abstract="true" id="ie-dpl_OtherSpecificActivity4"
+        name="OtherSpecificActivity4" nillable="true"
+        substitutionGroup="xbrli:item" type="nonnum:domainItemType" xbrli:periodType="duration"/>
+    <element abstract="true" id="ie-dpl_OtherSpecificActivity5"
+        name="OtherSpecificActivity5" nillable="true"
+        substitutionGroup="xbrli:item" type="nonnum:domainItemType" xbrli:periodType="duration"/>
+    <element id="ie-dpl_OtherStaffCosts" name="OtherStaffCosts"
+        nillable="true" substitutionGroup="xbrli:item"
+        type="xbrli:monetaryItemType" xbrli:balance="debit" xbrli:periodType="duration"/>
+    <element id="ie-dpl_OtherStaffCostsDirectors"
+        name="OtherStaffCostsDirectors" nillable="true"
+        substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"
+        xbrli:balance="debit" xbrli:periodType="duration"/>
+    <element id="ie-dpl_OtherStaffCostsExcludingDirectors"
+        name="OtherStaffCostsExcludingDirectors" nillable="true"
+        substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"
+        xbrli:balance="debit" xbrli:periodType="duration"/>
+    <element id="ie-dpl_OutsourcedServicesCosts"
+        name="OutsourcedServicesCosts" nillable="true"
+        substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"
+        xbrli:balance="debit" xbrli:periodType="duration"/>
+    <element abstract="true" id="ie-dpl_Parent" name="Parent"
+        nillable="true" substitutionGroup="xbrli:item"
+        type="nonnum:domainItemType" xbrli:periodType="duration"/>
+    <element abstract="true" id="ie-dpl_ParticipatingInterests"
+        name="ParticipatingInterests" nillable="true"
+        substitutionGroup="xbrli:item" type="nonnum:domainItemType" xbrli:periodType="duration"/>
+    <element
+        id="ie-dpl_PensionsCostsDefinedBenefitSchemesExcludingDirectors"
+        name="PensionsCostsDefinedBenefitSchemesExcludingDirectors"
+        nillable="true" substitutionGroup="xbrli:item"
+        type="xbrli:monetaryItemType" xbrli:balance="debit" xbrli:periodType="duration"/>
+    <element
+        id="ie-dpl_PensionsCostsDefinedContributionSchemesExcludingDirectors"
+        name="PensionsCostsDefinedContributionSchemesExcludingDirectors"
+        nillable="true" substitutionGroup="xbrli:item"
+        type="xbrli:monetaryItemType" xbrli:balance="debit" xbrli:periodType="duration"/>
+    <element id="ie-dpl_PrintingPostageStationeryCosts"
+        name="PrintingPostageStationeryCosts" nillable="true"
+        substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"
+        xbrli:balance="debit" xbrli:periodType="duration"/>
+    <element id="ie-dpl_DPLProfitLossBeforeTax"
+        name="DPLProfitLossBeforeTax" nillable="true"
+        substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"
+        xbrli:balance="credit" xbrli:periodType="duration"/>
+    <element abstract="true" id="ie-dpl_ProfitTaxTotalsHeading"
+        name="ProfitTaxTotalsHeading" nillable="true"
+        substitutionGroup="xbrli:item" type="xbrli:stringItemType" xbrli:periodType="duration"/>
+    <element abstract="true"
+        id="ie-dpl_PropertyPlantRelatedCostsHeading"
+        name="PropertyPlantRelatedCostsHeading" nillable="true"
+        substitutionGroup="xbrli:item" type="xbrli:stringItemType" xbrli:periodType="duration"/>
+    <element id="ie-dpl_PropertyRepairsMaintenanceCosts"
+        name="PropertyRepairsMaintenanceCosts" nillable="true"
+        substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"
+        xbrli:balance="debit" xbrli:periodType="duration"/>
+    <element id="ie-dpl_PurchaseRawMaterialsConsumables"
+        name="PurchaseRawMaterialsConsumables" nillable="true"
+        substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"
+        xbrli:balance="debit" xbrli:periodType="duration"/>
+    <element id="ie-dpl_RecruitmentRemunerationServiceCosts"
+        name="RecruitmentRemunerationServiceCosts" nillable="true"
+        substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"
+        xbrli:balance="debit" xbrli:periodType="duration"/>
+    <element id="ie-dpl_RemunerationTrustExpenses"
+        name="RemunerationTrustExpenses" nillable="true"
+        substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"
+        xbrli:balance="debit" xbrli:periodType="duration"/>
+    <element id="ie-dpl_RemunerationTrustExpensesDirectors"
+        name="RemunerationTrustExpensesDirectors" nillable="true"
+        substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"
+        xbrli:balance="debit" xbrli:periodType="duration"/>
+    <element id="ie-dpl_RemunerationTrustExpensesExcludingDirectors"
+        name="RemunerationTrustExpensesExcludingDirectors"
+        nillable="true" substitutionGroup="xbrli:item"
+        type="xbrli:monetaryItemType" xbrli:balance="debit" xbrli:periodType="duration"/>
+    <element id="ie-dpl_RentRatesServicesCosts"
+        name="RentRatesServicesCosts" nillable="true"
+        substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"
+        xbrli:balance="debit" xbrli:periodType="duration"/>
+    <element id="ie-dpl_ResidualFinanceCosts"
+        name="ResidualFinanceCosts" nillable="true"
+        substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"
+        xbrli:balance="debit" xbrli:periodType="duration"/>
+    <element id="ie-dpl_ResidualFinanceIncome"
+        name="ResidualFinanceIncome" nillable="true"
+        substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"
+        xbrli:balance="credit" xbrli:periodType="duration"/>
+    <element id="ie-dpl_ResidualNon-operatingGainLoss"
+        name="ResidualNon-operatingGainLoss" nillable="true"
+        substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"
+        xbrli:balance="credit" xbrli:periodType="duration"/>
+    <element
+        id="ie-dpl_RoyaltiesOrSimilarPaymentsForIntellectualProperty"
+        name="RoyaltiesOrSimilarPaymentsForIntellectualProperty"
+        nillable="true" substitutionGroup="xbrli:item"
+        type="xbrli:monetaryItemType" xbrli:balance="debit" xbrli:periodType="duration"/>
+    <element id="ie-dpl_SecurityCosts" name="SecurityCosts"
+        nillable="true" substitutionGroup="xbrli:item"
+        type="xbrli:monetaryItemType" xbrli:balance="debit" xbrli:periodType="duration"/>
+    <element id="ie-dpl_Share-basedPaymentsDirectors"
+        name="Share-basedPaymentsDirectors" nillable="true"
+        substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"
+        xbrli:balance="debit" xbrli:periodType="duration"/>
+    <element id="ie-dpl_Share-basedPaymentsExcludingDirectors"
+        name="Share-basedPaymentsExcludingDirectors" nillable="true"
+        substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"
+        xbrli:balance="debit" xbrli:periodType="duration"/>
+    <element id="ie-dpl_SocialSecurityCostsDirectors"
+        name="SocialSecurityCostsDirectors" nillable="true"
+        substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"
+        xbrli:balance="debit" xbrli:periodType="duration"/>
+    <element id="ie-dpl_SocialSecurityCostsExcludingDirectors"
+        name="SocialSecurityCostsExcludingDirectors" nillable="true"
+        substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"
+        xbrli:balance="debit" xbrli:periodType="duration"/>
+    <element id="ie-dpl_StaffCostsDirectors" name="StaffCostsDirectors"
+        nillable="true" substitutionGroup="xbrli:item"
+        type="xbrli:monetaryItemType" xbrli:balance="debit" xbrli:periodType="duration"/>
+    <element id="ie-dpl_StaffCostsExcludingDirectors"
+        name="StaffCostsExcludingDirectors" nillable="true"
+        substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"
+        xbrli:balance="debit" xbrli:periodType="duration"/>
+    <element abstract="true"
+        id="ie-dpl_StaffEmploymentRelatedCostsHeading"
+        name="StaffEmploymentRelatedCostsHeading" nillable="true"
+        substitutionGroup="xbrli:item" type="xbrli:stringItemType" xbrli:periodType="duration"/>
+    <element id="ie-dpl_StaffEntertainingCosts"
+        name="StaffEntertainingCosts" nillable="true"
+        substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"
+        xbrli:balance="debit" xbrli:periodType="duration"/>
+    <element abstract="true" id="ie-dpl_StocksInventoriesHeading"
+        name="StocksInventoriesHeading" nillable="true"
+        substitutionGroup="xbrli:item" type="xbrli:stringItemType" xbrli:periodType="duration"/>
+    <element abstract="true"
+        id="ie-dpl_StocksInventoriesStartEndPeriodHeading"
+        name="StocksInventoriesStartEndPeriodHeading" nillable="true"
+        substitutionGroup="xbrli:item" type="xbrli:stringItemType" xbrli:periodType="duration"/>
+    <element id="ie-dpl_SubcontractorCosts" name="SubcontractorCosts"
+        nillable="true" substitutionGroup="xbrli:item"
+        type="xbrli:monetaryItemType" xbrli:balance="debit" xbrli:periodType="duration"/>
+    <element id="ie-dpl_SubscriptionsCosts" name="SubscriptionsCosts"
+        nillable="true" substitutionGroup="xbrli:item"
+        type="xbrli:monetaryItemType" xbrli:balance="debit" xbrli:periodType="duration"/>
+    <element abstract="true"
+        id="ie-dpl_SubsidiariesOtherGroupUndertakings"
+        name="SubsidiariesOtherGroupUndertakings" nillable="true"
+        substitutionGroup="xbrli:item" type="nonnum:domainItemType" xbrli:periodType="duration"/>
+    <element abstract="true"
+        id="ie-dpl_T-HouseholdsAsEmployers-UndifferentiatedGoodsService-productionActivitiesHouseholdsForOwnUse"
+        name="T-HouseholdsAsEmployers-UndifferentiatedGoodsService-productionActivitiesHouseholdsForOwnUse"
+        nillable="true" substitutionGroup="xbrli:item"
+        type="nonnum:domainItemType" xbrli:periodType="duration"/>
+    <element id="ie-dpl_TelecommunicationsCosts"
+        name="TelecommunicationsCosts" nillable="true"
+        substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"
+        xbrli:balance="debit" xbrli:periodType="duration"/>
+    <element abstract="true" id="ie-dpl_ThirdPartiesOutsideGroup"
+        name="ThirdPartiesOutsideGroup" nillable="true"
+        substitutionGroup="xbrli:item" type="nonnum:domainItemType" xbrli:periodType="duration"/>
+    <element abstract="true" id="ie-dpl_TotalActivitiesDefault"
+        name="TotalActivitiesDefault" nillable="true"
+        substitutionGroup="xbrli:item" type="nonnum:domainItemType" xbrli:periodType="duration"/>
+    <element id="ie-dpl_TotalCosts" name="TotalCosts" nillable="true"
+        substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"
+        xbrli:balance="debit" xbrli:periodType="duration"/>
+    <element abstract="true" id="ie-dpl_TotalCostsDefault"
+        name="TotalCostsDefault" nillable="true"
+        substitutionGroup="xbrli:item" type="nonnum:domainItemType" xbrli:periodType="duration"/>
+    <element abstract="true"
+        id="ie-dpl_TotalExceptionalNon-exceptionalDefault"
+        name="TotalExceptionalNon-exceptionalDefault" nillable="true"
+        substitutionGroup="xbrli:item" type="nonnum:domainItemType" xbrli:periodType="duration"/>
+    <element abstract="true" id="ie-dpl_TotalItemsDefault"
+        name="TotalItemsDefault" nillable="true"
+        substitutionGroup="xbrli:item" type="nonnum:domainItemType" xbrli:periodType="duration"/>
+    <element abstract="true" id="ie-dpl_TotalTransactionsDefault"
+        name="TotalTransactionsDefault" nillable="true"
+        substitutionGroup="xbrli:item" type="nonnum:domainItemType" xbrli:periodType="duration"/>
+    <element abstract="true" id="ie-dpl_TradingIncomeHeading"
+        name="TradingIncomeHeading" nillable="true"
+        substitutionGroup="xbrli:item" type="xbrli:stringItemType" xbrli:periodType="duration"/>
+    <element id="ie-dpl_TrainingCosts" name="TrainingCosts"
+        nillable="true" substitutionGroup="xbrli:item"
+        type="xbrli:monetaryItemType" xbrli:balance="debit" xbrli:periodType="duration"/>
+    <element abstract="true"
+        id="ie-dpl_TransportStorageRelatedCostsHeading"
+        name="TransportStorageRelatedCostsHeading" nillable="true"
+        substitutionGroup="xbrli:item" type="xbrli:stringItemType" xbrli:periodType="duration"/>
+    <element id="ie-dpl_TravelSubsistenceCosts"
+        name="TravelSubsistenceCosts" nillable="true"
+        substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"
+        xbrli:balance="debit" xbrli:periodType="duration"/>
+    <element id="ie-dpl_DPLTurnoverRevenue" name="DPLTurnoverRevenue"
+        nillable="true" substitutionGroup="xbrli:item"
+        type="xbrli:monetaryItemType" xbrli:balance="credit" xbrli:periodType="duration"/>
+    <element abstract="true"
+        id="ie-dpl_U-Extra-territorialOrganisationsBodies"
+        name="U-Extra-territorialOrganisationsBodies" nillable="true"
+        substitutionGroup="xbrli:item" type="nonnum:domainItemType" xbrli:periodType="duration"/>
+    <element id="ie-dpl_UtilitiesCosts" name="UtilitiesCosts"
+        nillable="true" substitutionGroup="xbrli:item"
+        type="xbrli:monetaryItemType" xbrli:balance="debit" xbrli:periodType="duration"/>
+    <element id="ie-dpl_VehicleCosts" name="VehicleCosts"
+        nillable="true" substitutionGroup="xbrli:item"
+        type="xbrli:monetaryItemType" xbrli:balance="debit" xbrli:periodType="duration"/>
+    <element id="ie-dpl_WagesSalariesExcludingDirectors"
+        name="WagesSalariesExcludingDirectors" nillable="true"
+        substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"
+        xbrli:balance="debit" xbrli:periodType="duration"/>
+    <element id="ie-dpl_WarehouseStorageCosts"
+        name="WarehouseStorageCosts" nillable="true"
+        substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"
+        xbrli:balance="debit" xbrli:periodType="duration"/>
+</schema>

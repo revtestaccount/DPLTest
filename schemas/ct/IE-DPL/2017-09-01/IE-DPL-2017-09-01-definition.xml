@@ -1,0 +1,1917 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<linkbase xmlns="http://www.xbrl.org/2003/linkbase"
+    xmlns:link="http://www.xbrl.org/2003/linkbase"
+    xmlns:xbrldt="http://xbrl.org/2005/xbrldt"
+    xmlns:xlink="http://www.w3.org/1999/xlink"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.xbrl.org/2003/linkbase http://www.xbrl.org/2003/xbrl-linkbase-2003-12-31.xsd">
+    <roleRef
+        roleURI="http://www.revenue.ie/schemas/ct/IE-DPL/2017-09-01/role/Dimension-Activity"
+        xlink:href="IE-DPL-2017-09-01.xsd#role_Dimension-Activity" xlink:type="simple"/>
+    <roleRef
+        roleURI="http://www.revenue.ie/schemas/ct/IE-DPL/2017-09-01/role/Dimension-ExpenseType"
+        xlink:href="IE-DPL-2017-09-01.xsd#role_Dimension-ExpenseType" xlink:type="simple"/>
+    <roleRef
+        roleURI="http://www.revenue.ie/schemas/ct/IE-DPL/2017-09-01/role/Dimension-ExceptionalNonExceptionaltems"
+        xlink:href="IE-DPL-2017-09-01.xsd#role_Dimension-ExceptionalNonExceptionaltems" xlink:type="simple"/>
+    <roleRef
+        roleURI="http://www.revenue.ie/schemas/ct/IE-DPL/2017-09-01/role/Dimension-DetailedAnalysis"
+        xlink:href="IE-DPL-2017-09-01.xsd#role_Dimension-DetailedAnalysis" xlink:type="simple"/>
+    <roleRef
+        roleURI="http://www.revenue.ie/schemas/ct/IE-DPL/2017-09-01/role/Dimension-IntraExtraGroupTransactions"
+        xlink:href="IE-DPL-2017-09-01.xsd#role_Dimension-IntraExtraGroupTransactions" xlink:type="simple"/>
+    <roleRef
+        roleURI="http://www.revenue.ie/schemas/ct/IE-DPL/2017-09-01/role/Hypercube-DetailedProfitAndLoss"
+        xlink:href="IE-DPL-2017-09-01.xsd#role_Hypercube-DetailedProfitAndLoss" xlink:type="simple"/>
+    <roleRef
+        roleURI="http://xbrl.frc.org.uk/fr/core/roles/Dimension-ContinuingAndDiscontinuedOperations"
+        xlink:href="https://xbrl.frc.org.uk/fr/2014-09-01/core/frc-core-2014-09-01.xsd#Dimension-ContinuingAndDiscontinuedOperations" xlink:type="simple"/>
+    <roleRef
+        roleURI="http://xbrl.frc.org.uk/cd/roles/Dimension-CountriesAndRegions"
+        xlink:href="https://xbrl.frc.org.uk/cd/2014-09-01/countries-regions/countries-2014-09-01.xsd#Dimension-CountriesAndRegions" xlink:type="simple"/>
+    <roleRef
+        roleURI="http://xbrl.frc.org.uk/fr/core/roles/Dimension-RestatementsAndFirstTimeAdoption"
+        xlink:href="https://xbrl.frc.org.uk/fr/2014-09-01/core/frc-core-2014-09-01.xsd#Dimension-RestatementsAndFirstTimeAdoption" xlink:type="simple"/>
+    <arcroleRef
+        arcroleURI="http://xbrl.org/int/dim/arcrole/dimension-domain"
+        xlink:href="http://www.xbrl.org/2005/xbrldt-2005.xsd#dimension-domain" xlink:type="simple"/>
+    <arcroleRef
+        arcroleURI="http://xbrl.org/int/dim/arcrole/domain-member"
+        xlink:href="http://www.xbrl.org/2005/xbrldt-2005.xsd#domain-member" xlink:type="simple"/>
+    <arcroleRef
+        arcroleURI="http://xbrl.org/int/dim/arcrole/dimension-default"
+        xlink:href="http://www.xbrl.org/2005/xbrldt-2005.xsd#dimension-default" xlink:type="simple"/>
+    <arcroleRef arcroleURI="http://xbrl.org/int/dim/arcrole/all"
+        xlink:href="http://www.xbrl.org/2005/xbrldt-2005.xsd#all" xlink:type="simple"/>
+    <arcroleRef
+        arcroleURI="http://xbrl.org/int/dim/arcrole/hypercube-dimension"
+        xlink:href="http://www.xbrl.org/2005/xbrldt-2005.xsd#hypercube-dimension" xlink:type="simple"/>
+    <definitionLink
+        xlink:role="http://www.revenue.ie/schemas/ct/IE-DPL/2017-09-01/role/Hypercube-DetailedProfitAndLoss" xlink:type="extended">
+        <loc
+            xlink:href="IE-DPL-2017-09-01.xsd#ie-dpl_ItemsInheritingDetailedProfitLossDimensions"
+            xlink:label="ie-dpl_ItemsInheritingDetailedProfitLossDimensions" xlink:type="locator"/>
+        <loc
+            xlink:href="IE-DPL-2017-09-01.xsd#ie-dpl_TradingIncomeHeading"
+            xlink:label="ie-dpl_TradingIncomeHeading" xlink:type="locator"/>
+        <definitionArc order="1" use="optional"
+            xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member"
+            xlink:from="ie-dpl_ItemsInheritingDetailedProfitLossDimensions"
+            xlink:to="ie-dpl_TradingIncomeHeading" xlink:type="arc"/>
+        <loc
+            xlink:href="IE-DPL-2017-09-01.xsd#ie-dpl_DPLTurnoverRevenue"
+            xlink:label="ie-dpl_DPLTurnoverRevenue" xlink:type="locator"/>
+        <definitionArc order="1" use="optional"
+            xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member"
+            xlink:from="ie-dpl_TradingIncomeHeading"
+            xlink:to="ie-dpl_DPLTurnoverRevenue" xlink:type="arc"/>
+        <loc
+            xlink:href="IE-DPL-2017-09-01.xsd#ie-dpl_StocksInventoriesHeading"
+            xlink:label="ie-dpl_StocksInventoriesHeading" xlink:type="locator"/>
+        <definitionArc order="2" use="optional"
+            xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member"
+            xlink:from="ie-dpl_TradingIncomeHeading"
+            xlink:to="ie-dpl_StocksInventoriesHeading" xlink:type="arc"/>
+        <loc
+            xlink:href="IE-DPL-2017-09-01.xsd#ie-dpl_StocksInventoriesStartEndPeriodHeading"
+            xlink:label="ie-dpl_StocksInventoriesStartEndPeriodHeading" xlink:type="locator"/>
+        <definitionArc order="1" use="optional"
+            xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member"
+            xlink:from="ie-dpl_StocksInventoriesHeading"
+            xlink:to="ie-dpl_StocksInventoriesStartEndPeriodHeading" xlink:type="arc"/>
+        <loc
+            xlink:href="https://xbrl.frc.org.uk/fr/2014-09-01/core/frc-core-2014-09-01.xsd#core_TotalInventories"
+            xlink:label="core_TotalInventories" xlink:type="locator"/>
+        <definitionArc order="1" use="optional"
+            xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member"
+            xlink:from="ie-dpl_StocksInventoriesStartEndPeriodHeading"
+            xlink:to="core_TotalInventories" xlink:type="arc"/>
+        <loc
+            xlink:href="https://xbrl.frc.org.uk/fr/2014-09-01/core/frc-core-2014-09-01.xsd#core_RawMaterials"
+            xlink:label="core_RawMaterials" xlink:type="locator"/>
+        <definitionArc order="1" use="optional"
+            xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member"
+            xlink:from="core_TotalInventories"
+            xlink:to="core_RawMaterials" xlink:type="arc"/>
+        <loc
+            xlink:href="https://xbrl.frc.org.uk/fr/2014-09-01/core/frc-core-2014-09-01.xsd#core_Merchandise"
+            xlink:label="core_Merchandise" xlink:type="locator"/>
+        <definitionArc order="2" use="optional"
+            xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member"
+            xlink:from="core_TotalInventories"
+            xlink:to="core_Merchandise" xlink:type="arc"/>
+        <loc
+            xlink:href="https://xbrl.frc.org.uk/fr/2014-09-01/core/frc-core-2014-09-01.xsd#core_ProductionSupplies"
+            xlink:label="core_ProductionSupplies" xlink:type="locator"/>
+        <definitionArc order="3" use="optional"
+            xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member"
+            xlink:from="core_TotalInventories"
+            xlink:to="core_ProductionSupplies" xlink:type="arc"/>
+        <loc
+            xlink:href="https://xbrl.frc.org.uk/fr/2014-09-01/core/frc-core-2014-09-01.xsd#core_WorkInProgress"
+            xlink:label="core_WorkInProgress" xlink:type="locator"/>
+        <definitionArc order="4" use="optional"
+            xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member"
+            xlink:from="core_TotalInventories"
+            xlink:to="core_WorkInProgress" xlink:type="arc"/>
+        <loc
+            xlink:href="https://xbrl.frc.org.uk/fr/2014-09-01/core/frc-core-2014-09-01.xsd#core_FinishedGoods"
+            xlink:label="core_FinishedGoods" xlink:type="locator"/>
+        <definitionArc order="5" use="optional"
+            xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member"
+            xlink:from="core_TotalInventories"
+            xlink:to="core_FinishedGoods" xlink:type="arc"/>
+        <loc
+            xlink:href="https://xbrl.frc.org.uk/fr/2014-09-01/core/frc-core-2014-09-01.xsd#core_OtherInventories"
+            xlink:label="core_OtherInventories" xlink:type="locator"/>
+        <definitionArc order="6" use="optional"
+            xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member"
+            xlink:from="core_TotalInventories"
+            xlink:to="core_OtherInventories" xlink:type="arc"/>
+        <loc
+            xlink:href="https://xbrl.frc.org.uk/fr/2014-09-01/core/frc-core-2014-09-01.xsd#core_IncreaseDecreaseInStocksInventoriesFinishedGoodsWorkInProgress"
+            xlink:label="core_IncreaseDecreaseInStocksInventoriesFinishedGoodsWorkInProgress" xlink:type="locator"/>
+        <definitionArc order="2" use="optional"
+            xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member"
+            xlink:from="ie-dpl_StocksInventoriesHeading"
+            xlink:to="core_IncreaseDecreaseInStocksInventoriesFinishedGoodsWorkInProgress" xlink:type="arc"/>
+        <loc
+            xlink:href="https://xbrl.frc.org.uk/fr/2014-09-01/core/frc-core-2014-09-01.xsd#core_RawMaterialsConsumablesUsed"
+            xlink:label="core_RawMaterialsConsumablesUsed" xlink:type="locator"/>
+        <definitionArc order="1" use="optional"
+            xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member"
+            xlink:from="core_IncreaseDecreaseInStocksInventoriesFinishedGoodsWorkInProgress"
+            xlink:to="core_RawMaterialsConsumablesUsed" xlink:type="arc"/>
+        <loc
+            xlink:href="IE-DPL-2017-09-01.xsd#ie-dpl_OtherOperatingIncomeNetItemsHeading"
+            xlink:label="ie-dpl_OtherOperatingIncomeNetItemsHeading" xlink:type="locator"/>
+        <definitionArc order="2" use="optional"
+            xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member"
+            xlink:from="ie-dpl_ItemsInheritingDetailedProfitLossDimensions"
+            xlink:to="ie-dpl_OtherOperatingIncomeNetItemsHeading" xlink:type="arc"/>
+        <loc
+            xlink:href="https://xbrl.frc.org.uk/fr/2014-09-01/core/frc-core-2014-09-01.xsd#core_OtherOperatingIncome"
+            xlink:label="core_OtherOperatingIncome" xlink:type="locator"/>
+        <definitionArc order="1" use="optional"
+            xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member"
+            xlink:from="ie-dpl_OtherOperatingIncomeNetItemsHeading"
+            xlink:to="core_OtherOperatingIncome" xlink:type="arc"/>
+        <loc
+            xlink:href="IE-DPL-2017-09-01.xsd#ie-dpl_ForeignExchangeGainLossIncludedInOtherOperatingIncome"
+            xlink:label="ie-dpl_ForeignExchangeGainLossIncludedInOtherOperatingIncome" xlink:type="locator"/>
+        <definitionArc order="2" use="optional"
+            xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member"
+            xlink:from="ie-dpl_OtherOperatingIncomeNetItemsHeading"
+            xlink:to="ie-dpl_ForeignExchangeGainLossIncludedInOtherOperatingIncome" xlink:type="arc"/>
+        <loc
+            xlink:href="IE-DPL-2017-09-01.xsd#ie-dpl_OtherOperatingIncomeExcludingForeignExchangeGainOrLoss"
+            xlink:label="ie-dpl_OtherOperatingIncomeExcludingForeignExchangeGainOrLoss" xlink:type="locator"/>
+        <definitionArc order="3" use="optional"
+            xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member"
+            xlink:from="ie-dpl_OtherOperatingIncomeNetItemsHeading"
+            xlink:to="ie-dpl_OtherOperatingIncomeExcludingForeignExchangeGainOrLoss" xlink:type="arc"/>
+        <loc
+            xlink:href="IE-DPL-2017-09-01.xsd#ie-dpl_Non-operatingIncomeNetItemsHeading"
+            xlink:label="ie-dpl_Non-operatingIncomeNetItemsHeading" xlink:type="locator"/>
+        <definitionArc order="3" use="optional"
+            xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member"
+            xlink:from="ie-dpl_ItemsInheritingDetailedProfitLossDimensions"
+            xlink:to="ie-dpl_Non-operatingIncomeNetItemsHeading" xlink:type="arc"/>
+        <loc xlink:href="IE-DPL-2017-09-01.xsd#ie-dpl_IncomeFromShares"
+            xlink:label="ie-dpl_IncomeFromShares" xlink:type="locator"/>
+        <definitionArc order="1" use="optional"
+            xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member"
+            xlink:from="ie-dpl_Non-operatingIncomeNetItemsHeading"
+            xlink:to="ie-dpl_IncomeFromShares" xlink:type="arc"/>
+        <loc
+            xlink:href="IE-DPL-2017-09-01.xsd#ie-dpl_IncomeFromOtherInvestments"
+            xlink:label="ie-dpl_IncomeFromOtherInvestments" xlink:type="locator"/>
+        <definitionArc order="2" use="optional"
+            xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member"
+            xlink:from="ie-dpl_Non-operatingIncomeNetItemsHeading"
+            xlink:to="ie-dpl_IncomeFromOtherInvestments" xlink:type="arc"/>
+        <loc
+            xlink:href="IE-DPL-2017-09-01.xsd#ie-dpl_ForeignExchangeGainLossIncludedInNon-operatingIncome"
+            xlink:label="ie-dpl_ForeignExchangeGainLossIncludedInNon-operatingIncome" xlink:type="locator"/>
+        <definitionArc order="3" use="optional"
+            xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member"
+            xlink:from="ie-dpl_Non-operatingIncomeNetItemsHeading"
+            xlink:to="ie-dpl_ForeignExchangeGainLossIncludedInNon-operatingIncome" xlink:type="arc"/>
+        <loc
+            xlink:href="https://xbrl.frc.org.uk/fr/2014-09-01/core/frc-core-2014-09-01.xsd#core_GainLossAfterTaxOnSaleDiscontinuedOperations"
+            xlink:label="core_GainLossAfterTaxOnSaleDiscontinuedOperations" xlink:type="locator"/>
+        <definitionArc order="4" use="optional"
+            xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member"
+            xlink:from="ie-dpl_Non-operatingIncomeNetItemsHeading"
+            xlink:to="core_GainLossAfterTaxOnSaleDiscontinuedOperations" xlink:type="arc"/>
+        <loc
+            xlink:href="https://xbrl.frc.org.uk/fr/2014-09-01/core/frc-core-2014-09-01.xsd#core_GainLossFromFairValueAdjustmentInvestmentPropertyRecognisedInProfitOrLoss"
+            xlink:label="core_GainLossFromFairValueAdjustmentInvestmentPropertyRecognisedInProfitOrLoss" xlink:type="locator"/>
+        <definitionArc order="5" use="optional"
+            xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member"
+            xlink:from="ie-dpl_Non-operatingIncomeNetItemsHeading"
+            xlink:to="core_GainLossFromFairValueAdjustmentInvestmentPropertyRecognisedInProfitOrLoss" xlink:type="arc"/>
+        <loc
+            xlink:href="https://xbrl.frc.org.uk/fr/2014-09-01/core/frc-core-2014-09-01.xsd#core_GainLossFromFairValueAdjustmentBiologicalAssetsFairValueModel"
+            xlink:label="core_GainLossFromFairValueAdjustmentBiologicalAssetsFairValueModel" xlink:type="locator"/>
+        <definitionArc order="6" use="optional"
+            xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member"
+            xlink:from="ie-dpl_Non-operatingIncomeNetItemsHeading"
+            xlink:to="core_GainLossFromFairValueAdjustmentBiologicalAssetsFairValueModel" xlink:type="arc"/>
+        <loc
+            xlink:href="https://xbrl.frc.org.uk/fr/2014-09-01/core/frc-core-2014-09-01.xsd#core_Non-cashAssetsDeclaredForDistributionToOwnersAfterEndReportingPeriodFairValue"
+            xlink:label="core_Non-cashAssetsDeclaredForDistributionToOwnersAfterEndReportingPeriodFairValue" xlink:type="locator"/>
+        <definitionArc order="7" use="optional"
+            xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member"
+            xlink:from="ie-dpl_Non-operatingIncomeNetItemsHeading"
+            xlink:to="core_Non-cashAssetsDeclaredForDistributionToOwnersAfterEndReportingPeriodFairValue" xlink:type="arc"/>
+        <loc
+            xlink:href="https://xbrl.frc.org.uk/fr/2014-09-01/core/frc-core-2014-09-01.xsd#core_OtherNon-operatingNetGainLossBeforeTax"
+            xlink:label="core_OtherNon-operatingNetGainLossBeforeTax" xlink:type="locator"/>
+        <definitionArc order="8" use="optional"
+            xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member"
+            xlink:from="ie-dpl_Non-operatingIncomeNetItemsHeading"
+            xlink:to="core_OtherNon-operatingNetGainLossBeforeTax" xlink:type="arc"/>
+        <loc xlink:href="IE-DPL-2017-09-01.xsd#ie-dpl_OtherItemsHeading"
+            xlink:label="ie-dpl_OtherItemsHeading" xlink:type="locator"/>
+        <definitionArc order="4" use="optional"
+            xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member"
+            xlink:from="ie-dpl_ItemsInheritingDetailedProfitLossDimensions"
+            xlink:to="ie-dpl_OtherItemsHeading" xlink:type="arc"/>
+        <loc
+            xlink:href="https://xbrl.frc.org.uk/fr/2014-09-01/core/frc-core-2014-09-01.xsd#core_OwnWorkCapitalised"
+            xlink:label="core_OwnWorkCapitalised" xlink:type="locator"/>
+        <definitionArc order="1" use="optional"
+            xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member"
+            xlink:from="ie-dpl_OtherItemsHeading"
+            xlink:to="core_OwnWorkCapitalised" xlink:type="arc"/>
+        <loc
+            xlink:href="https://xbrl.frc.org.uk/fr/2014-09-01/core/frc-core-2014-09-01.xsd#core_GainLossOnDisposalsPropertyPlantEquipment"
+            xlink:label="core_GainLossOnDisposalsPropertyPlantEquipment" xlink:type="locator"/>
+        <definitionArc order="2" use="optional"
+            xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member"
+            xlink:from="ie-dpl_OtherItemsHeading"
+            xlink:to="core_GainLossOnDisposalsPropertyPlantEquipment" xlink:type="arc"/>
+        <loc
+            xlink:href="https://xbrl.frc.org.uk/fr/2014-09-01/core/frc-core-2014-09-01.xsd#core_GainLossOnDisposalsIntangibleAssets"
+            xlink:label="core_GainLossOnDisposalsIntangibleAssets" xlink:type="locator"/>
+        <definitionArc order="3" use="optional"
+            xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member"
+            xlink:from="ie-dpl_OtherItemsHeading"
+            xlink:to="core_GainLossOnDisposalsIntangibleAssets" xlink:type="arc"/>
+        <loc
+            xlink:href="https://xbrl.frc.org.uk/fr/2014-09-01/core/frc-core-2014-09-01.xsd#core_GainLossFromChangesInProvisions"
+            xlink:label="core_GainLossFromChangesInProvisions" xlink:type="locator"/>
+        <definitionArc order="4" use="optional"
+            xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member"
+            xlink:from="ie-dpl_OtherItemsHeading"
+            xlink:to="core_GainLossFromChangesInProvisions" xlink:type="arc"/>
+        <loc
+            xlink:href="https://xbrl.frc.org.uk/fr/2014-09-01/core/frc-core-2014-09-01.xsd#core_GovernmentGrantIncome"
+            xlink:label="core_GovernmentGrantIncome" xlink:type="locator"/>
+        <definitionArc order="5" use="optional"
+            xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member"
+            xlink:from="ie-dpl_OtherItemsHeading"
+            xlink:to="core_GovernmentGrantIncome" xlink:type="arc"/>
+        <loc
+            xlink:href="IE-DPL-2017-09-01.xsd#ie-dpl_GainLossOnNegativeGoodwillbargainPurchasesReleasedToIncome"
+            xlink:label="ie-dpl_GainLossOnNegativeGoodwillbargainPurchasesReleasedToIncome" xlink:type="locator"/>
+        <definitionArc order="6" use="optional"
+            xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member"
+            xlink:from="ie-dpl_OtherItemsHeading"
+            xlink:to="ie-dpl_GainLossOnNegativeGoodwillbargainPurchasesReleasedToIncome" xlink:type="arc"/>
+        <loc
+            xlink:href="IE-DPL-2017-09-01.xsd#ie-dpl_Hyper-inflationGainsLosses"
+            xlink:label="ie-dpl_Hyper-inflationGainsLosses" xlink:type="locator"/>
+        <definitionArc order="7" use="optional"
+            xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member"
+            xlink:from="ie-dpl_OtherItemsHeading"
+            xlink:to="ie-dpl_Hyper-inflationGainsLosses" xlink:type="arc"/>
+        <loc
+            xlink:href="IE-DPL-2017-09-01.xsd#ie-dpl_DepreciationExpenseTransferredToBalanceSheet"
+            xlink:label="ie-dpl_DepreciationExpenseTransferredToBalanceSheet" xlink:type="locator"/>
+        <definitionArc order="8" use="optional"
+            xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member"
+            xlink:from="ie-dpl_OtherItemsHeading"
+            xlink:to="ie-dpl_DepreciationExpenseTransferredToBalanceSheet" xlink:type="arc"/>
+        <loc
+            xlink:href="IE-DPL-2017-09-01.xsd#ie-dpl_OtherExpensesTransferredToBalanceSheet"
+            xlink:label="ie-dpl_OtherExpensesTransferredToBalanceSheet" xlink:type="locator"/>
+        <definitionArc order="9" use="optional"
+            xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member"
+            xlink:from="ie-dpl_OtherItemsHeading"
+            xlink:to="ie-dpl_OtherExpensesTransferredToBalanceSheet" xlink:type="arc"/>
+        <loc
+            xlink:href="IE-DPL-2017-09-01.xsd#ie-dpl_FinanceIncomeNetItemsHeading"
+            xlink:label="ie-dpl_FinanceIncomeNetItemsHeading" xlink:type="locator"/>
+        <definitionArc order="5" use="optional"
+            xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member"
+            xlink:from="ie-dpl_ItemsInheritingDetailedProfitLossDimensions"
+            xlink:to="ie-dpl_FinanceIncomeNetItemsHeading" xlink:type="arc"/>
+        <loc
+            xlink:href="IE-DPL-2017-09-01.xsd#ie-dpl_BankInterestSimilarIncomeReceivable"
+            xlink:label="ie-dpl_BankInterestSimilarIncomeReceivable" xlink:type="locator"/>
+        <definitionArc order="1" use="optional"
+            xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member"
+            xlink:from="ie-dpl_FinanceIncomeNetItemsHeading"
+            xlink:to="ie-dpl_BankInterestSimilarIncomeReceivable" xlink:type="arc"/>
+        <loc
+            xlink:href="IE-DPL-2017-09-01.xsd#ie-dpl_Non-bankInterestSimilarIncomeReceivable"
+            xlink:label="ie-dpl_Non-bankInterestSimilarIncomeReceivable" xlink:type="locator"/>
+        <definitionArc order="2" use="optional"
+            xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member"
+            xlink:from="ie-dpl_FinanceIncomeNetItemsHeading"
+            xlink:to="ie-dpl_Non-bankInterestSimilarIncomeReceivable" xlink:type="arc"/>
+        <loc
+            xlink:href="IE-DPL-2017-09-01.xsd#ie-dpl_FinancialInstrumentFairValueGain"
+            xlink:label="ie-dpl_FinancialInstrumentFairValueGain" xlink:type="locator"/>
+        <definitionArc order="3" use="optional"
+            xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member"
+            xlink:from="ie-dpl_FinanceIncomeNetItemsHeading"
+            xlink:to="ie-dpl_FinancialInstrumentFairValueGain" xlink:type="arc"/>
+        <loc
+            xlink:href="https://xbrl.frc.org.uk/fr/2014-09-01/core/frc-core-2014-09-01.xsd#core_IncreaseInAssetsDefinedBenefitPlanFromReturnOnAssetsNetInterestIncome"
+            xlink:label="core_IncreaseInAssetsDefinedBenefitPlanFromReturnOnAssetsNetInterestIncome" xlink:type="locator"/>
+        <definitionArc order="4" use="optional"
+            xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member"
+            xlink:from="ie-dpl_FinanceIncomeNetItemsHeading"
+            xlink:to="core_IncreaseInAssetsDefinedBenefitPlanFromReturnOnAssetsNetInterestIncome" xlink:type="arc"/>
+        <loc
+            xlink:href="https://xbrl.frc.org.uk/fr/2014-09-01/core/frc-core-2014-09-01.xsd#core_IncreaseInAssetsDefinedBenefitPlanFromInterestIncome"
+            xlink:label="core_IncreaseInAssetsDefinedBenefitPlanFromInterestIncome" xlink:type="locator"/>
+        <definitionArc order="5" use="optional"
+            xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member"
+            xlink:from="ie-dpl_FinanceIncomeNetItemsHeading"
+            xlink:to="core_IncreaseInAssetsDefinedBenefitPlanFromInterestIncome" xlink:type="arc"/>
+        <loc
+            xlink:href="IE-DPL-2017-09-01.xsd#ie-dpl_ForeignExchangeGainLossIncludedInFinancialIncome"
+            xlink:label="ie-dpl_ForeignExchangeGainLossIncludedInFinancialIncome" xlink:type="locator"/>
+        <definitionArc order="6" use="optional"
+            xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member"
+            xlink:from="ie-dpl_FinanceIncomeNetItemsHeading"
+            xlink:to="ie-dpl_ForeignExchangeGainLossIncludedInFinancialIncome" xlink:type="arc"/>
+        <loc
+            xlink:href="IE-DPL-2017-09-01.xsd#ie-dpl_ResidualFinanceIncome"
+            xlink:label="ie-dpl_ResidualFinanceIncome" xlink:type="locator"/>
+        <definitionArc order="7" use="optional"
+            xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member"
+            xlink:from="ie-dpl_FinanceIncomeNetItemsHeading"
+            xlink:to="ie-dpl_ResidualFinanceIncome" xlink:type="arc"/>
+        <loc xlink:href="IE-DPL-2017-09-01.xsd#ie-dpl_TotalCosts"
+            xlink:label="ie-dpl_TotalCosts" xlink:type="locator"/>
+        <definitionArc order="6" use="optional"
+            xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member"
+            xlink:from="ie-dpl_ItemsInheritingDetailedProfitLossDimensions"
+            xlink:to="ie-dpl_TotalCosts" xlink:type="arc"/>
+        <loc
+            xlink:href="IE-DPL-2017-09-01.xsd#ie-dpl_AuditAccountancyCosts"
+            xlink:label="ie-dpl_AuditAccountancyCosts" xlink:type="locator"/>
+        <definitionArc order="1" use="optional"
+            xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member"
+            xlink:from="ie-dpl_TotalCosts"
+            xlink:to="ie-dpl_AuditAccountancyCosts" xlink:type="arc"/>
+        <loc
+            xlink:href="IE-DPL-2017-09-01.xsd#ie-dpl_AuditAccountancyAuditCosts"
+            xlink:label="ie-dpl_AuditAccountancyAuditCosts" xlink:type="locator"/>
+        <definitionArc order="1" use="optional"
+            xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member"
+            xlink:from="ie-dpl_AuditAccountancyCosts"
+            xlink:to="ie-dpl_AuditAccountancyAuditCosts" xlink:type="arc"/>
+        <loc
+            xlink:href="IE-DPL-2017-09-01.xsd#ie-dpl_AuditAccountancyTaxServices"
+            xlink:label="ie-dpl_AuditAccountancyTaxServices" xlink:type="locator"/>
+        <definitionArc order="2" use="optional"
+            xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member"
+            xlink:from="ie-dpl_AuditAccountancyCosts"
+            xlink:to="ie-dpl_AuditAccountancyTaxServices" xlink:type="arc"/>
+        <loc
+            xlink:href="IE-DPL-2017-09-01.xsd#ie-dpl_AuditAccountancyOtherServices"
+            xlink:label="ie-dpl_AuditAccountancyOtherServices" xlink:type="locator"/>
+        <definitionArc order="3" use="optional"
+            xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member"
+            xlink:from="ie-dpl_AuditAccountancyCosts"
+            xlink:to="ie-dpl_AuditAccountancyOtherServices" xlink:type="arc"/>
+        <loc
+            xlink:href="IE-DPL-2017-09-01.xsd#ie-dpl_MarketingClientRelatedCostsHeading"
+            xlink:label="ie-dpl_MarketingClientRelatedCostsHeading" xlink:type="locator"/>
+        <definitionArc order="2" use="optional"
+            xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member"
+            xlink:from="ie-dpl_TotalCosts"
+            xlink:to="ie-dpl_MarketingClientRelatedCostsHeading" xlink:type="arc"/>
+        <loc
+            xlink:href="IE-DPL-2017-09-01.xsd#ie-dpl_AdvertisingPromotionsMarketingCosts"
+            xlink:label="ie-dpl_AdvertisingPromotionsMarketingCosts" xlink:type="locator"/>
+        <definitionArc order="1" use="optional"
+            xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member"
+            xlink:from="ie-dpl_MarketingClientRelatedCostsHeading"
+            xlink:to="ie-dpl_AdvertisingPromotionsMarketingCosts" xlink:type="arc"/>
+        <loc
+            xlink:href="IE-DPL-2017-09-01.xsd#ie-dpl_ClientEntertainingCosts"
+            xlink:label="ie-dpl_ClientEntertainingCosts" xlink:type="locator"/>
+        <definitionArc order="2" use="optional"
+            xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member"
+            xlink:from="ie-dpl_MarketingClientRelatedCostsHeading"
+            xlink:to="ie-dpl_ClientEntertainingCosts" xlink:type="arc"/>
+        <loc
+            xlink:href="IE-DPL-2017-09-01.xsd#ie-dpl_OtherEntertainingCosts"
+            xlink:label="ie-dpl_OtherEntertainingCosts" xlink:type="locator"/>
+        <definitionArc order="3" use="optional"
+            xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member"
+            xlink:from="ie-dpl_MarketingClientRelatedCostsHeading"
+            xlink:to="ie-dpl_OtherEntertainingCosts" xlink:type="arc"/>
+        <loc
+            xlink:href="IE-DPL-2017-09-01.xsd#ie-dpl_PropertyPlantRelatedCostsHeading"
+            xlink:label="ie-dpl_PropertyPlantRelatedCostsHeading" xlink:type="locator"/>
+        <definitionArc order="3" use="optional"
+            xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member"
+            xlink:from="ie-dpl_TotalCosts"
+            xlink:to="ie-dpl_PropertyPlantRelatedCostsHeading" xlink:type="arc"/>
+        <loc
+            xlink:href="IE-DPL-2017-09-01.xsd#ie-dpl_RentRatesServicesCosts"
+            xlink:label="ie-dpl_RentRatesServicesCosts" xlink:type="locator"/>
+        <definitionArc order="1" use="optional"
+            xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member"
+            xlink:from="ie-dpl_PropertyPlantRelatedCostsHeading"
+            xlink:to="ie-dpl_RentRatesServicesCosts" xlink:type="arc"/>
+        <loc
+            xlink:href="https://xbrl.frc.org.uk/fr/2014-09-01/core/frc-core-2014-09-01.xsd#core_UtilitiesCosts"
+            xlink:label="core_UtilitiesCosts" xlink:type="locator"/>
+        <definitionArc order="2" use="optional"
+            xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member"
+            xlink:from="ie-dpl_PropertyPlantRelatedCostsHeading"
+            xlink:to="core_UtilitiesCosts" xlink:type="arc"/>
+        <loc
+            xlink:href="https://xbrl.frc.org.uk/fr/2014-09-01/core/frc-core-2014-09-01.xsd#core_TotalOperatingLeasePayments"
+            xlink:label="core_TotalOperatingLeasePayments" xlink:type="locator"/>
+        <definitionArc order="3" use="optional"
+            xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member"
+            xlink:from="ie-dpl_PropertyPlantRelatedCostsHeading"
+            xlink:to="core_TotalOperatingLeasePayments" xlink:type="arc"/>
+        <loc
+            xlink:href="https://xbrl.frc.org.uk/fr/2014-09-01/core/frc-core-2014-09-01.xsd#core_RepairsMaintenanceExpenseProperty-related"
+            xlink:label="core_RepairsMaintenanceExpenseProperty-related" xlink:type="locator"/>
+        <definitionArc order="4" use="optional"
+            xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member"
+            xlink:from="ie-dpl_PropertyPlantRelatedCostsHeading"
+            xlink:to="core_RepairsMaintenanceExpenseProperty-related" xlink:type="arc"/>
+        <loc
+            xlink:href="https://xbrl.frc.org.uk/fr/2014-09-01/core/frc-core-2014-09-01.xsd#core_OtherRepairsMaintenanceExpense"
+            xlink:label="core_OtherRepairsMaintenanceExpense" xlink:type="locator"/>
+        <definitionArc order="5" use="optional"
+            xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member"
+            xlink:from="ie-dpl_PropertyPlantRelatedCostsHeading"
+            xlink:to="core_OtherRepairsMaintenanceExpense" xlink:type="arc"/>
+        <loc xlink:href="IE-DPL-2017-09-01.xsd#ie-dpl_CleaningCosts"
+            xlink:label="ie-dpl_CleaningCosts" xlink:type="locator"/>
+        <definitionArc order="6" use="optional"
+            xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member"
+            xlink:from="ie-dpl_PropertyPlantRelatedCostsHeading"
+            xlink:to="ie-dpl_CleaningCosts" xlink:type="arc"/>
+        <loc
+            xlink:href="IE-DPL-2017-09-01.xsd#ie-dpl_DepreciationAmortisationImpairmentCostsHeading"
+            xlink:label="ie-dpl_DepreciationAmortisationImpairmentCostsHeading" xlink:type="locator"/>
+        <definitionArc order="4" use="optional"
+            xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member"
+            xlink:from="ie-dpl_TotalCosts"
+            xlink:to="ie-dpl_DepreciationAmortisationImpairmentCostsHeading" xlink:type="arc"/>
+        <loc
+            xlink:href="https://xbrl.frc.org.uk/fr/2014-09-01/core/frc-core-2014-09-01.xsd#core_DepreciationExpensePropertyPlantEquipment"
+            xlink:label="core_DepreciationExpensePropertyPlantEquipment" xlink:type="locator"/>
+        <definitionArc order="1" use="optional"
+            xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member"
+            xlink:from="ie-dpl_DepreciationAmortisationImpairmentCostsHeading"
+            xlink:to="core_DepreciationExpensePropertyPlantEquipment" xlink:type="arc"/>
+        <loc
+            xlink:href="https://xbrl.frc.org.uk/fr/2014-09-01/core/frc-core-2014-09-01.xsd#core_AmortisationExpenseIntangibleAssets"
+            xlink:label="core_AmortisationExpenseIntangibleAssets" xlink:type="locator"/>
+        <definitionArc order="2" use="optional"
+            xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member"
+            xlink:from="ie-dpl_DepreciationAmortisationImpairmentCostsHeading"
+            xlink:to="core_AmortisationExpenseIntangibleAssets" xlink:type="arc"/>
+        <loc
+            xlink:href="https://xbrl.frc.org.uk/fr/2014-09-01/core/frc-core-2014-09-01.xsd#core_ImpairmentLossReversalPropertyPlantEquipment"
+            xlink:label="core_ImpairmentLossReversalPropertyPlantEquipment" xlink:type="locator"/>
+        <definitionArc order="3" use="optional"
+            xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member"
+            xlink:from="ie-dpl_DepreciationAmortisationImpairmentCostsHeading"
+            xlink:to="core_ImpairmentLossReversalPropertyPlantEquipment" xlink:type="arc"/>
+        <loc
+            xlink:href="https://xbrl.frc.org.uk/fr/2014-09-01/core/frc-core-2014-09-01.xsd#core_ImpairmentLossReversalIntangibleAssets"
+            xlink:label="core_ImpairmentLossReversalIntangibleAssets" xlink:type="locator"/>
+        <definitionArc order="4" use="optional"
+            xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member"
+            xlink:from="ie-dpl_DepreciationAmortisationImpairmentCostsHeading"
+            xlink:to="core_ImpairmentLossReversalIntangibleAssets" xlink:type="arc"/>
+        <loc
+            xlink:href="https://xbrl.frc.org.uk/fr/2014-09-01/core/frc-core-2014-09-01.xsd#core_ImpairmentLossReversalInvestmentInSubsidiariesAssociatesJointVentures"
+            xlink:label="core_ImpairmentLossReversalInvestmentInSubsidiariesAssociatesJointVentures" xlink:type="locator"/>
+        <definitionArc order="5" use="optional"
+            xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member"
+            xlink:from="ie-dpl_DepreciationAmortisationImpairmentCostsHeading"
+            xlink:to="core_ImpairmentLossReversalInvestmentInSubsidiariesAssociatesJointVentures" xlink:type="arc"/>
+        <loc
+            xlink:href="IE-DPL-2017-09-01.xsd#ie-dpl_TransportStorageRelatedCostsHeading"
+            xlink:label="ie-dpl_TransportStorageRelatedCostsHeading" xlink:type="locator"/>
+        <definitionArc order="5" use="optional"
+            xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member"
+            xlink:from="ie-dpl_TotalCosts"
+            xlink:to="ie-dpl_TransportStorageRelatedCostsHeading" xlink:type="arc"/>
+        <loc xlink:href="IE-DPL-2017-09-01.xsd#ie-dpl_VehicleCosts"
+            xlink:label="ie-dpl_VehicleCosts" xlink:type="locator"/>
+        <definitionArc order="1" use="optional"
+            xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member"
+            xlink:from="ie-dpl_TransportStorageRelatedCostsHeading"
+            xlink:to="ie-dpl_VehicleCosts" xlink:type="arc"/>
+        <loc
+            xlink:href="IE-DPL-2017-09-01.xsd#ie-dpl_FreightHaulageCosts"
+            xlink:label="ie-dpl_FreightHaulageCosts" xlink:type="locator"/>
+        <definitionArc order="2" use="optional"
+            xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member"
+            xlink:from="ie-dpl_TransportStorageRelatedCostsHeading"
+            xlink:to="ie-dpl_FreightHaulageCosts" xlink:type="arc"/>
+        <loc
+            xlink:href="IE-DPL-2017-09-01.xsd#ie-dpl_WarehouseStorageCosts"
+            xlink:label="ie-dpl_WarehouseStorageCosts" xlink:type="locator"/>
+        <definitionArc order="3" use="optional"
+            xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member"
+            xlink:from="ie-dpl_TransportStorageRelatedCostsHeading"
+            xlink:to="ie-dpl_WarehouseStorageCosts" xlink:type="arc"/>
+        <loc
+            xlink:href="IE-DPL-2017-09-01.xsd#ie-dpl_StaffEmploymentRelatedCostsHeading"
+            xlink:label="ie-dpl_StaffEmploymentRelatedCostsHeading" xlink:type="locator"/>
+        <definitionArc order="6" use="optional"
+            xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member"
+            xlink:from="ie-dpl_TotalCosts"
+            xlink:to="ie-dpl_StaffEmploymentRelatedCostsHeading" xlink:type="arc"/>
+        <loc
+            xlink:href="https://xbrl.frc.org.uk/fr/2014-09-01/core/frc-core-2014-09-01.xsd#core_StaffCostsEmployeeBenefitsExpense"
+            xlink:label="core_StaffCostsEmployeeBenefitsExpense" xlink:type="locator"/>
+        <definitionArc order="1" use="optional"
+            xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member"
+            xlink:from="ie-dpl_StaffEmploymentRelatedCostsHeading"
+            xlink:to="core_StaffCostsEmployeeBenefitsExpense" xlink:type="arc"/>
+        <loc
+            xlink:href="https://xbrl.frc.org.uk/fr/2014-09-01/core/frc-core-2014-09-01.xsd#core_WagesSalaries"
+            xlink:label="core_WagesSalaries" xlink:type="locator"/>
+        <definitionArc order="1" use="optional"
+            xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member"
+            xlink:from="core_StaffCostsEmployeeBenefitsExpense"
+            xlink:to="core_WagesSalaries" xlink:type="arc"/>
+        <loc xlink:href="IE-DPL-2017-09-01.xsd#ie-dpl_Bonuses"
+            xlink:label="ie-dpl_Bonuses" xlink:type="locator"/>
+        <definitionArc order="2" use="optional"
+            xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member"
+            xlink:from="core_StaffCostsEmployeeBenefitsExpense"
+            xlink:to="ie-dpl_Bonuses" xlink:type="arc"/>
+        <loc
+            xlink:href="https://xbrl.frc.org.uk/fr/2014-09-01/core/frc-core-2014-09-01.xsd#core_SocialSecurityCosts"
+            xlink:label="core_SocialSecurityCosts" xlink:type="locator"/>
+        <definitionArc order="3" use="optional"
+            xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member"
+            xlink:from="core_StaffCostsEmployeeBenefitsExpense"
+            xlink:to="core_SocialSecurityCosts" xlink:type="arc"/>
+        <loc
+            xlink:href="https://xbrl.frc.org.uk/fr/2014-09-01/core/frc-core-2014-09-01.xsd#core_PensionCostsDefinedContributionPlan"
+            xlink:label="core_PensionCostsDefinedContributionPlan" xlink:type="locator"/>
+        <definitionArc order="4" use="optional"
+            xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member"
+            xlink:from="core_StaffCostsEmployeeBenefitsExpense"
+            xlink:to="core_PensionCostsDefinedContributionPlan" xlink:type="arc"/>
+        <loc
+            xlink:href="https://xbrl.frc.org.uk/fr/2014-09-01/core/frc-core-2014-09-01.xsd#core_PensionCostsDefinedBenefitPlan"
+            xlink:label="core_PensionCostsDefinedBenefitPlan" xlink:type="locator"/>
+        <definitionArc order="5" use="optional"
+            xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member"
+            xlink:from="core_StaffCostsEmployeeBenefitsExpense"
+            xlink:to="core_PensionCostsDefinedBenefitPlan" xlink:type="arc"/>
+        <loc
+            xlink:href="https://xbrl.frc.org.uk/fr/2014-09-01/core/frc-core-2014-09-01.xsd#core_RedundancyCosts"
+            xlink:label="core_RedundancyCosts" xlink:type="locator"/>
+        <definitionArc order="6" use="optional"
+            xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member"
+            xlink:from="core_StaffCostsEmployeeBenefitsExpense"
+            xlink:to="core_RedundancyCosts" xlink:type="arc"/>
+        <loc
+            xlink:href="https://xbrl.frc.org.uk/fr/2014-09-01/core/frc-core-2014-09-01.xsd#core_Share-basedPaymentExpenseEquitySettled"
+            xlink:label="core_Share-basedPaymentExpenseEquitySettled" xlink:type="locator"/>
+        <definitionArc order="7" use="optional"
+            xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member"
+            xlink:from="core_StaffCostsEmployeeBenefitsExpense"
+            xlink:to="core_Share-basedPaymentExpenseEquitySettled" xlink:type="arc"/>
+        <loc
+            xlink:href="https://xbrl.frc.org.uk/fr/2014-09-01/core/frc-core-2014-09-01.xsd#core_Share-basedPaymentExpenseCashSettled"
+            xlink:label="core_Share-basedPaymentExpenseCashSettled" xlink:type="locator"/>
+        <definitionArc order="8" use="optional"
+            xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member"
+            xlink:from="core_StaffCostsEmployeeBenefitsExpense"
+            xlink:to="core_Share-basedPaymentExpenseCashSettled" xlink:type="arc"/>
+        <loc
+            xlink:href="IE-DPL-2017-09-01.xsd#ie-dpl_RemunerationTrustExpenses"
+            xlink:label="ie-dpl_RemunerationTrustExpenses" xlink:type="locator"/>
+        <definitionArc order="9" use="optional"
+            xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member"
+            xlink:from="core_StaffCostsEmployeeBenefitsExpense"
+            xlink:to="ie-dpl_RemunerationTrustExpenses" xlink:type="arc"/>
+        <loc xlink:href="IE-DPL-2017-09-01.xsd#ie-dpl_OtherStaffCosts"
+            xlink:label="ie-dpl_OtherStaffCosts" xlink:type="locator"/>
+        <definitionArc order="10" use="optional"
+            xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member"
+            xlink:from="core_StaffCostsEmployeeBenefitsExpense"
+            xlink:to="ie-dpl_OtherStaffCosts" xlink:type="arc"/>
+        <loc
+            xlink:href="IE-DPL-2017-09-01.xsd#ie-dpl_StaffCostsExcludingDirectors"
+            xlink:label="ie-dpl_StaffCostsExcludingDirectors" xlink:type="locator"/>
+        <definitionArc order="2" use="optional"
+            xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member"
+            xlink:from="ie-dpl_StaffEmploymentRelatedCostsHeading"
+            xlink:to="ie-dpl_StaffCostsExcludingDirectors" xlink:type="arc"/>
+        <loc
+            xlink:href="IE-DPL-2017-09-01.xsd#ie-dpl_WagesSalariesExcludingDirectors"
+            xlink:label="ie-dpl_WagesSalariesExcludingDirectors" xlink:type="locator"/>
+        <definitionArc order="1" use="optional"
+            xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member"
+            xlink:from="ie-dpl_StaffCostsExcludingDirectors"
+            xlink:to="ie-dpl_WagesSalariesExcludingDirectors" xlink:type="arc"/>
+        <loc
+            xlink:href="IE-DPL-2017-09-01.xsd#ie-dpl_BonusesExcludingDirectors"
+            xlink:label="ie-dpl_BonusesExcludingDirectors" xlink:type="locator"/>
+        <definitionArc order="2" use="optional"
+            xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member"
+            xlink:from="ie-dpl_StaffCostsExcludingDirectors"
+            xlink:to="ie-dpl_BonusesExcludingDirectors" xlink:type="arc"/>
+        <loc
+            xlink:href="IE-DPL-2017-09-01.xsd#ie-dpl_SocialSecurityCostsExcludingDirectors"
+            xlink:label="ie-dpl_SocialSecurityCostsExcludingDirectors" xlink:type="locator"/>
+        <definitionArc order="3" use="optional"
+            xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member"
+            xlink:from="ie-dpl_StaffCostsExcludingDirectors"
+            xlink:to="ie-dpl_SocialSecurityCostsExcludingDirectors" xlink:type="arc"/>
+        <loc
+            xlink:href="IE-DPL-2017-09-01.xsd#ie-dpl_PensionsCostsDefinedBenefitSchemesExcludingDirectors"
+            xlink:label="ie-dpl_PensionsCostsDefinedBenefitSchemesExcludingDirectors" xlink:type="locator"/>
+        <definitionArc order="4" use="optional"
+            xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member"
+            xlink:from="ie-dpl_StaffCostsExcludingDirectors"
+            xlink:to="ie-dpl_PensionsCostsDefinedBenefitSchemesExcludingDirectors" xlink:type="arc"/>
+        <loc
+            xlink:href="IE-DPL-2017-09-01.xsd#ie-dpl_PensionsCostsDefinedContributionSchemesExcludingDirectors"
+            xlink:label="ie-dpl_PensionsCostsDefinedContributionSchemesExcludingDirectors" xlink:type="locator"/>
+        <definitionArc order="5" use="optional"
+            xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member"
+            xlink:from="ie-dpl_StaffCostsExcludingDirectors"
+            xlink:to="ie-dpl_PensionsCostsDefinedContributionSchemesExcludingDirectors" xlink:type="arc"/>
+        <loc
+            xlink:href="IE-DPL-2017-09-01.xsd#ie-dpl_RedundancyCostsExcludingDirectors"
+            xlink:label="ie-dpl_RedundancyCostsExcludingDirectors" xlink:type="locator"/>
+        <definitionArc order="6" use="optional"
+            xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member"
+            xlink:from="ie-dpl_StaffCostsExcludingDirectors"
+            xlink:to="ie-dpl_RedundancyCostsExcludingDirectors" xlink:type="arc"/>
+        <loc
+            xlink:href="IE-DPL-2017-09-01.xsd#ie-dpl_Share-basedPaymentsExcludingDirectors"
+            xlink:label="ie-dpl_Share-basedPaymentsExcludingDirectors" xlink:type="locator"/>
+        <definitionArc order="7" use="optional"
+            xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member"
+            xlink:from="ie-dpl_StaffCostsExcludingDirectors"
+            xlink:to="ie-dpl_Share-basedPaymentsExcludingDirectors" xlink:type="arc"/>
+        <loc
+            xlink:href="IE-DPL-2017-09-01.xsd#ie-dpl_RemunerationTrustExpensesExcludingDirectors"
+            xlink:label="ie-dpl_RemunerationTrustExpensesExcludingDirectors" xlink:type="locator"/>
+        <definitionArc order="8" use="optional"
+            xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member"
+            xlink:from="ie-dpl_StaffCostsExcludingDirectors"
+            xlink:to="ie-dpl_RemunerationTrustExpensesExcludingDirectors" xlink:type="arc"/>
+        <loc
+            xlink:href="IE-DPL-2017-09-01.xsd#ie-dpl_OtherStaffCostsExcludingDirectors"
+            xlink:label="ie-dpl_OtherStaffCostsExcludingDirectors" xlink:type="locator"/>
+        <definitionArc order="9" use="optional"
+            xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member"
+            xlink:from="ie-dpl_StaffCostsExcludingDirectors"
+            xlink:to="ie-dpl_OtherStaffCostsExcludingDirectors" xlink:type="arc"/>
+        <loc
+            xlink:href="IE-DPL-2017-09-01.xsd#ie-dpl_StaffCostsDirectors"
+            xlink:label="ie-dpl_StaffCostsDirectors" xlink:type="locator"/>
+        <definitionArc order="3" use="optional"
+            xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member"
+            xlink:from="ie-dpl_StaffEmploymentRelatedCostsHeading"
+            xlink:to="ie-dpl_StaffCostsDirectors" xlink:type="arc"/>
+        <loc
+            xlink:href="https://xbrl.frc.org.uk/reports/2014-09-01/direp/direp-2014-09-01.xsd#direp_SalariesFeesDirectors"
+            xlink:label="direp_SalariesFeesDirectors" xlink:type="locator"/>
+        <definitionArc order="1" use="optional"
+            xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member"
+            xlink:from="ie-dpl_StaffCostsDirectors"
+            xlink:to="direp_SalariesFeesDirectors" xlink:type="arc"/>
+        <loc
+            xlink:href="https://xbrl.frc.org.uk/reports/2014-09-01/direp/direp-2014-09-01.xsd#direp_BonusesDirectors"
+            xlink:label="direp_BonusesDirectors" xlink:type="locator"/>
+        <definitionArc order="2" use="optional"
+            xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member"
+            xlink:from="ie-dpl_StaffCostsDirectors"
+            xlink:to="direp_BonusesDirectors" xlink:type="arc"/>
+        <loc
+            xlink:href="IE-DPL-2017-09-01.xsd#ie-dpl_SocialSecurityCostsDirectors"
+            xlink:label="ie-dpl_SocialSecurityCostsDirectors" xlink:type="locator"/>
+        <definitionArc order="3" use="optional"
+            xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member"
+            xlink:from="ie-dpl_StaffCostsDirectors"
+            xlink:to="ie-dpl_SocialSecurityCostsDirectors" xlink:type="arc"/>
+        <loc
+            xlink:href="https://xbrl.frc.org.uk/reports/2014-09-01/direp/direp-2014-09-01.xsd#direp_CompanyContributionsToDefinedBenefitPlansDirectors"
+            xlink:label="direp_CompanyContributionsToDefinedBenefitPlansDirectors" xlink:type="locator"/>
+        <definitionArc order="4" use="optional"
+            xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member"
+            xlink:from="ie-dpl_StaffCostsDirectors"
+            xlink:to="direp_CompanyContributionsToDefinedBenefitPlansDirectors" xlink:type="arc"/>
+        <loc
+            xlink:href="https://xbrl.frc.org.uk/reports/2014-09-01/direp/direp-2014-09-01.xsd#direp_CompanyContributionsToMoneyPurchasePlansDirectors"
+            xlink:label="direp_CompanyContributionsToMoneyPurchasePlansDirectors" xlink:type="locator"/>
+        <definitionArc order="5" use="optional"
+            xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member"
+            xlink:from="ie-dpl_StaffCostsDirectors"
+            xlink:to="direp_CompanyContributionsToMoneyPurchasePlansDirectors" xlink:type="arc"/>
+        <loc
+            xlink:href="IE-DPL-2017-09-01.xsd#ie-dpl_Share-basedPaymentsDirectors"
+            xlink:label="ie-dpl_Share-basedPaymentsDirectors" xlink:type="locator"/>
+        <definitionArc order="6" use="optional"
+            xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member"
+            xlink:from="ie-dpl_StaffCostsDirectors"
+            xlink:to="ie-dpl_Share-basedPaymentsDirectors" xlink:type="arc"/>
+        <loc
+            xlink:href="IE-DPL-2017-09-01.xsd#ie-dpl_RemunerationTrustExpensesDirectors"
+            xlink:label="ie-dpl_RemunerationTrustExpensesDirectors" xlink:type="locator"/>
+        <definitionArc order="7" use="optional"
+            xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member"
+            xlink:from="ie-dpl_StaffCostsDirectors"
+            xlink:to="ie-dpl_RemunerationTrustExpensesDirectors" xlink:type="arc"/>
+        <loc
+            xlink:href="https://xbrl.frc.org.uk/reports/2014-09-01/direp/direp-2014-09-01.xsd#direp_CompensationForLossOfficeDirectors"
+            xlink:label="direp_CompensationForLossOfficeDirectors" xlink:type="locator"/>
+        <definitionArc order="8" use="optional"
+            xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member"
+            xlink:from="ie-dpl_StaffCostsDirectors"
+            xlink:to="direp_CompensationForLossOfficeDirectors" xlink:type="arc"/>
+        <loc
+            xlink:href="https://xbrl.frc.org.uk/reports/2014-09-01/direp/direp-2014-09-01.xsd#direp_PaymentsToThirdPartiesForDirectorServices"
+            xlink:label="direp_PaymentsToThirdPartiesForDirectorServices" xlink:type="locator"/>
+        <definitionArc order="9" use="optional"
+            xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member"
+            xlink:from="ie-dpl_StaffCostsDirectors"
+            xlink:to="direp_PaymentsToThirdPartiesForDirectorServices" xlink:type="arc"/>
+        <loc
+            xlink:href="IE-DPL-2017-09-01.xsd#ie-dpl_OtherStaffCostsDirectors"
+            xlink:label="ie-dpl_OtherStaffCostsDirectors" xlink:type="locator"/>
+        <definitionArc order="10" use="optional"
+            xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member"
+            xlink:from="ie-dpl_StaffCostsDirectors"
+            xlink:to="ie-dpl_OtherStaffCostsDirectors" xlink:type="arc"/>
+        <loc xlink:href="IE-DPL-2017-09-01.xsd#ie-dpl_ConsultancyCosts"
+            xlink:label="ie-dpl_ConsultancyCosts" xlink:type="locator"/>
+        <definitionArc order="4" use="optional"
+            xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member"
+            xlink:from="ie-dpl_StaffEmploymentRelatedCostsHeading"
+            xlink:to="ie-dpl_ConsultancyCosts" xlink:type="arc"/>
+        <loc
+            xlink:href="IE-DPL-2017-09-01.xsd#ie-dpl_SubcontractorCosts"
+            xlink:label="ie-dpl_SubcontractorCosts" xlink:type="locator"/>
+        <definitionArc order="5" use="optional"
+            xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member"
+            xlink:from="ie-dpl_StaffEmploymentRelatedCostsHeading"
+            xlink:to="ie-dpl_SubcontractorCosts" xlink:type="arc"/>
+        <loc
+            xlink:href="IE-DPL-2017-09-01.xsd#ie-dpl_TravelSubsistenceCosts"
+            xlink:label="ie-dpl_TravelSubsistenceCosts" xlink:type="locator"/>
+        <definitionArc order="6" use="optional"
+            xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member"
+            xlink:from="ie-dpl_StaffEmploymentRelatedCostsHeading"
+            xlink:to="ie-dpl_TravelSubsistenceCosts" xlink:type="arc"/>
+        <loc xlink:href="IE-DPL-2017-09-01.xsd#ie-dpl_TrainingCosts"
+            xlink:label="ie-dpl_TrainingCosts" xlink:type="locator"/>
+        <definitionArc order="7" use="optional"
+            xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member"
+            xlink:from="ie-dpl_StaffEmploymentRelatedCostsHeading"
+            xlink:to="ie-dpl_TrainingCosts" xlink:type="arc"/>
+        <loc
+            xlink:href="IE-DPL-2017-09-01.xsd#ie-dpl_StaffEntertainingCosts"
+            xlink:label="ie-dpl_StaffEntertainingCosts" xlink:type="locator"/>
+        <definitionArc order="8" use="optional"
+            xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member"
+            xlink:from="ie-dpl_StaffEmploymentRelatedCostsHeading"
+            xlink:to="ie-dpl_StaffEntertainingCosts" xlink:type="arc"/>
+        <loc
+            xlink:href="IE-DPL-2017-09-01.xsd#ie-dpl_RecruitmentRemunerationServiceCosts"
+            xlink:label="ie-dpl_RecruitmentRemunerationServiceCosts" xlink:type="locator"/>
+        <definitionArc order="9" use="optional"
+            xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member"
+            xlink:from="ie-dpl_StaffEmploymentRelatedCostsHeading"
+            xlink:to="ie-dpl_RecruitmentRemunerationServiceCosts" xlink:type="arc"/>
+        <loc
+            xlink:href="IE-DPL-2017-09-01.xsd#ie-dpl_OtherEmploymentCosts"
+            xlink:label="ie-dpl_OtherEmploymentCosts" xlink:type="locator"/>
+        <definitionArc order="10" use="optional"
+            xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member"
+            xlink:from="ie-dpl_StaffEmploymentRelatedCostsHeading"
+            xlink:to="ie-dpl_OtherEmploymentCosts" xlink:type="arc"/>
+        <loc
+            xlink:href="IE-DPL-2017-09-01.xsd#ie-dpl_Finance-relatedCostsNetItemsHeading"
+            xlink:label="ie-dpl_Finance-relatedCostsNetItemsHeading" xlink:type="locator"/>
+        <definitionArc order="7" use="optional"
+            xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member"
+            xlink:from="ie-dpl_TotalCosts"
+            xlink:to="ie-dpl_Finance-relatedCostsNetItemsHeading" xlink:type="arc"/>
+        <loc
+            xlink:href="https://xbrl.frc.org.uk/fr/2014-09-01/core/frc-core-2014-09-01.xsd#core_InterestExpenseOnBankOverdraftsBankLoansSimilarBorrowings"
+            xlink:label="core_InterestExpenseOnBankOverdraftsBankLoansSimilarBorrowings" xlink:type="locator"/>
+        <definitionArc order="1" use="optional"
+            xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member"
+            xlink:from="ie-dpl_Finance-relatedCostsNetItemsHeading"
+            xlink:to="core_InterestExpenseOnBankOverdraftsBankLoansSimilarBorrowings" xlink:type="arc"/>
+        <loc
+            xlink:href="IE-DPL-2017-09-01.xsd#ie-dpl_Non-bankInterestSimilarCharges"
+            xlink:label="ie-dpl_Non-bankInterestSimilarCharges" xlink:type="locator"/>
+        <definitionArc order="2" use="optional"
+            xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member"
+            xlink:from="ie-dpl_Finance-relatedCostsNetItemsHeading"
+            xlink:to="ie-dpl_Non-bankInterestSimilarCharges" xlink:type="arc"/>
+        <loc
+            xlink:href="https://xbrl.frc.org.uk/fr/2014-09-01/core/frc-core-2014-09-01.xsd#core_InterestExpenseOnObligationsUnderFinanceLeasesHirePurchaseContracts"
+            xlink:label="core_InterestExpenseOnObligationsUnderFinanceLeasesHirePurchaseContracts" xlink:type="locator"/>
+        <definitionArc order="3" use="optional"
+            xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member"
+            xlink:from="ie-dpl_Finance-relatedCostsNetItemsHeading"
+            xlink:to="core_InterestExpenseOnObligationsUnderFinanceLeasesHirePurchaseContracts" xlink:type="arc"/>
+        <loc
+            xlink:href="https://xbrl.frc.org.uk/fr/2014-09-01/core/frc-core-2014-09-01.xsd#core_InterestExpenseOnPreferenceSharesClassifiedAsDebt"
+            xlink:label="core_InterestExpenseOnPreferenceSharesClassifiedAsDebt" xlink:type="locator"/>
+        <definitionArc order="4" use="optional"
+            xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member"
+            xlink:from="ie-dpl_Finance-relatedCostsNetItemsHeading"
+            xlink:to="core_InterestExpenseOnPreferenceSharesClassifiedAsDebt" xlink:type="arc"/>
+        <loc
+            xlink:href="https://xbrl.frc.org.uk/fr/2014-09-01/core/frc-core-2014-09-01.xsd#core_UnwindingDiscountOnProvisionsExpense"
+            xlink:label="core_UnwindingDiscountOnProvisionsExpense" xlink:type="locator"/>
+        <definitionArc order="5" use="optional"
+            xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member"
+            xlink:from="ie-dpl_Finance-relatedCostsNetItemsHeading"
+            xlink:to="core_UnwindingDiscountOnProvisionsExpense" xlink:type="arc"/>
+        <loc
+            xlink:href="IE-DPL-2017-09-01.xsd#ie-dpl_BadDebtsImpairmentLosses"
+            xlink:label="ie-dpl_BadDebtsImpairmentLosses" xlink:type="locator"/>
+        <definitionArc order="6" use="optional"
+            xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member"
+            xlink:from="ie-dpl_Finance-relatedCostsNetItemsHeading"
+            xlink:to="ie-dpl_BadDebtsImpairmentLosses" xlink:type="arc"/>
+        <loc
+            xlink:href="IE-DPL-2017-09-01.xsd#ie-dpl_LoansWrittenOffOrDown"
+            xlink:label="ie-dpl_LoansWrittenOffOrDown" xlink:type="locator"/>
+        <definitionArc order="7" use="optional"
+            xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member"
+            xlink:from="ie-dpl_Finance-relatedCostsNetItemsHeading"
+            xlink:to="ie-dpl_LoansWrittenOffOrDown" xlink:type="arc"/>
+        <loc
+            xlink:href="https://xbrl.frc.org.uk/fr/2014-09-01/core/frc-core-2014-09-01.xsd#core_ImpairmentLossReversalOnInvestments"
+            xlink:label="core_ImpairmentLossReversalOnInvestments" xlink:type="locator"/>
+        <definitionArc order="8" use="optional"
+            xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member"
+            xlink:from="ie-dpl_Finance-relatedCostsNetItemsHeading"
+            xlink:to="core_ImpairmentLossReversalOnInvestments" xlink:type="arc"/>
+        <loc
+            xlink:href="IE-DPL-2017-09-01.xsd#ie-dpl_FinancialInstrumentFairValueLoss"
+            xlink:label="ie-dpl_FinancialInstrumentFairValueLoss" xlink:type="locator"/>
+        <definitionArc order="9" use="optional"
+            xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member"
+            xlink:from="ie-dpl_Finance-relatedCostsNetItemsHeading"
+            xlink:to="ie-dpl_FinancialInstrumentFairValueLoss" xlink:type="arc"/>
+        <loc xlink:href="IE-DPL-2017-09-01.xsd#ie-dpl_BankCharges"
+            xlink:label="ie-dpl_BankCharges" xlink:type="locator"/>
+        <definitionArc order="10" use="optional"
+            xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member"
+            xlink:from="ie-dpl_Finance-relatedCostsNetItemsHeading"
+            xlink:to="ie-dpl_BankCharges" xlink:type="arc"/>
+        <loc
+            xlink:href="IE-DPL-2017-09-01.xsd#ie-dpl_ResidualFinanceCosts"
+            xlink:label="ie-dpl_ResidualFinanceCosts" xlink:type="locator"/>
+        <definitionArc order="11" use="optional"
+            xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member"
+            xlink:from="ie-dpl_Finance-relatedCostsNetItemsHeading"
+            xlink:to="ie-dpl_ResidualFinanceCosts" xlink:type="arc"/>
+        <loc
+            xlink:href="IE-DPL-2017-09-01.xsd#ie-dpl_ForForeignExchangeCostClassifiedUnderFinanceSeeNetItemUnderFinanceIncomeCross-reference"
+            xlink:label="ie-dpl_ForForeignExchangeCostClassifiedUnderFinanceSeeNetItemUnderFinanceIncomeCross-reference" xlink:type="locator"/>
+        <definitionArc order="12" use="optional"
+            xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member"
+            xlink:from="ie-dpl_Finance-relatedCostsNetItemsHeading"
+            xlink:to="ie-dpl_ForForeignExchangeCostClassifiedUnderFinanceSeeNetItemUnderFinanceIncomeCross-reference" xlink:type="arc"/>
+        <loc
+            xlink:href="IE-DPL-2017-09-01.xsd#ie-dpl_ForForeignExchangeCostClassifiedAsOperatingSeeNetItemUnderOtherOperatingIncomeCross-reference"
+            xlink:label="ie-dpl_ForForeignExchangeCostClassifiedAsOperatingSeeNetItemUnderOtherOperatingIncomeCross-reference" xlink:type="locator"/>
+        <definitionArc order="13" use="optional"
+            xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member"
+            xlink:from="ie-dpl_Finance-relatedCostsNetItemsHeading"
+            xlink:to="ie-dpl_ForForeignExchangeCostClassifiedAsOperatingSeeNetItemUnderOtherOperatingIncomeCross-reference" xlink:type="arc"/>
+        <loc
+            xlink:href="IE-DPL-2017-09-01.xsd#ie-dpl_ForForeignExchangeCostClassifiedAsNon-operatingSeeNetItemUnderNon-operatingIncomeCross-reference"
+            xlink:label="ie-dpl_ForForeignExchangeCostClassifiedAsNon-operatingSeeNetItemUnderNon-operatingIncomeCross-reference" xlink:type="locator"/>
+        <definitionArc order="14" use="optional"
+            xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member"
+            xlink:from="ie-dpl_Finance-relatedCostsNetItemsHeading"
+            xlink:to="ie-dpl_ForForeignExchangeCostClassifiedAsNon-operatingSeeNetItemUnderNon-operatingIncomeCross-reference" xlink:type="arc"/>
+        <loc
+            xlink:href="IE-DPL-2017-09-01.xsd#ie-dpl_ForOtherForeignExchangeCostSeeNetItemUnderOperationalAdministrationCostsCross-reference"
+            xlink:label="ie-dpl_ForOtherForeignExchangeCostSeeNetItemUnderOperationalAdministrationCostsCross-reference" xlink:type="locator"/>
+        <definitionArc order="15" use="optional"
+            xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member"
+            xlink:from="ie-dpl_Finance-relatedCostsNetItemsHeading"
+            xlink:to="ie-dpl_ForOtherForeignExchangeCostSeeNetItemUnderOperationalAdministrationCostsCross-reference" xlink:type="arc"/>
+        <loc
+            xlink:href="IE-DPL-2017-09-01.xsd#ie-dpl_GeneralServicesExpensesHeading"
+            xlink:label="ie-dpl_GeneralServicesExpensesHeading" xlink:type="locator"/>
+        <definitionArc order="8" use="optional"
+            xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member"
+            xlink:from="ie-dpl_TotalCosts"
+            xlink:to="ie-dpl_GeneralServicesExpensesHeading" xlink:type="arc"/>
+        <loc
+            xlink:href="IE-DPL-2017-09-01.xsd#ie-dpl_LegalProfessionalCosts"
+            xlink:label="ie-dpl_LegalProfessionalCosts" xlink:type="locator"/>
+        <definitionArc order="1" use="optional"
+            xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member"
+            xlink:from="ie-dpl_GeneralServicesExpensesHeading"
+            xlink:to="ie-dpl_LegalProfessionalCosts" xlink:type="arc"/>
+        <loc
+            xlink:href="IE-DPL-2017-09-01.xsd#ie-dpl_ExternalCommissionCosts"
+            xlink:label="ie-dpl_ExternalCommissionCosts" xlink:type="locator"/>
+        <definitionArc order="2" use="optional"
+            xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member"
+            xlink:from="ie-dpl_GeneralServicesExpensesHeading"
+            xlink:to="ie-dpl_ExternalCommissionCosts" xlink:type="arc"/>
+        <loc
+            xlink:href="https://xbrl.frc.org.uk/fr/2014-09-01/core/frc-core-2014-09-01.xsd#core_RoyaltiesLicencesSimilarExpense"
+            xlink:label="core_RoyaltiesLicencesSimilarExpense" xlink:type="locator"/>
+        <definitionArc order="3" use="optional"
+            xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member"
+            xlink:from="ie-dpl_GeneralServicesExpensesHeading"
+            xlink:to="core_RoyaltiesLicencesSimilarExpense" xlink:type="arc"/>
+        <loc
+            xlink:href="IE-DPL-2017-09-01.xsd#ie-dpl_Inter-companyManagementFees"
+            xlink:label="ie-dpl_Inter-companyManagementFees" xlink:type="locator"/>
+        <definitionArc order="4" use="optional"
+            xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member"
+            xlink:from="ie-dpl_GeneralServicesExpensesHeading"
+            xlink:to="ie-dpl_Inter-companyManagementFees" xlink:type="arc"/>
+        <loc
+            xlink:href="IE-DPL-2017-09-01.xsd#ie-dpl_Inter-companyRecharges"
+            xlink:label="ie-dpl_Inter-companyRecharges" xlink:type="locator"/>
+        <definitionArc order="5" use="optional"
+            xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member"
+            xlink:from="ie-dpl_GeneralServicesExpensesHeading"
+            xlink:to="ie-dpl_Inter-companyRecharges" xlink:type="arc"/>
+        <loc
+            xlink:href="IE-DPL-2017-09-01.xsd#ie-dpl_OperationalAdministrationCostsHeading"
+            xlink:label="ie-dpl_OperationalAdministrationCostsHeading" xlink:type="locator"/>
+        <definitionArc order="9" use="optional"
+            xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member"
+            xlink:from="ie-dpl_TotalCosts"
+            xlink:to="ie-dpl_OperationalAdministrationCostsHeading" xlink:type="arc"/>
+        <loc
+            xlink:href="https://xbrl.frc.org.uk/fr/2014-09-01/core/frc-core-2014-09-01.xsd#core_InsuranceCosts"
+            xlink:label="core_InsuranceCosts" xlink:type="locator"/>
+        <definitionArc order="1" use="optional"
+            xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member"
+            xlink:from="ie-dpl_OperationalAdministrationCostsHeading"
+            xlink:to="core_InsuranceCosts" xlink:type="arc"/>
+        <loc xlink:href="IE-DPL-2017-09-01.xsd#ie-dpl_ITComputingCosts"
+            xlink:label="ie-dpl_ITComputingCosts" xlink:type="locator"/>
+        <definitionArc order="2" use="optional"
+            xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member"
+            xlink:from="ie-dpl_OperationalAdministrationCostsHeading"
+            xlink:to="ie-dpl_ITComputingCosts" xlink:type="arc"/>
+        <loc
+            xlink:href="IE-DPL-2017-09-01.xsd#ie-dpl_TelecommunicationsCosts"
+            xlink:label="ie-dpl_TelecommunicationsCosts" xlink:type="locator"/>
+        <definitionArc order="3" use="optional"
+            xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member"
+            xlink:from="ie-dpl_OperationalAdministrationCostsHeading"
+            xlink:to="ie-dpl_TelecommunicationsCosts" xlink:type="arc"/>
+        <loc
+            xlink:href="IE-DPL-2017-09-01.xsd#ie-dpl_OutsourcedServicesCosts"
+            xlink:label="ie-dpl_OutsourcedServicesCosts" xlink:type="locator"/>
+        <definitionArc order="4" use="optional"
+            xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member"
+            xlink:from="ie-dpl_OperationalAdministrationCostsHeading"
+            xlink:to="ie-dpl_OutsourcedServicesCosts" xlink:type="arc"/>
+        <loc
+            xlink:href="IE-DPL-2017-09-01.xsd#ie-dpl_PrintingPostageStationeryCosts"
+            xlink:label="ie-dpl_PrintingPostageStationeryCosts" xlink:type="locator"/>
+        <definitionArc order="5" use="optional"
+            xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member"
+            xlink:from="ie-dpl_OperationalAdministrationCostsHeading"
+            xlink:to="ie-dpl_PrintingPostageStationeryCosts" xlink:type="arc"/>
+        <loc xlink:href="IE-DPL-2017-09-01.xsd#ie-dpl_HealthSafetyCosts"
+            xlink:label="ie-dpl_HealthSafetyCosts" xlink:type="locator"/>
+        <definitionArc order="6" use="optional"
+            xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member"
+            xlink:from="ie-dpl_OperationalAdministrationCostsHeading"
+            xlink:to="ie-dpl_HealthSafetyCosts" xlink:type="arc"/>
+        <loc xlink:href="IE-DPL-2017-09-01.xsd#ie-dpl_SecurityCosts"
+            xlink:label="ie-dpl_SecurityCosts" xlink:type="locator"/>
+        <definitionArc order="7" use="optional"
+            xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member"
+            xlink:from="ie-dpl_OperationalAdministrationCostsHeading"
+            xlink:to="ie-dpl_SecurityCosts" xlink:type="arc"/>
+        <loc
+            xlink:href="https://xbrl.frc.org.uk/fr/2014-09-01/core/frc-core-2014-09-01.xsd#core_ResearchDevelopmentExpenseRecognisedInProfitOrLoss"
+            xlink:label="core_ResearchDevelopmentExpenseRecognisedInProfitOrLoss" xlink:type="locator"/>
+        <definitionArc order="8" use="optional"
+            xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member"
+            xlink:from="ie-dpl_OperationalAdministrationCostsHeading"
+            xlink:to="core_ResearchDevelopmentExpenseRecognisedInProfitOrLoss" xlink:type="arc"/>
+        <loc
+            xlink:href="https://xbrl.frc.org.uk/fr/2014-09-01/core/frc-core-2014-09-01.xsd#core_RestructuringCosts"
+            xlink:label="core_RestructuringCosts" xlink:type="locator"/>
+        <definitionArc order="9" use="optional"
+            xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member"
+            xlink:from="ie-dpl_OperationalAdministrationCostsHeading"
+            xlink:to="core_RestructuringCosts" xlink:type="arc"/>
+        <loc
+            xlink:href="IE-DPL-2017-09-01.xsd#ie-dpl_EnvironmentalCosts"
+            xlink:label="ie-dpl_EnvironmentalCosts" xlink:type="locator"/>
+        <definitionArc order="10" use="optional"
+            xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member"
+            xlink:from="ie-dpl_OperationalAdministrationCostsHeading"
+            xlink:to="ie-dpl_EnvironmentalCosts" xlink:type="arc"/>
+        <loc
+            xlink:href="IE-DPL-2017-09-01.xsd#ie-dpl_CharitableDonations"
+            xlink:label="ie-dpl_CharitableDonations" xlink:type="locator"/>
+        <definitionArc order="11" use="optional"
+            xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member"
+            xlink:from="ie-dpl_OperationalAdministrationCostsHeading"
+            xlink:to="ie-dpl_CharitableDonations" xlink:type="arc"/>
+        <loc
+            xlink:href="https://xbrl.frc.org.uk/reports/2014-09-01/direp/direp-2014-09-01.xsd#direp_PoliticalDonations"
+            xlink:label="direp_PoliticalDonations" xlink:type="locator"/>
+        <definitionArc order="12" use="optional"
+            xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member"
+            xlink:from="ie-dpl_OperationalAdministrationCostsHeading"
+            xlink:to="direp_PoliticalDonations" xlink:type="arc"/>
+        <loc
+            xlink:href="IE-DPL-2017-09-01.xsd#ie-dpl_SubscriptionsCosts"
+            xlink:label="ie-dpl_SubscriptionsCosts" xlink:type="locator"/>
+        <definitionArc order="13" use="optional"
+            xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member"
+            xlink:from="ie-dpl_OperationalAdministrationCostsHeading"
+            xlink:to="ie-dpl_SubscriptionsCosts" xlink:type="arc"/>
+        <loc xlink:href="IE-DPL-2017-09-01.xsd#ie-dpl_FinesPenalties"
+            xlink:label="ie-dpl_FinesPenalties" xlink:type="locator"/>
+        <definitionArc order="14" use="optional"
+            xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member"
+            xlink:from="ie-dpl_OperationalAdministrationCostsHeading"
+            xlink:to="ie-dpl_FinesPenalties" xlink:type="arc"/>
+        <loc xlink:href="IE-DPL-2017-09-01.xsd#ie-dpl_IrrecoverableVAT"
+            xlink:label="ie-dpl_IrrecoverableVAT" xlink:type="locator"/>
+        <definitionArc order="15" use="optional"
+            xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member"
+            xlink:from="ie-dpl_OperationalAdministrationCostsHeading"
+            xlink:to="ie-dpl_IrrecoverableVAT" xlink:type="arc"/>
+        <loc
+            xlink:href="IE-DPL-2017-09-01.xsd#ie-dpl_OtherForeignExchangeLossGain"
+            xlink:label="ie-dpl_OtherForeignExchangeLossGain" xlink:type="locator"/>
+        <definitionArc order="16" use="optional"
+            xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member"
+            xlink:from="ie-dpl_OperationalAdministrationCostsHeading"
+            xlink:to="ie-dpl_OtherForeignExchangeLossGain" xlink:type="arc"/>
+        <loc
+            xlink:href="IE-DPL-2017-09-01.xsd#ie-dpl_OtherOperationalAdministrationCosts"
+            xlink:label="ie-dpl_OtherOperationalAdministrationCosts" xlink:type="locator"/>
+        <definitionArc order="17" use="optional"
+            xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member"
+            xlink:from="ie-dpl_OperationalAdministrationCostsHeading"
+            xlink:to="ie-dpl_OtherOperationalAdministrationCosts" xlink:type="arc"/>
+        <loc xlink:href="IE-DPL-2017-09-01.xsd#ie-dpl_OtherCosts"
+            xlink:label="ie-dpl_OtherCosts" xlink:type="locator"/>
+        <definitionArc order="10" use="optional"
+            xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member"
+            xlink:from="ie-dpl_TotalCosts" xlink:to="ie-dpl_OtherCosts" xlink:type="arc"/>
+        <loc
+            xlink:href="IE-DPL-2017-09-01.xsd#ie-dpl_Sub-totalsNotIncludedElsewhereHeading"
+            xlink:label="ie-dpl_Sub-totalsNotIncludedElsewhereHeading" xlink:type="locator"/>
+        <definitionArc order="7" use="optional"
+            xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member"
+            xlink:from="ie-dpl_ItemsInheritingDetailedProfitLossDimensions"
+            xlink:to="ie-dpl_Sub-totalsNotIncludedElsewhereHeading" xlink:type="arc"/>
+        <loc
+            xlink:href="https://xbrl.frc.org.uk/fr/2014-09-01/core/frc-core-2014-09-01.xsd#core_RawMaterialsConsumables"
+            xlink:label="core_RawMaterialsConsumables" xlink:type="locator"/>
+        <definitionArc order="1" use="optional"
+            xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member"
+            xlink:from="ie-dpl_Sub-totalsNotIncludedElsewhereHeading"
+            xlink:to="core_RawMaterialsConsumables" xlink:type="arc"/>
+        <definitionArc order="2" use="optional"
+            xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member"
+            xlink:from="ie-dpl_Sub-totalsNotIncludedElsewhereHeading"
+            xlink:to="core_IncreaseDecreaseInStocksInventoriesFinishedGoodsWorkInProgress" xlink:type="arc"/>
+        <loc
+            xlink:href="https://xbrl.frc.org.uk/fr/2014-09-01/core/frc-core-2014-09-01.xsd#core_DepreciationAmortisationExpense"
+            xlink:label="core_DepreciationAmortisationExpense" xlink:type="locator"/>
+        <definitionArc order="3" use="optional"
+            xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member"
+            xlink:from="ie-dpl_Sub-totalsNotIncludedElsewhereHeading"
+            xlink:to="core_DepreciationAmortisationExpense" xlink:type="arc"/>
+        <loc
+            xlink:href="https://xbrl.frc.org.uk/fr/2014-09-01/core/frc-core-2014-09-01.xsd#core_OtherOperatingExpensesByFunction"
+            xlink:label="core_OtherOperatingExpensesByFunction" xlink:type="locator"/>
+        <definitionArc order="4" use="optional"
+            xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member"
+            xlink:from="ie-dpl_Sub-totalsNotIncludedElsewhereHeading"
+            xlink:to="core_OtherOperatingExpensesByFunction" xlink:type="arc"/>
+        <loc
+            xlink:href="https://xbrl.frc.org.uk/fr/2014-09-01/core/frc-core-2014-09-01.xsd#core_OtherOperatingExpensesByNature"
+            xlink:label="core_OtherOperatingExpensesByNature" xlink:type="locator"/>
+        <definitionArc order="5" use="optional"
+            xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member"
+            xlink:from="ie-dpl_Sub-totalsNotIncludedElsewhereHeading"
+            xlink:to="core_OtherOperatingExpensesByNature" xlink:type="arc"/>
+        <loc
+            xlink:href="IE-DPL-2017-09-01.xsd#ie-dpl_ProfitTaxTotalsHeading"
+            xlink:label="ie-dpl_ProfitTaxTotalsHeading" xlink:type="locator"/>
+        <definitionArc order="8" use="optional"
+            xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member"
+            xlink:from="ie-dpl_ItemsInheritingDetailedProfitLossDimensions"
+            xlink:to="ie-dpl_ProfitTaxTotalsHeading" xlink:type="arc"/>
+        <loc
+            xlink:href="IE-DPL-2017-09-01.xsd#ie-dpl_DPLGrossProfitLoss"
+            xlink:label="ie-dpl_DPLGrossProfitLoss" xlink:type="locator"/>
+        <definitionArc order="1" use="optional"
+            xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member"
+            xlink:from="ie-dpl_ProfitTaxTotalsHeading"
+            xlink:to="ie-dpl_DPLGrossProfitLoss" xlink:type="arc"/>
+        <loc
+            xlink:href="https://xbrl.frc.org.uk/fr/2014-09-01/core/frc-core-2014-09-01.xsd#core_OperatingProfitLoss"
+            xlink:label="core_OperatingProfitLoss" xlink:type="locator"/>
+        <definitionArc order="2" use="optional"
+            xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member"
+            xlink:from="ie-dpl_ProfitTaxTotalsHeading"
+            xlink:to="core_OperatingProfitLoss" xlink:type="arc"/>
+        <loc
+            xlink:href="IE-DPL-2017-09-01.xsd#ie-dpl_DPLProfitLossBeforeTax"
+            xlink:label="ie-dpl_DPLProfitLossBeforeTax" xlink:type="locator"/>
+        <definitionArc order="3" use="optional"
+            xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member"
+            xlink:from="ie-dpl_ProfitTaxTotalsHeading"
+            xlink:to="ie-dpl_DPLProfitLossBeforeTax" xlink:type="arc"/>
+        <loc
+            xlink:href="IE-DPL-2017-09-01.xsd#ie-dpl_DPLIncomeTaxExpenseCredit"
+            xlink:label="ie-dpl_DPLIncomeTaxExpenseCredit" xlink:type="locator"/>
+        <definitionArc order="4" use="optional"
+            xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member"
+            xlink:from="ie-dpl_ProfitTaxTotalsHeading"
+            xlink:to="ie-dpl_DPLIncomeTaxExpenseCredit" xlink:type="arc"/>
+        <loc
+            xlink:href="https://xbrl.frc.org.uk/fr/2014-09-01/core/frc-core-2014-09-01.xsd#core_ProfitLoss"
+            xlink:label="core_ProfitLoss" xlink:type="locator"/>
+        <definitionArc order="5" use="optional"
+            xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member"
+            xlink:from="ie-dpl_ProfitTaxTotalsHeading"
+            xlink:to="core_ProfitLoss" xlink:type="arc"/>
+        <loc
+            xlink:href="IE-DPL-2017-09-01.xsd#ie-dpl_DescriptionSpecificActivity-ForUseWithGenericActivityDimensionTagsHeading"
+            xlink:label="ie-dpl_DescriptionSpecificActivity-ForUseWithGenericActivityDimensionTagsHeading" xlink:type="locator"/>
+        <definitionArc order="9" use="optional"
+            xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member"
+            xlink:from="ie-dpl_ItemsInheritingDetailedProfitLossDimensions"
+            xlink:to="ie-dpl_DescriptionSpecificActivity-ForUseWithGenericActivityDimensionTagsHeading" xlink:type="arc"/>
+        <loc
+            xlink:href="IE-DPL-2017-09-01.xsd#ie-dpl_DescriptionActivity"
+            xlink:label="ie-dpl_DescriptionActivity" xlink:type="locator"/>
+        <definitionArc order="1" use="optional"
+            xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member"
+            xlink:from="ie-dpl_DescriptionSpecificActivity-ForUseWithGenericActivityDimensionTagsHeading"
+            xlink:to="ie-dpl_DescriptionActivity" xlink:type="arc"/>
+        <loc
+            xlink:href="IE-DPL-2017-09-01.xsd#ie-dpl_DetailedProfitLossFree-textComment"
+            xlink:label="ie-dpl_DetailedProfitLossFree-textComment" xlink:type="locator"/>
+        <definitionArc order="10" use="optional"
+            xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member"
+            xlink:from="ie-dpl_ItemsInheritingDetailedProfitLossDimensions"
+            xlink:to="ie-dpl_DetailedProfitLossFree-textComment" xlink:type="arc"/>
+        <loc
+            xlink:href="IE-DPL-2017-09-01.xsd#ie-dpl_DetailedProfitLossHypercube"
+            xlink:label="ie-dpl_DetailedProfitLossHypercube" xlink:type="locator"/>
+        <definitionArc order="1" use="optional" xbrldt:closed="true"
+            xbrldt:contextElement="segment"
+            xlink:arcrole="http://xbrl.org/int/dim/arcrole/all"
+            xlink:from="ie-dpl_ItemsInheritingDetailedProfitLossDimensions"
+            xlink:to="ie-dpl_DetailedProfitLossHypercube" xlink:type="arc"/>
+        <loc xlink:href="IE-DPL-2017-09-01.xsd#ie-dpl_ActivityDimension"
+            xlink:label="ie-dpl_ActivityDimension" xlink:type="locator"/>
+        <definitionArc order="1" use="optional"
+            xbrldt:targetRole="http://www.revenue.ie/schemas/ct/IE-DPL/2017-09-01/role/Dimension-Activity"
+            xlink:arcrole="http://xbrl.org/int/dim/arcrole/hypercube-dimension"
+            xlink:from="ie-dpl_DetailedProfitLossHypercube"
+            xlink:to="ie-dpl_ActivityDimension" xlink:type="arc"/>
+        <loc
+            xlink:href="https://xbrl.frc.org.uk/fr/2014-09-01/core/frc-core-2014-09-01.xsd#core_ContinuingDiscontinuedOperationsDimension"
+            xlink:label="core_ContinuingDiscontinuedOperationsDimension" xlink:type="locator"/>
+        <definitionArc order="2" use="optional"
+            xbrldt:targetRole="http://xbrl.frc.org.uk/fr/core/roles/Dimension-ContinuingAndDiscontinuedOperations"
+            xlink:arcrole="http://xbrl.org/int/dim/arcrole/hypercube-dimension"
+            xlink:from="ie-dpl_DetailedProfitLossHypercube"
+            xlink:to="core_ContinuingDiscontinuedOperationsDimension" xlink:type="arc"/>
+        <loc
+            xlink:href="IE-DPL-2017-09-01.xsd#ie-dpl_ExpenseTypeDimension"
+            xlink:label="ie-dpl_ExpenseTypeDimension" xlink:type="locator"/>
+        <definitionArc order="3" use="optional"
+            xbrldt:targetRole="http://www.revenue.ie/schemas/ct/IE-DPL/2017-09-01/role/Dimension-ExpenseType"
+            xlink:arcrole="http://xbrl.org/int/dim/arcrole/hypercube-dimension"
+            xlink:from="ie-dpl_DetailedProfitLossHypercube"
+            xlink:to="ie-dpl_ExpenseTypeDimension" xlink:type="arc"/>
+        <loc
+            xlink:href="IE-DPL-2017-09-01.xsd#ie-dpl_ExceptionalNon-exceptionalItemsDimension"
+            xlink:label="ie-dpl_ExceptionalNon-exceptionalItemsDimension" xlink:type="locator"/>
+        <definitionArc order="4" use="optional"
+            xbrldt:targetRole="http://www.revenue.ie/schemas/ct/IE-DPL/2017-09-01/role/Dimension-ExceptionalNonExceptionaltems"
+            xlink:arcrole="http://xbrl.org/int/dim/arcrole/hypercube-dimension"
+            xlink:from="ie-dpl_DetailedProfitLossHypercube"
+            xlink:to="ie-dpl_ExceptionalNon-exceptionalItemsDimension" xlink:type="arc"/>
+        <loc
+            xlink:href="IE-DPL-2017-09-01.xsd#ie-dpl_DetailedAnalysisDimension"
+            xlink:label="ie-dpl_DetailedAnalysisDimension" xlink:type="locator"/>
+        <definitionArc order="5" use="optional"
+            xbrldt:targetRole="http://www.revenue.ie/schemas/ct/IE-DPL/2017-09-01/role/Dimension-DetailedAnalysis"
+            xlink:arcrole="http://xbrl.org/int/dim/arcrole/hypercube-dimension"
+            xlink:from="ie-dpl_DetailedProfitLossHypercube"
+            xlink:to="ie-dpl_DetailedAnalysisDimension" xlink:type="arc"/>
+        <loc
+            xlink:href="IE-DPL-2017-09-01.xsd#ie-dpl_IntraExtraGroupTransactionsDimension"
+            xlink:label="ie-dpl_IntraExtraGroupTransactionsDimension" xlink:type="locator"/>
+        <definitionArc order="6" use="optional"
+            xbrldt:targetRole="http://www.revenue.ie/schemas/ct/IE-DPL/2017-09-01/role/Dimension-IntraExtraGroupTransactions"
+            xlink:arcrole="http://xbrl.org/int/dim/arcrole/hypercube-dimension"
+            xlink:from="ie-dpl_DetailedProfitLossHypercube"
+            xlink:to="ie-dpl_IntraExtraGroupTransactionsDimension" xlink:type="arc"/>
+        <loc
+            xlink:href="https://xbrl.frc.org.uk/cd/2014-09-01/countries-regions/countries-2014-09-01.xsd#countries_CountriesRegionsDimension"
+            xlink:label="countries_CountriesRegionsDimension" xlink:type="locator"/>
+        <definitionArc order="7" use="optional"
+            xbrldt:targetRole="http://xbrl.frc.org.uk/cd/roles/Dimension-CountriesAndRegions"
+            xlink:arcrole="http://xbrl.org/int/dim/arcrole/hypercube-dimension"
+            xlink:from="ie-dpl_DetailedProfitLossHypercube"
+            xlink:to="countries_CountriesRegionsDimension" xlink:type="arc"/>
+        <loc
+            xlink:href="https://xbrl.frc.org.uk/fr/2014-09-01/core/frc-core-2014-09-01.xsd#core_RestatementsFirstTimeAdoptionDimension"
+            xlink:label="core_RestatementsFirstTimeAdoptionDimension" xlink:type="locator"/>
+        <definitionArc order="8" use="optional"
+            xbrldt:targetRole="http://xbrl.frc.org.uk/fr/core/roles/Dimension-RestatementsAndFirstTimeAdoption"
+            xlink:arcrole="http://xbrl.org/int/dim/arcrole/hypercube-dimension"
+            xlink:from="ie-dpl_DetailedProfitLossHypercube"
+            xlink:to="core_RestatementsFirstTimeAdoptionDimension" xlink:type="arc"/>
+    </definitionLink>
+    <definitionLink
+        xlink:role="http://www.revenue.ie/schemas/ct/IE-DPL/2017-09-01/role/Dimension-IntraExtraGroupTransactions" xlink:type="extended">
+        <loc
+            xlink:href="IE-DPL-2017-09-01.xsd#ie-dpl_IntraExtraGroupTransactionsDimension"
+            xlink:label="ie-dpl_IntraExtraGroupTransactionsDimension" xlink:type="locator"/>
+        <loc
+            xlink:href="IE-DPL-2017-09-01.xsd#ie-dpl_TotalTransactionsDefault"
+            xlink:label="ie-dpl_TotalTransactionsDefault" xlink:type="locator"/>
+        <definitionArc order="1" use="optional"
+            xlink:arcrole="http://xbrl.org/int/dim/arcrole/dimension-default"
+            xlink:from="ie-dpl_IntraExtraGroupTransactionsDimension"
+            xlink:to="ie-dpl_TotalTransactionsDefault" xlink:type="arc"/>
+    </definitionLink>
+    <definitionLink
+        xlink:role="http://www.revenue.ie/schemas/ct/IE-DPL/2017-09-01/role/Dimension-IntraExtraGroupTransactions" xlink:type="extended">
+        <loc
+            xlink:href="IE-DPL-2017-09-01.xsd#ie-dpl_IntraExtraGroupTransactionsDimension"
+            xlink:label="ie-dpl_IntraExtraGroupTransactionsDimension" xlink:type="locator"/>
+        <loc
+            xlink:href="IE-DPL-2017-09-01.xsd#ie-dpl_TotalTransactionsDefault"
+            xlink:label="ie-dpl_TotalTransactionsDefault" xlink:type="locator"/>
+        <definitionArc order="1" use="optional"
+            xlink:arcrole="http://xbrl.org/int/dim/arcrole/dimension-domain"
+            xlink:from="ie-dpl_IntraExtraGroupTransactionsDimension"
+            xlink:to="ie-dpl_TotalTransactionsDefault" xlink:type="arc"/>
+        <loc xlink:href="IE-DPL-2017-09-01.xsd#ie-dpl_GroupUndertakings"
+            xlink:label="ie-dpl_GroupUndertakings" xlink:type="locator"/>
+        <definitionArc order="1" use="optional"
+            xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member"
+            xlink:from="ie-dpl_TotalTransactionsDefault"
+            xlink:to="ie-dpl_GroupUndertakings" xlink:type="arc"/>
+        <loc xlink:href="IE-DPL-2017-09-01.xsd#ie-dpl_Parent"
+            xlink:label="ie-dpl_Parent" xlink:type="locator"/>
+        <definitionArc order="1" use="optional"
+            xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member"
+            xlink:from="ie-dpl_GroupUndertakings"
+            xlink:to="ie-dpl_Parent" xlink:type="arc"/>
+        <loc
+            xlink:href="IE-DPL-2017-09-01.xsd#ie-dpl_SubsidiariesOtherGroupUndertakings"
+            xlink:label="ie-dpl_SubsidiariesOtherGroupUndertakings" xlink:type="locator"/>
+        <definitionArc order="2" use="optional"
+            xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member"
+            xlink:from="ie-dpl_GroupUndertakings"
+            xlink:to="ie-dpl_SubsidiariesOtherGroupUndertakings" xlink:type="arc"/>
+        <loc xlink:href="IE-DPL-2017-09-01.xsd#ie-dpl_JointVentures"
+            xlink:label="ie-dpl_JointVentures" xlink:type="locator"/>
+        <definitionArc order="2" use="optional"
+            xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member"
+            xlink:from="ie-dpl_TotalTransactionsDefault"
+            xlink:to="ie-dpl_JointVentures" xlink:type="arc"/>
+        <loc xlink:href="IE-DPL-2017-09-01.xsd#ie-dpl_Associates"
+            xlink:label="ie-dpl_Associates" xlink:type="locator"/>
+        <definitionArc order="3" use="optional"
+            xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member"
+            xlink:from="ie-dpl_TotalTransactionsDefault"
+            xlink:to="ie-dpl_Associates" xlink:type="arc"/>
+        <loc
+            xlink:href="IE-DPL-2017-09-01.xsd#ie-dpl_ParticipatingInterests"
+            xlink:label="ie-dpl_ParticipatingInterests" xlink:type="locator"/>
+        <definitionArc order="4" use="optional"
+            xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member"
+            xlink:from="ie-dpl_TotalTransactionsDefault"
+            xlink:to="ie-dpl_ParticipatingInterests" xlink:type="arc"/>
+        <loc
+            xlink:href="IE-DPL-2017-09-01.xsd#ie-dpl_ThirdPartiesOutsideGroup"
+            xlink:label="ie-dpl_ThirdPartiesOutsideGroup" xlink:type="locator"/>
+        <definitionArc order="5" use="optional"
+            xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member"
+            xlink:from="ie-dpl_TotalTransactionsDefault"
+            xlink:to="ie-dpl_ThirdPartiesOutsideGroup" xlink:type="arc"/>
+    </definitionLink>
+    <definitionLink
+        xlink:role="http://www.revenue.ie/schemas/ct/IE-DPL/2017-09-01/role/Dimension-DetailedAnalysis" xlink:type="extended">
+        <loc
+            xlink:href="IE-DPL-2017-09-01.xsd#ie-dpl_DetailedAnalysisDimension"
+            xlink:label="ie-dpl_DetailedAnalysisDimension" xlink:type="locator"/>
+        <loc xlink:href="IE-DPL-2017-09-01.xsd#ie-dpl_TotalItemsDefault"
+            xlink:label="ie-dpl_TotalItemsDefault" xlink:type="locator"/>
+        <definitionArc order="1" use="optional"
+            xlink:arcrole="http://xbrl.org/int/dim/arcrole/dimension-default"
+            xlink:from="ie-dpl_DetailedAnalysisDimension"
+            xlink:to="ie-dpl_TotalItemsDefault" xlink:type="arc"/>
+    </definitionLink>
+    <definitionLink
+        xlink:role="http://www.revenue.ie/schemas/ct/IE-DPL/2017-09-01/role/Dimension-DetailedAnalysis" xlink:type="extended">
+        <loc
+            xlink:href="IE-DPL-2017-09-01.xsd#ie-dpl_DetailedAnalysisDimension"
+            xlink:label="ie-dpl_DetailedAnalysisDimension" xlink:type="locator"/>
+        <loc xlink:href="IE-DPL-2017-09-01.xsd#ie-dpl_TotalItemsDefault"
+            xlink:label="ie-dpl_TotalItemsDefault" xlink:type="locator"/>
+        <definitionArc order="1" use="optional"
+            xlink:arcrole="http://xbrl.org/int/dim/arcrole/dimension-domain"
+            xlink:from="ie-dpl_DetailedAnalysisDimension"
+            xlink:to="ie-dpl_TotalItemsDefault" xlink:type="arc"/>
+        <loc xlink:href="IE-DPL-2017-09-01.xsd#ie-dpl_Item1"
+            xlink:label="ie-dpl_Item1" xlink:type="locator"/>
+        <definitionArc order="1" use="optional"
+            xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member"
+            xlink:from="ie-dpl_TotalItemsDefault"
+            xlink:to="ie-dpl_Item1" xlink:type="arc"/>
+        <loc xlink:href="IE-DPL-2017-09-01.xsd#ie-dpl_Item2"
+            xlink:label="ie-dpl_Item2" xlink:type="locator"/>
+        <definitionArc order="2" use="optional"
+            xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member"
+            xlink:from="ie-dpl_TotalItemsDefault"
+            xlink:to="ie-dpl_Item2" xlink:type="arc"/>
+        <loc xlink:href="IE-DPL-2017-09-01.xsd#ie-dpl_Item3"
+            xlink:label="ie-dpl_Item3" xlink:type="locator"/>
+        <definitionArc order="3" use="optional"
+            xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member"
+            xlink:from="ie-dpl_TotalItemsDefault"
+            xlink:to="ie-dpl_Item3" xlink:type="arc"/>
+        <loc xlink:href="IE-DPL-2017-09-01.xsd#ie-dpl_Item4"
+            xlink:label="ie-dpl_Item4" xlink:type="locator"/>
+        <definitionArc order="4" use="optional"
+            xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member"
+            xlink:from="ie-dpl_TotalItemsDefault"
+            xlink:to="ie-dpl_Item4" xlink:type="arc"/>
+        <loc xlink:href="IE-DPL-2017-09-01.xsd#ie-dpl_Item5"
+            xlink:label="ie-dpl_Item5" xlink:type="locator"/>
+        <definitionArc order="5" use="optional"
+            xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member"
+            xlink:from="ie-dpl_TotalItemsDefault"
+            xlink:to="ie-dpl_Item5" xlink:type="arc"/>
+        <loc xlink:href="IE-DPL-2017-09-01.xsd#ie-dpl_Item6"
+            xlink:label="ie-dpl_Item6" xlink:type="locator"/>
+        <definitionArc order="6" use="optional"
+            xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member"
+            xlink:from="ie-dpl_TotalItemsDefault"
+            xlink:to="ie-dpl_Item6" xlink:type="arc"/>
+        <loc xlink:href="IE-DPL-2017-09-01.xsd#ie-dpl_Item7"
+            xlink:label="ie-dpl_Item7" xlink:type="locator"/>
+        <definitionArc order="7" use="optional"
+            xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member"
+            xlink:from="ie-dpl_TotalItemsDefault"
+            xlink:to="ie-dpl_Item7" xlink:type="arc"/>
+        <loc xlink:href="IE-DPL-2017-09-01.xsd#ie-dpl_Item8"
+            xlink:label="ie-dpl_Item8" xlink:type="locator"/>
+        <definitionArc order="8" use="optional"
+            xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member"
+            xlink:from="ie-dpl_TotalItemsDefault"
+            xlink:to="ie-dpl_Item8" xlink:type="arc"/>
+        <loc xlink:href="IE-DPL-2017-09-01.xsd#ie-dpl_Item9"
+            xlink:label="ie-dpl_Item9" xlink:type="locator"/>
+        <definitionArc order="9" use="optional"
+            xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member"
+            xlink:from="ie-dpl_TotalItemsDefault"
+            xlink:to="ie-dpl_Item9" xlink:type="arc"/>
+        <loc xlink:href="IE-DPL-2017-09-01.xsd#ie-dpl_Item10"
+            xlink:label="ie-dpl_Item10" xlink:type="locator"/>
+        <definitionArc order="10" use="optional"
+            xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member"
+            xlink:from="ie-dpl_TotalItemsDefault"
+            xlink:to="ie-dpl_Item10" xlink:type="arc"/>
+        <loc xlink:href="IE-DPL-2017-09-01.xsd#ie-dpl_Item11"
+            xlink:label="ie-dpl_Item11" xlink:type="locator"/>
+        <definitionArc order="11" use="optional"
+            xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member"
+            xlink:from="ie-dpl_TotalItemsDefault"
+            xlink:to="ie-dpl_Item11" xlink:type="arc"/>
+        <loc xlink:href="IE-DPL-2017-09-01.xsd#ie-dpl_Item12"
+            xlink:label="ie-dpl_Item12" xlink:type="locator"/>
+        <definitionArc order="12" use="optional"
+            xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member"
+            xlink:from="ie-dpl_TotalItemsDefault"
+            xlink:to="ie-dpl_Item12" xlink:type="arc"/>
+        <loc xlink:href="IE-DPL-2017-09-01.xsd#ie-dpl_Item13"
+            xlink:label="ie-dpl_Item13" xlink:type="locator"/>
+        <definitionArc order="13" use="optional"
+            xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member"
+            xlink:from="ie-dpl_TotalItemsDefault"
+            xlink:to="ie-dpl_Item13" xlink:type="arc"/>
+        <loc xlink:href="IE-DPL-2017-09-01.xsd#ie-dpl_Item14"
+            xlink:label="ie-dpl_Item14" xlink:type="locator"/>
+        <definitionArc order="14" use="optional"
+            xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member"
+            xlink:from="ie-dpl_TotalItemsDefault"
+            xlink:to="ie-dpl_Item14" xlink:type="arc"/>
+        <loc xlink:href="IE-DPL-2017-09-01.xsd#ie-dpl_Item15"
+            xlink:label="ie-dpl_Item15" xlink:type="locator"/>
+        <definitionArc order="15" use="optional"
+            xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member"
+            xlink:from="ie-dpl_TotalItemsDefault"
+            xlink:to="ie-dpl_Item15" xlink:type="arc"/>
+        <loc xlink:href="IE-DPL-2017-09-01.xsd#ie-dpl_Item16"
+            xlink:label="ie-dpl_Item16" xlink:type="locator"/>
+        <definitionArc order="16" use="optional"
+            xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member"
+            xlink:from="ie-dpl_TotalItemsDefault"
+            xlink:to="ie-dpl_Item16" xlink:type="arc"/>
+        <loc xlink:href="IE-DPL-2017-09-01.xsd#ie-dpl_Item17"
+            xlink:label="ie-dpl_Item17" xlink:type="locator"/>
+        <definitionArc order="17" use="optional"
+            xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member"
+            xlink:from="ie-dpl_TotalItemsDefault"
+            xlink:to="ie-dpl_Item17" xlink:type="arc"/>
+        <loc xlink:href="IE-DPL-2017-09-01.xsd#ie-dpl_Item18"
+            xlink:label="ie-dpl_Item18" xlink:type="locator"/>
+        <definitionArc order="18" use="optional"
+            xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member"
+            xlink:from="ie-dpl_TotalItemsDefault"
+            xlink:to="ie-dpl_Item18" xlink:type="arc"/>
+        <loc xlink:href="IE-DPL-2017-09-01.xsd#ie-dpl_Item19"
+            xlink:label="ie-dpl_Item19" xlink:type="locator"/>
+        <definitionArc order="19" use="optional"
+            xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member"
+            xlink:from="ie-dpl_TotalItemsDefault"
+            xlink:to="ie-dpl_Item19" xlink:type="arc"/>
+        <loc xlink:href="IE-DPL-2017-09-01.xsd#ie-dpl_Item20"
+            xlink:label="ie-dpl_Item20" xlink:type="locator"/>
+        <definitionArc order="20" use="optional"
+            xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member"
+            xlink:from="ie-dpl_TotalItemsDefault"
+            xlink:to="ie-dpl_Item20" xlink:type="arc"/>
+        <loc xlink:href="IE-DPL-2017-09-01.xsd#ie-dpl_Item21"
+            xlink:label="ie-dpl_Item21" xlink:type="locator"/>
+        <definitionArc order="21" use="optional"
+            xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member"
+            xlink:from="ie-dpl_TotalItemsDefault"
+            xlink:to="ie-dpl_Item21" xlink:type="arc"/>
+        <loc xlink:href="IE-DPL-2017-09-01.xsd#ie-dpl_Item22"
+            xlink:label="ie-dpl_Item22" xlink:type="locator"/>
+        <definitionArc order="22" use="optional"
+            xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member"
+            xlink:from="ie-dpl_TotalItemsDefault"
+            xlink:to="ie-dpl_Item22" xlink:type="arc"/>
+        <loc xlink:href="IE-DPL-2017-09-01.xsd#ie-dpl_Item23"
+            xlink:label="ie-dpl_Item23" xlink:type="locator"/>
+        <definitionArc order="23" use="optional"
+            xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member"
+            xlink:from="ie-dpl_TotalItemsDefault"
+            xlink:to="ie-dpl_Item23" xlink:type="arc"/>
+        <loc xlink:href="IE-DPL-2017-09-01.xsd#ie-dpl_Item24"
+            xlink:label="ie-dpl_Item24" xlink:type="locator"/>
+        <definitionArc order="24" use="optional"
+            xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member"
+            xlink:from="ie-dpl_TotalItemsDefault"
+            xlink:to="ie-dpl_Item24" xlink:type="arc"/>
+        <loc xlink:href="IE-DPL-2017-09-01.xsd#ie-dpl_Item25"
+            xlink:label="ie-dpl_Item25" xlink:type="locator"/>
+        <definitionArc order="25" use="optional"
+            xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member"
+            xlink:from="ie-dpl_TotalItemsDefault"
+            xlink:to="ie-dpl_Item25" xlink:type="arc"/>
+        <loc xlink:href="IE-DPL-2017-09-01.xsd#ie-dpl_Item26"
+            xlink:label="ie-dpl_Item26" xlink:type="locator"/>
+        <definitionArc order="26" use="optional"
+            xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member"
+            xlink:from="ie-dpl_TotalItemsDefault"
+            xlink:to="ie-dpl_Item26" xlink:type="arc"/>
+        <loc xlink:href="IE-DPL-2017-09-01.xsd#ie-dpl_Item27"
+            xlink:label="ie-dpl_Item27" xlink:type="locator"/>
+        <definitionArc order="27" use="optional"
+            xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member"
+            xlink:from="ie-dpl_TotalItemsDefault"
+            xlink:to="ie-dpl_Item27" xlink:type="arc"/>
+        <loc xlink:href="IE-DPL-2017-09-01.xsd#ie-dpl_Item28"
+            xlink:label="ie-dpl_Item28" xlink:type="locator"/>
+        <definitionArc order="28" use="optional"
+            xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member"
+            xlink:from="ie-dpl_TotalItemsDefault"
+            xlink:to="ie-dpl_Item28" xlink:type="arc"/>
+        <loc xlink:href="IE-DPL-2017-09-01.xsd#ie-dpl_Item29"
+            xlink:label="ie-dpl_Item29" xlink:type="locator"/>
+        <definitionArc order="29" use="optional"
+            xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member"
+            xlink:from="ie-dpl_TotalItemsDefault"
+            xlink:to="ie-dpl_Item29" xlink:type="arc"/>
+        <loc xlink:href="IE-DPL-2017-09-01.xsd#ie-dpl_Item30"
+            xlink:label="ie-dpl_Item30" xlink:type="locator"/>
+        <definitionArc order="30" use="optional"
+            xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member"
+            xlink:from="ie-dpl_TotalItemsDefault"
+            xlink:to="ie-dpl_Item30" xlink:type="arc"/>
+        <loc xlink:href="IE-DPL-2017-09-01.xsd#ie-dpl_Item31"
+            xlink:label="ie-dpl_Item31" xlink:type="locator"/>
+        <definitionArc order="31" use="optional"
+            xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member"
+            xlink:from="ie-dpl_TotalItemsDefault"
+            xlink:to="ie-dpl_Item31" xlink:type="arc"/>
+        <loc xlink:href="IE-DPL-2017-09-01.xsd#ie-dpl_Item32"
+            xlink:label="ie-dpl_Item32" xlink:type="locator"/>
+        <definitionArc order="32" use="optional"
+            xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member"
+            xlink:from="ie-dpl_TotalItemsDefault"
+            xlink:to="ie-dpl_Item32" xlink:type="arc"/>
+        <loc xlink:href="IE-DPL-2017-09-01.xsd#ie-dpl_Item33"
+            xlink:label="ie-dpl_Item33" xlink:type="locator"/>
+        <definitionArc order="33" use="optional"
+            xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member"
+            xlink:from="ie-dpl_TotalItemsDefault"
+            xlink:to="ie-dpl_Item33" xlink:type="arc"/>
+        <loc xlink:href="IE-DPL-2017-09-01.xsd#ie-dpl_Item34"
+            xlink:label="ie-dpl_Item34" xlink:type="locator"/>
+        <definitionArc order="34" use="optional"
+            xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member"
+            xlink:from="ie-dpl_TotalItemsDefault"
+            xlink:to="ie-dpl_Item34" xlink:type="arc"/>
+        <loc xlink:href="IE-DPL-2017-09-01.xsd#ie-dpl_Item35"
+            xlink:label="ie-dpl_Item35" xlink:type="locator"/>
+        <definitionArc order="35" use="optional"
+            xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member"
+            xlink:from="ie-dpl_TotalItemsDefault"
+            xlink:to="ie-dpl_Item35" xlink:type="arc"/>
+        <loc xlink:href="IE-DPL-2017-09-01.xsd#ie-dpl_Item36"
+            xlink:label="ie-dpl_Item36" xlink:type="locator"/>
+        <definitionArc order="36" use="optional"
+            xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member"
+            xlink:from="ie-dpl_TotalItemsDefault"
+            xlink:to="ie-dpl_Item36" xlink:type="arc"/>
+        <loc xlink:href="IE-DPL-2017-09-01.xsd#ie-dpl_Item37"
+            xlink:label="ie-dpl_Item37" xlink:type="locator"/>
+        <definitionArc order="37" use="optional"
+            xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member"
+            xlink:from="ie-dpl_TotalItemsDefault"
+            xlink:to="ie-dpl_Item37" xlink:type="arc"/>
+        <loc xlink:href="IE-DPL-2017-09-01.xsd#ie-dpl_Item38"
+            xlink:label="ie-dpl_Item38" xlink:type="locator"/>
+        <definitionArc order="38" use="optional"
+            xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member"
+            xlink:from="ie-dpl_TotalItemsDefault"
+            xlink:to="ie-dpl_Item38" xlink:type="arc"/>
+        <loc xlink:href="IE-DPL-2017-09-01.xsd#ie-dpl_Item39"
+            xlink:label="ie-dpl_Item39" xlink:type="locator"/>
+        <definitionArc order="39" use="optional"
+            xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member"
+            xlink:from="ie-dpl_TotalItemsDefault"
+            xlink:to="ie-dpl_Item39" xlink:type="arc"/>
+        <loc xlink:href="IE-DPL-2017-09-01.xsd#ie-dpl_Item40"
+            xlink:label="ie-dpl_Item40" xlink:type="locator"/>
+        <definitionArc order="40" use="optional"
+            xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member"
+            xlink:from="ie-dpl_TotalItemsDefault"
+            xlink:to="ie-dpl_Item40" xlink:type="arc"/>
+    </definitionLink>
+    <definitionLink
+        xlink:role="http://www.revenue.ie/schemas/ct/IE-DPL/2017-09-01/role/Dimension-ExceptionalNonExceptionaltems" xlink:type="extended">
+        <loc
+            xlink:href="IE-DPL-2017-09-01.xsd#ie-dpl_ExceptionalNon-exceptionalItemsDimension"
+            xlink:label="ie-dpl_ExceptionalNon-exceptionalItemsDimension" xlink:type="locator"/>
+        <loc
+            xlink:href="IE-DPL-2017-09-01.xsd#ie-dpl_TotalExceptionalNon-exceptionalDefault"
+            xlink:label="ie-dpl_TotalExceptionalNon-exceptionalDefault" xlink:type="locator"/>
+        <definitionArc order="1" use="optional"
+            xlink:arcrole="http://xbrl.org/int/dim/arcrole/dimension-default"
+            xlink:from="ie-dpl_ExceptionalNon-exceptionalItemsDimension"
+            xlink:to="ie-dpl_TotalExceptionalNon-exceptionalDefault" xlink:type="arc"/>
+    </definitionLink>
+    <definitionLink
+        xlink:role="http://www.revenue.ie/schemas/ct/IE-DPL/2017-09-01/role/Dimension-ExceptionalNonExceptionaltems" xlink:type="extended">
+        <loc
+            xlink:href="IE-DPL-2017-09-01.xsd#ie-dpl_ExceptionalNon-exceptionalItemsDimension"
+            xlink:label="ie-dpl_ExceptionalNon-exceptionalItemsDimension" xlink:type="locator"/>
+        <loc
+            xlink:href="IE-DPL-2017-09-01.xsd#ie-dpl_TotalExceptionalNon-exceptionalDefault"
+            xlink:label="ie-dpl_TotalExceptionalNon-exceptionalDefault" xlink:type="locator"/>
+        <definitionArc order="1" use="optional"
+            xlink:arcrole="http://xbrl.org/int/dim/arcrole/dimension-domain"
+            xlink:from="ie-dpl_ExceptionalNon-exceptionalItemsDimension"
+            xlink:to="ie-dpl_TotalExceptionalNon-exceptionalDefault" xlink:type="arc"/>
+        <loc xlink:href="IE-DPL-2017-09-01.xsd#ie-dpl_Non-exceptional"
+            xlink:label="ie-dpl_Non-exceptional" xlink:type="locator"/>
+        <definitionArc order="1" use="optional"
+            xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member"
+            xlink:from="ie-dpl_TotalExceptionalNon-exceptionalDefault"
+            xlink:to="ie-dpl_Non-exceptional" xlink:type="arc"/>
+        <loc xlink:href="IE-DPL-2017-09-01.xsd#ie-dpl_Exceptional"
+            xlink:label="ie-dpl_Exceptional" xlink:type="locator"/>
+        <definitionArc order="2" use="optional"
+            xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member"
+            xlink:from="ie-dpl_TotalExceptionalNon-exceptionalDefault"
+            xlink:to="ie-dpl_Exceptional" xlink:type="arc"/>
+    </definitionLink>
+    <definitionLink
+        xlink:role="http://www.revenue.ie/schemas/ct/IE-DPL/2017-09-01/role/Dimension-ExpenseType" xlink:type="extended">
+        <loc
+            xlink:href="IE-DPL-2017-09-01.xsd#ie-dpl_ExpenseTypeDimension"
+            xlink:label="ie-dpl_ExpenseTypeDimension" xlink:type="locator"/>
+        <loc xlink:href="IE-DPL-2017-09-01.xsd#ie-dpl_TotalCostsDefault"
+            xlink:label="ie-dpl_TotalCostsDefault" xlink:type="locator"/>
+        <definitionArc order="1" use="optional"
+            xlink:arcrole="http://xbrl.org/int/dim/arcrole/dimension-default"
+            xlink:from="ie-dpl_ExpenseTypeDimension"
+            xlink:to="ie-dpl_TotalCostsDefault" xlink:type="arc"/>
+    </definitionLink>
+    <definitionLink
+        xlink:role="http://www.revenue.ie/schemas/ct/IE-DPL/2017-09-01/role/Dimension-ExpenseType" xlink:type="extended">
+        <loc
+            xlink:href="IE-DPL-2017-09-01.xsd#ie-dpl_ExpenseTypeDimension"
+            xlink:label="ie-dpl_ExpenseTypeDimension" xlink:type="locator"/>
+        <loc xlink:href="IE-DPL-2017-09-01.xsd#ie-dpl_TotalCostsDefault"
+            xlink:label="ie-dpl_TotalCostsDefault" xlink:type="locator"/>
+        <definitionArc order="1" use="optional"
+            xlink:arcrole="http://xbrl.org/int/dim/arcrole/dimension-domain"
+            xlink:from="ie-dpl_ExpenseTypeDimension"
+            xlink:to="ie-dpl_TotalCostsDefault" xlink:type="arc"/>
+        <loc xlink:href="IE-DPL-2017-09-01.xsd#ie-dpl_CostSales"
+            xlink:label="ie-dpl_CostSales" xlink:type="locator"/>
+        <definitionArc order="1" use="optional"
+            xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member"
+            xlink:from="ie-dpl_TotalCostsDefault"
+            xlink:to="ie-dpl_CostSales" xlink:type="arc"/>
+        <loc xlink:href="IE-DPL-2017-09-01.xsd#ie-dpl_DistributionCosts"
+            xlink:label="ie-dpl_DistributionCosts" xlink:type="locator"/>
+        <definitionArc order="2" use="optional"
+            xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member"
+            xlink:from="ie-dpl_TotalCostsDefault"
+            xlink:to="ie-dpl_DistributionCosts" xlink:type="arc"/>
+        <loc
+            xlink:href="IE-DPL-2017-09-01.xsd#ie-dpl_AdministrativeExpenses"
+            xlink:label="ie-dpl_AdministrativeExpenses" xlink:type="locator"/>
+        <definitionArc order="3" use="optional"
+            xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member"
+            xlink:from="ie-dpl_TotalCostsDefault"
+            xlink:to="ie-dpl_AdministrativeExpenses" xlink:type="arc"/>
+    </definitionLink>
+    <definitionLink
+        xlink:role="http://www.revenue.ie/schemas/ct/IE-DPL/2017-09-01/role/Dimension-Activity" xlink:type="extended">
+        <loc xlink:href="IE-DPL-2017-09-01.xsd#ie-dpl_ActivityDimension"
+            xlink:label="ie-dpl_ActivityDimension" xlink:type="locator"/>
+        <loc
+            xlink:href="IE-DPL-2017-09-01.xsd#ie-dpl_TotalActivitiesDefault"
+            xlink:label="ie-dpl_TotalActivitiesDefault" xlink:type="locator"/>
+        <definitionArc order="1" use="optional"
+            xlink:arcrole="http://xbrl.org/int/dim/arcrole/dimension-default"
+            xlink:from="ie-dpl_ActivityDimension"
+            xlink:to="ie-dpl_TotalActivitiesDefault" xlink:type="arc"/>
+    </definitionLink>
+    <definitionLink
+        xlink:role="http://www.revenue.ie/schemas/ct/IE-DPL/2017-09-01/role/Dimension-Activity" xlink:type="extended">
+        <loc xlink:href="IE-DPL-2017-09-01.xsd#ie-dpl_ActivityDimension"
+            xlink:label="ie-dpl_ActivityDimension" xlink:type="locator"/>
+        <loc
+            xlink:href="IE-DPL-2017-09-01.xsd#ie-dpl_TotalActivitiesDefault"
+            xlink:label="ie-dpl_TotalActivitiesDefault" xlink:type="locator"/>
+        <definitionArc order="1" use="optional"
+            xlink:arcrole="http://xbrl.org/int/dim/arcrole/dimension-domain"
+            xlink:from="ie-dpl_ActivityDimension"
+            xlink:to="ie-dpl_TotalActivitiesDefault" xlink:type="arc"/>
+        <loc
+            xlink:href="https://xbrl.frc.org.uk/cd/2014-09-01/business/bus-2014-09-01.xsd#bus_A-AgricultureForestryFishing"
+            xlink:label="bus_A-AgricultureForestryFishing" xlink:type="locator"/>
+        <definitionArc order="1" use="optional"
+            xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member"
+            xlink:from="ie-dpl_TotalActivitiesDefault"
+            xlink:to="bus_A-AgricultureForestryFishing" xlink:type="arc"/>
+        <loc
+            xlink:href="https://xbrl.frc.org.uk/cd/2014-09-01/business/bus-2014-09-01.xsd#bus_B-MiningQuarrying"
+            xlink:label="bus_B-MiningQuarrying" xlink:type="locator"/>
+        <definitionArc order="2" use="optional"
+            xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member"
+            xlink:from="ie-dpl_TotalActivitiesDefault"
+            xlink:to="bus_B-MiningQuarrying" xlink:type="arc"/>
+        <loc
+            xlink:href="https://xbrl.frc.org.uk/cd/2014-09-01/business/bus-2014-09-01.xsd#bus_C-Manufacturing"
+            xlink:label="bus_C-Manufacturing" xlink:type="locator"/>
+        <definitionArc order="3" use="optional"
+            xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member"
+            xlink:from="ie-dpl_TotalActivitiesDefault"
+            xlink:to="bus_C-Manufacturing" xlink:type="arc"/>
+        <loc
+            xlink:href="https://xbrl.frc.org.uk/cd/2014-09-01/business/bus-2014-09-01.xsd#bus_D-ElectricityGasSteamAirConditioningSupply"
+            xlink:label="bus_D-ElectricityGasSteamAirConditioningSupply" xlink:type="locator"/>
+        <definitionArc order="4" use="optional"
+            xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member"
+            xlink:from="ie-dpl_TotalActivitiesDefault"
+            xlink:to="bus_D-ElectricityGasSteamAirConditioningSupply" xlink:type="arc"/>
+        <loc
+            xlink:href="https://xbrl.frc.org.uk/cd/2014-09-01/business/bus-2014-09-01.xsd#bus_E-WaterSupplySewerageWasteManagementRemediationActivities"
+            xlink:label="bus_E-WaterSupplySewerageWasteManagementRemediationActivities" xlink:type="locator"/>
+        <definitionArc order="5" use="optional"
+            xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member"
+            xlink:from="ie-dpl_TotalActivitiesDefault"
+            xlink:to="bus_E-WaterSupplySewerageWasteManagementRemediationActivities" xlink:type="arc"/>
+        <loc
+            xlink:href="https://xbrl.frc.org.uk/cd/2014-09-01/business/bus-2014-09-01.xsd#bus_F-Construction"
+            xlink:label="bus_F-Construction" xlink:type="locator"/>
+        <definitionArc order="6" use="optional"
+            xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member"
+            xlink:from="ie-dpl_TotalActivitiesDefault"
+            xlink:to="bus_F-Construction" xlink:type="arc"/>
+        <loc
+            xlink:href="https://xbrl.frc.org.uk/cd/2014-09-01/business/bus-2014-09-01.xsd#bus_G-WholesaleRetailTradeRepairMotorVehiclesMotorcycles"
+            xlink:label="bus_G-WholesaleRetailTradeRepairMotorVehiclesMotorcycles" xlink:type="locator"/>
+        <definitionArc order="7" use="optional"
+            xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member"
+            xlink:from="ie-dpl_TotalActivitiesDefault"
+            xlink:to="bus_G-WholesaleRetailTradeRepairMotorVehiclesMotorcycles" xlink:type="arc"/>
+        <loc
+            xlink:href="https://xbrl.frc.org.uk/cd/2014-09-01/business/bus-2014-09-01.xsd#bus_H-TransportationStorage"
+            xlink:label="bus_H-TransportationStorage" xlink:type="locator"/>
+        <definitionArc order="8" use="optional"
+            xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member"
+            xlink:from="ie-dpl_TotalActivitiesDefault"
+            xlink:to="bus_H-TransportationStorage" xlink:type="arc"/>
+        <loc
+            xlink:href="https://xbrl.frc.org.uk/cd/2014-09-01/business/bus-2014-09-01.xsd#bus_I-AccommodationFoodServiceActivities"
+            xlink:label="bus_I-AccommodationFoodServiceActivities" xlink:type="locator"/>
+        <definitionArc order="9" use="optional"
+            xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member"
+            xlink:from="ie-dpl_TotalActivitiesDefault"
+            xlink:to="bus_I-AccommodationFoodServiceActivities" xlink:type="arc"/>
+        <loc
+            xlink:href="https://xbrl.frc.org.uk/cd/2014-09-01/business/bus-2014-09-01.xsd#bus_J-InformationCommunication"
+            xlink:label="bus_J-InformationCommunication" xlink:type="locator"/>
+        <definitionArc order="10" use="optional"
+            xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member"
+            xlink:from="ie-dpl_TotalActivitiesDefault"
+            xlink:to="bus_J-InformationCommunication" xlink:type="arc"/>
+        <loc
+            xlink:href="https://xbrl.frc.org.uk/cd/2014-09-01/business/bus-2014-09-01.xsd#bus_K-FinancialInsuranceActivities"
+            xlink:label="bus_K-FinancialInsuranceActivities" xlink:type="locator"/>
+        <definitionArc order="11" use="optional"
+            xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member"
+            xlink:from="ie-dpl_TotalActivitiesDefault"
+            xlink:to="bus_K-FinancialInsuranceActivities" xlink:type="arc"/>
+        <loc
+            xlink:href="https://xbrl.frc.org.uk/cd/2014-09-01/business/bus-2014-09-01.xsd#bus_L-RealEstateActivities"
+            xlink:label="bus_L-RealEstateActivities" xlink:type="locator"/>
+        <definitionArc order="12" use="optional"
+            xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member"
+            xlink:from="ie-dpl_TotalActivitiesDefault"
+            xlink:to="bus_L-RealEstateActivities" xlink:type="arc"/>
+        <loc
+            xlink:href="https://xbrl.frc.org.uk/cd/2014-09-01/business/bus-2014-09-01.xsd#bus_M-ProfessionalScientificTechnicalActivities"
+            xlink:label="bus_M-ProfessionalScientificTechnicalActivities" xlink:type="locator"/>
+        <definitionArc order="13" use="optional"
+            xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member"
+            xlink:from="ie-dpl_TotalActivitiesDefault"
+            xlink:to="bus_M-ProfessionalScientificTechnicalActivities" xlink:type="arc"/>
+        <loc
+            xlink:href="https://xbrl.frc.org.uk/cd/2014-09-01/business/bus-2014-09-01.xsd#bus_N-AdministrativeSupportServiceActivities"
+            xlink:label="bus_N-AdministrativeSupportServiceActivities" xlink:type="locator"/>
+        <definitionArc order="14" use="optional"
+            xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member"
+            xlink:from="ie-dpl_TotalActivitiesDefault"
+            xlink:to="bus_N-AdministrativeSupportServiceActivities" xlink:type="arc"/>
+        <loc
+            xlink:href="https://xbrl.frc.org.uk/cd/2014-09-01/business/bus-2014-09-01.xsd#bus_O-PublicAdministrationDefenceCompulsorySocialSecurity"
+            xlink:label="bus_O-PublicAdministrationDefenceCompulsorySocialSecurity" xlink:type="locator"/>
+        <definitionArc order="15" use="optional"
+            xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member"
+            xlink:from="ie-dpl_TotalActivitiesDefault"
+            xlink:to="bus_O-PublicAdministrationDefenceCompulsorySocialSecurity" xlink:type="arc"/>
+        <loc
+            xlink:href="https://xbrl.frc.org.uk/cd/2014-09-01/business/bus-2014-09-01.xsd#bus_P-Education"
+            xlink:label="bus_P-Education" xlink:type="locator"/>
+        <definitionArc order="16" use="optional"
+            xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member"
+            xlink:from="ie-dpl_TotalActivitiesDefault"
+            xlink:to="bus_P-Education" xlink:type="arc"/>
+        <loc
+            xlink:href="https://xbrl.frc.org.uk/cd/2014-09-01/business/bus-2014-09-01.xsd#bus_Q-HumanHealthSocialWorkActivities"
+            xlink:label="bus_Q-HumanHealthSocialWorkActivities" xlink:type="locator"/>
+        <definitionArc order="17" use="optional"
+            xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member"
+            xlink:from="ie-dpl_TotalActivitiesDefault"
+            xlink:to="bus_Q-HumanHealthSocialWorkActivities" xlink:type="arc"/>
+        <loc
+            xlink:href="https://xbrl.frc.org.uk/cd/2014-09-01/business/bus-2014-09-01.xsd#bus_R-ArtsEntertainmentRecreation"
+            xlink:label="bus_R-ArtsEntertainmentRecreation" xlink:type="locator"/>
+        <definitionArc order="18" use="optional"
+            xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member"
+            xlink:from="ie-dpl_TotalActivitiesDefault"
+            xlink:to="bus_R-ArtsEntertainmentRecreation" xlink:type="arc"/>
+        <loc
+            xlink:href="https://xbrl.frc.org.uk/cd/2014-09-01/business/bus-2014-09-01.xsd#bus_S-OtherServiceActivities"
+            xlink:label="bus_S-OtherServiceActivities" xlink:type="locator"/>
+        <definitionArc order="19" use="optional"
+            xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member"
+            xlink:from="ie-dpl_TotalActivitiesDefault"
+            xlink:to="bus_S-OtherServiceActivities" xlink:type="arc"/>
+        <loc
+            xlink:href="IE-DPL-2017-09-01.xsd#ie-dpl_T-HouseholdsAsEmployers-UndifferentiatedGoodsService-productionActivitiesHouseholdsForOwnUse"
+            xlink:label="ie-dpl_T-HouseholdsAsEmployers-UndifferentiatedGoodsService-productionActivitiesHouseholdsForOwnUse" xlink:type="locator"/>
+        <definitionArc order="20" use="optional"
+            xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member"
+            xlink:from="ie-dpl_TotalActivitiesDefault"
+            xlink:to="ie-dpl_T-HouseholdsAsEmployers-UndifferentiatedGoodsService-productionActivitiesHouseholdsForOwnUse" xlink:type="arc"/>
+        <loc
+            xlink:href="IE-DPL-2017-09-01.xsd#ie-dpl_U-Extra-territorialOrganisationsBodies"
+            xlink:label="ie-dpl_U-Extra-territorialOrganisationsBodies" xlink:type="locator"/>
+        <definitionArc order="21" use="optional"
+            xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member"
+            xlink:from="ie-dpl_TotalActivitiesDefault"
+            xlink:to="ie-dpl_U-Extra-territorialOrganisationsBodies" xlink:type="arc"/>
+        <loc
+            xlink:href="IE-DPL-2017-09-01.xsd#ie-dpl_CombinedCross-sectorActivities1"
+            xlink:label="ie-dpl_CombinedCross-sectorActivities1" xlink:type="locator"/>
+        <definitionArc order="22" use="optional"
+            xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member"
+            xlink:from="ie-dpl_TotalActivitiesDefault"
+            xlink:to="ie-dpl_CombinedCross-sectorActivities1" xlink:type="arc"/>
+        <loc
+            xlink:href="IE-DPL-2017-09-01.xsd#ie-dpl_CombinedCross-sectorActivities2"
+            xlink:label="ie-dpl_CombinedCross-sectorActivities2" xlink:type="locator"/>
+        <definitionArc order="23" use="optional"
+            xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member"
+            xlink:from="ie-dpl_TotalActivitiesDefault"
+            xlink:to="ie-dpl_CombinedCross-sectorActivities2" xlink:type="arc"/>
+        <loc
+            xlink:href="IE-DPL-2017-09-01.xsd#ie-dpl_CombinedCross-sectorActivities3"
+            xlink:label="ie-dpl_CombinedCross-sectorActivities3" xlink:type="locator"/>
+        <definitionArc order="24" use="optional"
+            xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member"
+            xlink:from="ie-dpl_TotalActivitiesDefault"
+            xlink:to="ie-dpl_CombinedCross-sectorActivities3" xlink:type="arc"/>
+        <loc
+            xlink:href="IE-DPL-2017-09-01.xsd#ie-dpl_CombinedCross-sectorActivities4"
+            xlink:label="ie-dpl_CombinedCross-sectorActivities4" xlink:type="locator"/>
+        <definitionArc order="25" use="optional"
+            xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member"
+            xlink:from="ie-dpl_TotalActivitiesDefault"
+            xlink:to="ie-dpl_CombinedCross-sectorActivities4" xlink:type="arc"/>
+        <loc
+            xlink:href="IE-DPL-2017-09-01.xsd#ie-dpl_OtherSpecificActivity1"
+            xlink:label="ie-dpl_OtherSpecificActivity1" xlink:type="locator"/>
+        <definitionArc order="26" use="optional"
+            xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member"
+            xlink:from="ie-dpl_TotalActivitiesDefault"
+            xlink:to="ie-dpl_OtherSpecificActivity1" xlink:type="arc"/>
+        <loc
+            xlink:href="IE-DPL-2017-09-01.xsd#ie-dpl_OtherSpecificActivity2"
+            xlink:label="ie-dpl_OtherSpecificActivity2" xlink:type="locator"/>
+        <definitionArc order="27" use="optional"
+            xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member"
+            xlink:from="ie-dpl_TotalActivitiesDefault"
+            xlink:to="ie-dpl_OtherSpecificActivity2" xlink:type="arc"/>
+        <loc
+            xlink:href="IE-DPL-2017-09-01.xsd#ie-dpl_OtherSpecificActivity3"
+            xlink:label="ie-dpl_OtherSpecificActivity3" xlink:type="locator"/>
+        <definitionArc order="28" use="optional"
+            xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member"
+            xlink:from="ie-dpl_TotalActivitiesDefault"
+            xlink:to="ie-dpl_OtherSpecificActivity3" xlink:type="arc"/>
+        <loc
+            xlink:href="IE-DPL-2017-09-01.xsd#ie-dpl_OtherSpecificActivity4"
+            xlink:label="ie-dpl_OtherSpecificActivity4" xlink:type="locator"/>
+        <definitionArc order="29" use="optional"
+            xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member"
+            xlink:from="ie-dpl_TotalActivitiesDefault"
+            xlink:to="ie-dpl_OtherSpecificActivity4" xlink:type="arc"/>
+        <loc
+            xlink:href="IE-DPL-2017-09-01.xsd#ie-dpl_OtherSpecificActivity5"
+            xlink:label="ie-dpl_OtherSpecificActivity5" xlink:type="locator"/>
+        <definitionArc order="30" use="optional"
+            xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member"
+            xlink:from="ie-dpl_TotalActivitiesDefault"
+            xlink:to="ie-dpl_OtherSpecificActivity5" xlink:type="arc"/>
+    </definitionLink>
+</linkbase>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schema attributeFormDefault="unqualified"
+    elementFormDefault="qualified"
+    targetNamespace="http://www.revenue.ie/schemas/ct/combined/2017-09-01/IE-FRS-102-IE-DPL-2017-09-01"
+    xmlns:ie-FRS-102-dpl="http://www.revenue.ie/schemas/ct/combined/2017-09-01/IE-FRS-102-IE-DPL-2017-09-01"
+    xmlns="http://www.w3.org/2001/XMLSchema"
+    xmlns:ie-FRS-102="http://www.xbrl-ie.net/fr/FRS-102/2016-12-01"
+    xmlns:ie-dpl="http://www.revenue.ie/schemas/ct/IE-DPL/2017-09-01"
+    xmlns:link="http://www.xbrl.org/2003/linkbase"
+    xmlns:xbrli="http://www.xbrl.org/2003/instance" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <import namespace="http://www.xbrl.org/2003/instance" schemaLocation="http://www.xbrl.org/2003/xbrl-instance-2003-12-31.xsd"/>
+    <import namespace="http://www.xbrl-ie.net/fr/FRS-102/2016-12-01" schemaLocation="http://www.xbrl-ie.net/fr/FRS-102/2016-12-01/FRS-102-ie-2016-12-01.xsd"/>
+    <import namespace="http://www.revenue.ie/schemas/ct/IE-DPL/2017-09-01" schemaLocation="http://www.revenue.ie/schemas/ct/IE-DPL/2017-09-01/IE-DPL-2017-09-01.xsd"/>
+</schema>
