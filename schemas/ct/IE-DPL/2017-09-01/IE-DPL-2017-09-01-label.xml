@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<!-- Version 2.0 2018-02-22 -->
 <linkbase xmlns="http://www.xbrl.org/2003/linkbase"
     xmlns:link="http://www.xbrl.org/2003/linkbase"
     xmlns:xlink="http://www.w3.org/1999/xlink"
@@ -649,16 +650,6 @@
             xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label"
             xlink:from="ie-dpl_IncomeFromShares"
             xlink:to="ie-dpl_IncomeFromShares_resource" xlink:type="arc"/>
-        <label xlink:label="ie-dpl_DPLIncomeTaxExpenseCredit_resource"
-            xlink:role="http://www.xbrl.org/2003/role/label"
-            xlink:type="resource" xml:lang="en">DPL Income tax expense (credit)</label>
-        <loc
-            xlink:href="IE-DPL-2017-09-01.xsd#ie-dpl_DPLIncomeTaxExpenseCredit"
-            xlink:label="ie-dpl_DPLIncomeTaxExpenseCredit" xlink:type="locator"/>
-        <labelArc
-            xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label"
-            xlink:from="ie-dpl_DPLIncomeTaxExpenseCredit"
-            xlink:to="ie-dpl_DPLIncomeTaxExpenseCredit_resource" xlink:type="arc"/>
         <label
             xlink:label="ie-dpl_IncreaseDecreaseInStocksInventories_resource"
             xlink:role="http://www.xbrl.org/2003/role/label"
@@ -1525,17 +1516,6 @@
             xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label"
             xlink:from="ie-dpl_ResidualNon-operatingGainLoss"
             xlink:to="ie-dpl_ResidualNon-operatingGainLoss_resource" xlink:type="arc"/>
-        <label
-            xlink:label="ie-dpl_RoyaltiesOrSimilarPaymentsForIntellectualProperty_resource"
-            xlink:role="http://www.xbrl.org/2003/role/label"
-            xlink:type="resource" xml:lang="en">Royalties or similar payments for intellectual property</label>
-        <loc
-            xlink:href="IE-DPL-2017-09-01.xsd#ie-dpl_RoyaltiesOrSimilarPaymentsForIntellectualProperty"
-            xlink:label="ie-dpl_RoyaltiesOrSimilarPaymentsForIntellectualProperty" xlink:type="locator"/>
-        <labelArc
-            xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label"
-            xlink:from="ie-dpl_RoyaltiesOrSimilarPaymentsForIntellectualProperty"
-            xlink:to="ie-dpl_RoyaltiesOrSimilarPaymentsForIntellectualProperty_resource" xlink:type="arc"/>
         <label xlink:label="ie-dpl_SecurityCosts_resource"
             xlink:role="http://www.xbrl.org/2003/role/label"
             xlink:type="resource" xml:lang="en">Security costs</label>
@@ -1652,16 +1632,16 @@
             xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label"
             xlink:from="ie-dpl_StocksInventoriesStartEndPeriodHeading"
             xlink:to="ie-dpl_StocksInventoriesStartEndPeriodHeading_resource" xlink:type="arc"/>
-        <label xlink:label="ie-dpl_SubcontractorCosts_resource"
+        <label xlink:label="ie-dpl_DPLSubcontractorCosts_resource"
             xlink:role="http://www.xbrl.org/2003/role/label"
-            xlink:type="resource" xml:lang="en">Subcontractor costs</label>
+            xlink:type="resource" xml:lang="en">DPL Subcontractor costs</label>
         <loc
-            xlink:href="IE-DPL-2017-09-01.xsd#ie-dpl_SubcontractorCosts"
-            xlink:label="ie-dpl_SubcontractorCosts" xlink:type="locator"/>
+            xlink:href="IE-DPL-2017-09-01.xsd#ie-dpl_DPLSubcontractorCosts"
+            xlink:label="ie-dpl_DPLSubcontractorCosts" xlink:type="locator"/>
         <labelArc
             xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label"
-            xlink:from="ie-dpl_SubcontractorCosts"
-            xlink:to="ie-dpl_SubcontractorCosts_resource" xlink:type="arc"/>
+            xlink:from="ie-dpl_DPLSubcontractorCosts"
+            xlink:to="ie-dpl_DPLSubcontractorCosts_resource" xlink:type="arc"/>
         <label xlink:label="ie-dpl_SubscriptionsCosts_resource"
             xlink:role="http://www.xbrl.org/2003/role/label"
             xlink:type="resource" xml:lang="en">Subscriptions costs</label>
@@ -1872,5 +1852,133 @@
             xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label"
             xlink:from="ie-dpl_WarehouseStorageCosts"
             xlink:to="ie-dpl_WarehouseStorageCosts_resource" xlink:type="arc"/>
+        <label xlink:label="ie-dpl_PurchasesHeading_resource"
+            xlink:role="http://www.xbrl.org/2003/role/label"
+            xlink:type="resource" xml:lang="en">Purchases [heading]</label>
+        <loc xlink:href="IE-DPL-2017-09-01.xsd#ie-dpl_PurchasesHeading"
+            xlink:label="ie-dpl_PurchasesHeading" xlink:type="locator"/>
+        <labelArc
+            xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label"
+            xlink:from="ie-dpl_PurchasesHeading"
+            xlink:to="ie-dpl_PurchasesHeading_resource" xlink:type="arc"/>
+        <label xlink:label="ie-dpl_Purchases_resource"
+            xlink:role="http://www.xbrl.org/2003/role/label"
+            xlink:type="resource" xml:lang="en">Purchases</label>
+        <loc xlink:href="IE-DPL-2017-09-01.xsd#ie-dpl_Purchases"
+            xlink:label="ie-dpl_Purchases" xlink:type="locator"/>
+        <labelArc
+            xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label"
+            xlink:from="ie-dpl_Purchases"
+            xlink:to="ie-dpl_Purchases_resource" xlink:type="arc"/>
+        <label xlink:label="ie-dpl_PurchasesInventories_resource"
+            xlink:role="http://www.xbrl.org/2003/role/label"
+            xlink:type="resource" xml:lang="en">Purchases of inventories</label>
+        <loc
+            xlink:href="IE-DPL-2017-09-01.xsd#ie-dpl_PurchasesInventories"
+            xlink:label="ie-dpl_PurchasesInventories" xlink:type="locator"/>
+        <labelArc
+            xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label"
+            xlink:from="ie-dpl_PurchasesInventories"
+            xlink:to="ie-dpl_PurchasesInventories_resource" xlink:type="arc"/>
+        <label xlink:label="ie-dpl_DPLGovernmentGrantIncome_resource"
+            xlink:role="http://www.xbrl.org/2003/role/label"
+            xlink:type="resource" xml:lang="en">DPL Government grant income</label>
+        <loc
+            xlink:href="IE-DPL-2017-09-01.xsd#ie-dpl_DPLGovernmentGrantIncome"
+            xlink:label="ie-dpl_DPLGovernmentGrantIncome" xlink:type="locator"/>
+        <labelArc
+            xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label"
+            xlink:from="ie-dpl_DPLGovernmentGrantIncome"
+            xlink:to="ie-dpl_DPLGovernmentGrantIncome_resource" xlink:type="arc"/>
+        <label xlink:label="ie-dpl_DPLOtherOperatingIncome_resource"
+            xlink:role="http://www.xbrl.org/2003/role/label"
+            xlink:type="resource" xml:lang="en">DPL Other operating income</label>
+        <loc
+            xlink:href="IE-DPL-2017-09-01.xsd#ie-dpl_DPLOtherOperatingIncome"
+            xlink:label="ie-dpl_DPLOtherOperatingIncome" xlink:type="locator"/>
+        <labelArc
+            xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label"
+            xlink:from="ie-dpl_DPLOtherOperatingIncome"
+            xlink:to="ie-dpl_DPLOtherOperatingIncome_resource" xlink:type="arc"/>
+        <label
+            xlink:label="ie-dpl_DPLStaffCostsEmployeeBenefitsExpense_resource"
+            xlink:role="http://www.xbrl.org/2003/role/label"
+            xlink:type="resource" xml:lang="en">DPL Staff costs / employee benefits expense</label>
+        <loc
+            xlink:href="IE-DPL-2017-09-01.xsd#ie-dpl_DPLStaffCostsEmployeeBenefitsExpense"
+            xlink:label="ie-dpl_DPLStaffCostsEmployeeBenefitsExpense" xlink:type="locator"/>
+        <labelArc
+            xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label"
+            xlink:from="ie-dpl_DPLStaffCostsEmployeeBenefitsExpense"
+            xlink:to="ie-dpl_DPLStaffCostsEmployeeBenefitsExpense_resource" xlink:type="arc"/>
+        <label xlink:label="ie-dpl_PurchasesOfRawMaterials_resource"
+            xlink:role="http://www.xbrl.org/2003/role/label"
+            xlink:type="resource" xml:lang="en">Purchases of raw materials</label>
+        <loc
+            xlink:href="IE-DPL-2017-09-01.xsd#ie-dpl_PurchasesRawMaterials"
+            xlink:label="ie-dpl_PurchasesOfRawMaterials" xlink:type="locator"/>
+        <labelArc
+            xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label"
+            xlink:from="ie-dpl_PurchasesOfRawMaterials"
+            xlink:to="ie-dpl_PurchasesOfRawMaterials_resource" xlink:type="arc"/>
+        <label xlink:label="ie-dpl_PurchasesOfMerchandise_resource"
+            xlink:role="http://www.xbrl.org/2003/role/label"
+            xlink:type="resource" xml:lang="en">Purchases of merchandise</label>
+        <loc
+            xlink:href="IE-DPL-2017-09-01.xsd#ie-dpl_PurchasesMerchandise"
+            xlink:label="ie-dpl_PurchasesOfMerchandise" xlink:type="locator"/>
+        <labelArc
+            xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label"
+            xlink:from="ie-dpl_PurchasesOfMerchandise"
+            xlink:to="ie-dpl_PurchasesOfMerchandise_resource" xlink:type="arc"/>
+        <label
+            xlink:label="ie-dpl_PurchasesOfProductionSupplies_resource"
+            xlink:role="http://www.xbrl.org/2003/role/label"
+            xlink:type="resource" xml:lang="en">Purchases of production supplies</label>
+        <loc
+            xlink:href="IE-DPL-2017-09-01.xsd#ie-dpl_PurchasesProductionSupplies"
+            xlink:label="ie-dpl_PurchasesOfProductionSupplies" xlink:type="locator"/>
+        <labelArc
+            xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label"
+            xlink:from="ie-dpl_PurchasesOfProductionSupplies"
+            xlink:to="ie-dpl_PurchasesOfProductionSupplies_resource" xlink:type="arc"/>
+        <label xlink:label="ie-dpl_PurchasesOfWorkInProgress_resource"
+            xlink:role="http://www.xbrl.org/2003/role/label"
+            xlink:type="resource" xml:lang="en">Purchases of work in progress</label>
+        <loc
+            xlink:href="IE-DPL-2017-09-01.xsd#ie-dpl_PurchasesWorkInProgress"
+            xlink:label="ie-dpl_PurchasesOfWorkInProgress" xlink:type="locator"/>
+        <labelArc
+            xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label"
+            xlink:from="ie-dpl_PurchasesOfWorkInProgress"
+            xlink:to="ie-dpl_PurchasesOfWorkInProgress_resource" xlink:type="arc"/>
+        <label xlink:label="ie-dpl_PurchasesOfFinishedGoods_resource"
+            xlink:role="http://www.xbrl.org/2003/role/label"
+            xlink:type="resource" xml:lang="en">Purchases of finished goods</label>
+        <loc
+            xlink:href="IE-DPL-2017-09-01.xsd#ie-dpl_PurchasesFinishedGoods"
+            xlink:label="ie-dpl_PurchasesOfFinishedGoods" xlink:type="locator"/>
+        <labelArc
+            xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label"
+            xlink:from="ie-dpl_PurchasesOfFinishedGoods"
+            xlink:to="ie-dpl_PurchasesOfFinishedGoods_resource" xlink:type="arc"/>
+        <label xlink:label="ie-dpl_PurchasesOfServices_resource"
+            xlink:role="http://www.xbrl.org/2003/role/label"
+            xlink:type="resource" xml:lang="en">Purchases of services</label>
+        <loc xlink:href="IE-DPL-2017-09-01.xsd#ie-dpl_PurchasesServices"
+            xlink:label="ie-dpl_PurchasesOfServices" xlink:type="locator"/>
+        <labelArc
+            xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label"
+            xlink:from="ie-dpl_PurchasesOfServices"
+            xlink:to="ie-dpl_PurchasesOfServices_resource" xlink:type="arc"/>
+        <label xlink:label="ie-dpl_PurchasesOther_resource"
+            xlink:role="http://www.xbrl.org/2003/role/label"
+            xlink:type="resource" xml:lang="en">Purchases - Other</label>
+        <loc xlink:href="IE-DPL-2017-09-01.xsd#ie-dpl_PurchasesOther"
+            xlink:label="ie-dpl_PurchasesOther" xlink:type="locator"/>
+        <labelArc
+            xlink:arcrole="http://www.xbrl.org/2003/arcrole/concept-label"
+            xlink:from="ie-dpl_PurchasesOther"
+            xlink:to="ie-dpl_PurchasesOther_resource" xlink:type="arc"/>
     </labelLink>
 </linkbase>

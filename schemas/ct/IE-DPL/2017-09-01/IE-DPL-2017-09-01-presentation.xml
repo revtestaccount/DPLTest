@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<!-- Version 2.0 2018-02-22 -->
 <linkbase xmlns="http://www.xbrl.org/2003/linkbase"
     xmlns:link="http://www.xbrl.org/2003/linkbase"
     xmlns:xlink="http://www.w3.org/1999/xlink"
@@ -25,6 +26,72 @@
             xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child"
             xlink:from="ie-dpl_TradingIncomeHeading"
             xlink:to="ie-dpl_DPLTurnoverRevenue" xlink:type="arc"/>
+        <loc xlink:href="IE-DPL-2017-09-01.xsd#ie-dpl_PurchasesHeading"
+            xlink:label="ie-dpl_PurchasesHeading" xlink:type="locator"/>
+        <presentationArc order="1.5" use="optional"
+            xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child"
+            xlink:from="ie-dpl_TradingIncomeHeading"
+            xlink:to="ie-dpl_PurchasesHeading" xlink:type="arc"/>
+        <loc xlink:href="IE-DPL-2017-09-01.xsd#ie-dpl_Purchases"
+            xlink:label="ie-dpl_Purchases" xlink:type="locator"/>
+        <presentationArc order="1" use="optional"
+            xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child"
+            xlink:from="ie-dpl_PurchasesHeading"
+            xlink:to="ie-dpl_Purchases" xlink:type="arc"/>
+        <loc
+            xlink:href="IE-DPL-2017-09-01.xsd#ie-dpl_PurchasesInventories"
+            xlink:label="ie-dpl_PurchasesInventories" xlink:type="locator"/>
+        <presentationArc order="1" use="optional"
+            xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child"
+            xlink:from="ie-dpl_Purchases"
+            xlink:to="ie-dpl_PurchasesInventories" xlink:type="arc"/>
+        <loc
+            xlink:href="IE-DPL-2017-09-01.xsd#ie-dpl_PurchasesRawMaterials"
+            xlink:label="ie-dpl_PurchasesOfRawMaterials" xlink:type="locator"/>
+        <presentationArc order="2" use="optional"
+            xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child"
+            xlink:from="ie-dpl_Purchases"
+            xlink:to="ie-dpl_PurchasesOfRawMaterials" xlink:type="arc"/>
+        <loc
+            xlink:href="IE-DPL-2017-09-01.xsd#ie-dpl_PurchasesMerchandise"
+            xlink:label="ie-dpl_PurchasesOfMerchandise" xlink:type="locator"/>
+        <presentationArc order="3" use="optional"
+            xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child"
+            xlink:from="ie-dpl_Purchases"
+            xlink:to="ie-dpl_PurchasesOfMerchandise" xlink:type="arc"/>
+        <loc
+            xlink:href="IE-DPL-2017-09-01.xsd#ie-dpl_PurchasesProductionSupplies"
+            xlink:label="ie-dpl_PurchasesOfProductionSupplies" xlink:type="locator"/>
+        <presentationArc order="4" use="optional"
+            xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child"
+            xlink:from="ie-dpl_Purchases"
+            xlink:to="ie-dpl_PurchasesOfProductionSupplies" xlink:type="arc"/>
+        <loc
+            xlink:href="IE-DPL-2017-09-01.xsd#ie-dpl_PurchasesWorkInProgress"
+            xlink:label="ie-dpl_PurchasesOfWorkInProgress" xlink:type="locator"/>
+        <presentationArc order="5" use="optional"
+            xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child"
+            xlink:from="ie-dpl_Purchases"
+            xlink:to="ie-dpl_PurchasesOfWorkInProgress" xlink:type="arc"/>
+        <loc
+            xlink:href="IE-DPL-2017-09-01.xsd#ie-dpl_PurchasesFinishedGoods"
+            xlink:label="ie-dpl_PurchasesOfFinishedGoods" xlink:type="locator"/>
+        <presentationArc order="6" use="optional"
+            xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child"
+            xlink:from="ie-dpl_Purchases"
+            xlink:to="ie-dpl_PurchasesOfFinishedGoods" xlink:type="arc"/>
+        <loc xlink:href="IE-DPL-2017-09-01.xsd#ie-dpl_PurchasesServices"
+            xlink:label="ie-dpl_PurchasesOfServices" xlink:type="locator"/>
+        <presentationArc order="7" use="optional"
+            xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child"
+            xlink:from="ie-dpl_Purchases"
+            xlink:to="ie-dpl_PurchasesOfServices" xlink:type="arc"/>
+        <loc xlink:href="IE-DPL-2017-09-01.xsd#ie-dpl_PurchasesOther"
+            xlink:label="ie-dpl_PurchasesOther" xlink:type="locator"/>
+        <presentationArc order="8" use="optional"
+            xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child"
+            xlink:from="ie-dpl_Purchases"
+            xlink:to="ie-dpl_PurchasesOther" xlink:type="arc"/>
         <loc
             xlink:href="IE-DPL-2017-09-01.xsd#ie-dpl_StocksInventoriesHeading"
             xlink:label="ie-dpl_StocksInventoriesHeading" xlink:type="locator"/>
@@ -110,12 +177,12 @@
             xlink:from="ie-dpl_DetailedProfitLossHeading"
             xlink:to="ie-dpl_OtherOperatingIncomeNetItemsHeading" xlink:type="arc"/>
         <loc
-            xlink:href="https://xbrl.frc.org.uk/fr/2014-09-01/core/frc-core-2014-09-01.xsd#core_OtherOperatingIncome"
-            xlink:label="core_OtherOperatingIncome" xlink:type="locator"/>
+            xlink:href="IE-DPL-2017-09-01.xsd#ie-dpl_DPLOtherOperatingIncome"
+            xlink:label="ie-dpl_DPLOtherOperatingIncome" xlink:type="locator"/>
         <presentationArc order="1" use="optional"
             xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child"
             xlink:from="ie-dpl_OtherOperatingIncomeNetItemsHeading"
-            xlink:to="core_OtherOperatingIncome" xlink:type="arc"/>
+            xlink:to="ie-dpl_DPLOtherOperatingIncome" xlink:type="arc"/>        
         <loc
             xlink:href="IE-DPL-2017-09-01.xsd#ie-dpl_ForeignExchangeGainLossIncludedInOtherOperatingIncome"
             xlink:label="ie-dpl_ForeignExchangeGainLossIncludedInOtherOperatingIncome" xlink:type="locator"/>
@@ -227,12 +294,12 @@
             xlink:from="ie-dpl_OtherItemsHeading"
             xlink:to="core_GainLossFromChangesInProvisions" xlink:type="arc"/>
         <loc
-            xlink:href="https://xbrl.frc.org.uk/fr/2014-09-01/core/frc-core-2014-09-01.xsd#core_GovernmentGrantIncome"
-            xlink:label="core_GovernmentGrantIncome" xlink:type="locator"/>
-        <presentationArc order="5" use="optional"
+            xlink:href="IE-DPL-2017-09-01.xsd#ie-dpl_DPLGovernmentGrantIncome"
+            xlink:label="ie-dpl_DPLGovernmentGrantIncome" xlink:type="locator"/>
+        <presentationArc order="6" use="optional"
             xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child"
             xlink:from="ie-dpl_OtherItemsHeading"
-            xlink:to="core_GovernmentGrantIncome" xlink:type="arc"/>
+            xlink:to="ie-dpl_DPLGovernmentGrantIncome" xlink:type="arc"/>        
         <loc
             xlink:href="IE-DPL-2017-09-01.xsd#ie-dpl_GainLossOnNegativeGoodwillbargainPurchasesReleasedToIncome"
             xlink:label="ie-dpl_GainLossOnNegativeGoodwillbargainPurchasesReleasedToIncome" xlink:type="locator"/>
@@ -504,79 +571,79 @@
             xlink:from="ie-dpl_TotalCosts"
             xlink:to="ie-dpl_StaffEmploymentRelatedCostsHeading" xlink:type="arc"/>
         <loc
-            xlink:href="https://xbrl.frc.org.uk/fr/2014-09-01/core/frc-core-2014-09-01.xsd#core_StaffCostsEmployeeBenefitsExpense"
-            xlink:label="core_StaffCostsEmployeeBenefitsExpense" xlink:type="locator"/>
+            xlink:href="IE-DPL-2017-09-01.xsd#ie-dpl_DPLStaffCostsEmployeeBenefitsExpense"
+            xlink:label="ie-dpl_DPLStaffCostsEmployeeBenefitsExpense" xlink:type="locator"/>
         <presentationArc order="1" use="optional"
             xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child"
             xlink:from="ie-dpl_StaffEmploymentRelatedCostsHeading"
-            xlink:to="core_StaffCostsEmployeeBenefitsExpense" xlink:type="arc"/>
+            xlink:to="ie-dpl_DPLStaffCostsEmployeeBenefitsExpense" xlink:type="arc"/>
         <loc
             xlink:href="https://xbrl.frc.org.uk/fr/2014-09-01/core/frc-core-2014-09-01.xsd#core_WagesSalaries"
             xlink:label="core_WagesSalaries" xlink:type="locator"/>
         <presentationArc order="1" use="optional"
             xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child"
-            xlink:from="core_StaffCostsEmployeeBenefitsExpense"
+            xlink:from="ie-dpl_DPLStaffCostsEmployeeBenefitsExpense"
             xlink:to="core_WagesSalaries" xlink:type="arc"/>
         <loc xlink:href="IE-DPL-2017-09-01.xsd#ie-dpl_Bonuses"
             xlink:label="ie-dpl_Bonuses" xlink:type="locator"/>
         <presentationArc order="2" use="optional"
             xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child"
-            xlink:from="core_StaffCostsEmployeeBenefitsExpense"
+            xlink:from="ie-dpl_DPLStaffCostsEmployeeBenefitsExpense"
             xlink:to="ie-dpl_Bonuses" xlink:type="arc"/>
         <loc
             xlink:href="https://xbrl.frc.org.uk/fr/2014-09-01/core/frc-core-2014-09-01.xsd#core_SocialSecurityCosts"
             xlink:label="core_SocialSecurityCosts" xlink:type="locator"/>
         <presentationArc order="3" use="optional"
             xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child"
-            xlink:from="core_StaffCostsEmployeeBenefitsExpense"
+            xlink:from="ie-dpl_DPLStaffCostsEmployeeBenefitsExpense"
             xlink:to="core_SocialSecurityCosts" xlink:type="arc"/>
         <loc
             xlink:href="https://xbrl.frc.org.uk/fr/2014-09-01/core/frc-core-2014-09-01.xsd#core_PensionCostsDefinedContributionPlan"
             xlink:label="core_PensionCostsDefinedContributionPlan" xlink:type="locator"/>
         <presentationArc order="4" use="optional"
             xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child"
-            xlink:from="core_StaffCostsEmployeeBenefitsExpense"
+            xlink:from="ie-dpl_DPLStaffCostsEmployeeBenefitsExpense"
             xlink:to="core_PensionCostsDefinedContributionPlan" xlink:type="arc"/>
         <loc
             xlink:href="https://xbrl.frc.org.uk/fr/2014-09-01/core/frc-core-2014-09-01.xsd#core_PensionCostsDefinedBenefitPlan"
             xlink:label="core_PensionCostsDefinedBenefitPlan" xlink:type="locator"/>
         <presentationArc order="5" use="optional"
             xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child"
-            xlink:from="core_StaffCostsEmployeeBenefitsExpense"
+            xlink:from="ie-dpl_DPLStaffCostsEmployeeBenefitsExpense"
             xlink:to="core_PensionCostsDefinedBenefitPlan" xlink:type="arc"/>
         <loc
             xlink:href="https://xbrl.frc.org.uk/fr/2014-09-01/core/frc-core-2014-09-01.xsd#core_RedundancyCosts"
             xlink:label="core_RedundancyCosts" xlink:type="locator"/>
         <presentationArc order="6" use="optional"
             xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child"
-            xlink:from="core_StaffCostsEmployeeBenefitsExpense"
+            xlink:from="ie-dpl_DPLStaffCostsEmployeeBenefitsExpense"
             xlink:to="core_RedundancyCosts" xlink:type="arc"/>
         <loc
             xlink:href="https://xbrl.frc.org.uk/fr/2014-09-01/core/frc-core-2014-09-01.xsd#core_Share-basedPaymentExpenseEquitySettled"
             xlink:label="core_Share-basedPaymentExpenseEquitySettled" xlink:type="locator"/>
         <presentationArc order="7" use="optional"
             xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child"
-            xlink:from="core_StaffCostsEmployeeBenefitsExpense"
+            xlink:from="ie-dpl_DPLStaffCostsEmployeeBenefitsExpense"
             xlink:to="core_Share-basedPaymentExpenseEquitySettled" xlink:type="arc"/>
         <loc
             xlink:href="https://xbrl.frc.org.uk/fr/2014-09-01/core/frc-core-2014-09-01.xsd#core_Share-basedPaymentExpenseCashSettled"
             xlink:label="core_Share-basedPaymentExpenseCashSettled" xlink:type="locator"/>
         <presentationArc order="8" use="optional"
             xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child"
-            xlink:from="core_StaffCostsEmployeeBenefitsExpense"
+            xlink:from="ie-dpl_DPLStaffCostsEmployeeBenefitsExpense"
             xlink:to="core_Share-basedPaymentExpenseCashSettled" xlink:type="arc"/>
         <loc
             xlink:href="IE-DPL-2017-09-01.xsd#ie-dpl_RemunerationTrustExpenses"
             xlink:label="ie-dpl_RemunerationTrustExpenses" xlink:type="locator"/>
         <presentationArc order="9" use="optional"
             xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child"
-            xlink:from="core_StaffCostsEmployeeBenefitsExpense"
+            xlink:from="ie-dpl_DPLStaffCostsEmployeeBenefitsExpense"
             xlink:to="ie-dpl_RemunerationTrustExpenses" xlink:type="arc"/>
         <loc xlink:href="IE-DPL-2017-09-01.xsd#ie-dpl_OtherStaffCosts"
             xlink:label="ie-dpl_OtherStaffCosts" xlink:type="locator"/>
         <presentationArc order="10" use="optional"
             xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child"
-            xlink:from="core_StaffCostsEmployeeBenefitsExpense"
+            xlink:from="ie-dpl_DPLStaffCostsEmployeeBenefitsExpense"
             xlink:to="ie-dpl_OtherStaffCosts" xlink:type="arc"/>
         <loc
             xlink:href="IE-DPL-2017-09-01.xsd#ie-dpl_StaffCostsExcludingDirectors"
@@ -732,12 +799,12 @@
             xlink:from="ie-dpl_StaffEmploymentRelatedCostsHeading"
             xlink:to="ie-dpl_ConsultancyCosts" xlink:type="arc"/>
         <loc
-            xlink:href="IE-DPL-2017-09-01.xsd#ie-dpl_SubcontractorCosts"
-            xlink:label="ie-dpl_SubcontractorCosts" xlink:type="locator"/>
+            xlink:href="IE-DPL-2017-09-01.xsd#ie-dpl_DPLSubcontractorCosts"
+            xlink:label="ie-dpl_DPLSubcontractorCosts" xlink:type="locator"/>
         <presentationArc order="5" use="optional"
             xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child"
             xlink:from="ie-dpl_StaffEmploymentRelatedCostsHeading"
-            xlink:to="ie-dpl_SubcontractorCosts" xlink:type="arc"/>
+            xlink:to="ie-dpl_DPLSubcontractorCosts" xlink:type="arc"/>
         <loc
             xlink:href="IE-DPL-2017-09-01.xsd#ie-dpl_TravelSubsistenceCosts"
             xlink:label="ie-dpl_TravelSubsistenceCosts" xlink:type="locator"/>
@@ -1119,12 +1186,12 @@
             xlink:from="ie-dpl_ProfitTaxTotalsHeading"
             xlink:to="ie-dpl_DPLProfitLossBeforeTax" xlink:type="arc"/>
         <loc
-            xlink:href="IE-DPL-2017-09-01.xsd#ie-dpl_DPLIncomeTaxExpenseCredit"
-            xlink:label="ie-dpl_DPLIncomeTaxExpenseCredit" xlink:type="locator"/>
+            xlink:href="https://xbrl.frc.org.uk/fr/2014-09-01/core/frc-core-2014-09-01.xsd#core_IncomeTaxExpenseCredit"
+            xlink:label="core_IncomeTaxExpenseCredit" xlink:type="locator"/>
         <presentationArc order="4" use="optional"
             xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child"
             xlink:from="ie-dpl_ProfitTaxTotalsHeading"
-            xlink:to="ie-dpl_DPLIncomeTaxExpenseCredit" xlink:type="arc"/>
+            xlink:to="core_IncomeTaxExpenseCredit" xlink:type="arc"/>
         <loc
             xlink:href="https://xbrl.frc.org.uk/fr/2014-09-01/core/frc-core-2014-09-01.xsd#core_ProfitLoss"
             xlink:label="core_ProfitLoss" xlink:type="locator"/>

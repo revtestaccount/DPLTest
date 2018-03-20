@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<!-- Version 2.0 2018-02-22 -->
 <schema attributeFormDefault="unqualified"
     elementFormDefault="qualified"
     targetNamespace="http://www.revenue.ie/schemas/ct/IE-DPL/2017-09-01"
@@ -295,10 +296,6 @@
     <element id="ie-dpl_IncomeFromShares" name="IncomeFromShares"
         nillable="true" substitutionGroup="xbrli:item"
         type="xbrli:monetaryItemType" xbrli:balance="credit" xbrli:periodType="duration"/>
-    <element id="ie-dpl_DPLIncomeTaxExpenseCredit"
-        name="DPLIncomeTaxExpenseCredit" nillable="true"
-        substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"
-        xbrli:balance="debit" xbrli:periodType="duration"/>
     <element id="ie-dpl_IncreaseDecreaseInStocksInventories"
         name="IncreaseDecreaseInStocksInventories" nillable="true"
         substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"
@@ -621,11 +618,6 @@
         name="ResidualNon-operatingGainLoss" nillable="true"
         substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"
         xbrli:balance="credit" xbrli:periodType="duration"/>
-    <element
-        id="ie-dpl_RoyaltiesOrSimilarPaymentsForIntellectualProperty"
-        name="RoyaltiesOrSimilarPaymentsForIntellectualProperty"
-        nillable="true" substitutionGroup="xbrli:item"
-        type="xbrli:monetaryItemType" xbrli:balance="debit" xbrli:periodType="duration"/>
     <element id="ie-dpl_SecurityCosts" name="SecurityCosts"
         nillable="true" substitutionGroup="xbrli:item"
         type="xbrli:monetaryItemType" xbrli:balance="debit" xbrli:periodType="duration"/>
@@ -667,9 +659,10 @@
         id="ie-dpl_StocksInventoriesStartEndPeriodHeading"
         name="StocksInventoriesStartEndPeriodHeading" nillable="true"
         substitutionGroup="xbrli:item" type="xbrli:stringItemType" xbrli:periodType="duration"/>
-    <element id="ie-dpl_SubcontractorCosts" name="SubcontractorCosts"
-        nillable="true" substitutionGroup="xbrli:item"
-        type="xbrli:monetaryItemType" xbrli:balance="debit" xbrli:periodType="duration"/>
+    <element id="ie-dpl_DPLSubcontractorCosts"
+        name="DPLSubcontractorCosts" nillable="true"
+        substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"
+        xbrli:balance="debit" xbrli:periodType="duration"/>
     <element id="ie-dpl_SubscriptionsCosts" name="SubscriptionsCosts"
         nillable="true" substitutionGroup="xbrli:item"
         type="xbrli:monetaryItemType" xbrli:balance="debit" xbrli:periodType="duration"/>
@@ -743,4 +736,52 @@
         name="WarehouseStorageCosts" nillable="true"
         substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"
         xbrli:balance="debit" xbrli:periodType="duration"/>
+    <element abstract="true" id="ie-dpl_PurchasesHeading"
+        name="PurchasesHeading" nillable="true"
+        substitutionGroup="xbrli:item" type="xbrli:monetaryItemType" xbrli:periodType="duration"/>
+    <element id="ie-dpl_Purchases" name="Purchases" nillable="true"
+        substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"
+        xbrli:balance="debit" xbrli:periodType="duration"/>
+    <element id="ie-dpl_PurchasesInventories"
+        name="PurchasesInventories" nillable="true"
+        substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"
+        xbrli:balance="debit" xbrli:periodType="duration"/>
+    <element id="ie-dpl_DPLGovernmentGrantIncome"
+        name="DPLGovernmentGrantIncome" nillable="true"
+        substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"
+        xbrli:balance="credit" xbrli:periodType="duration"/>
+    <element id="ie-dpl_DPLOtherOperatingIncome"
+        name="DPLOtherOperatingIncome" nillable="true"
+        substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"
+        xbrli:balance="credit" xbrli:periodType="duration"/>
+    <element id="ie-dpl_DPLStaffCostsEmployeeBenefitsExpense"
+        name="DPLStaffCostsEmployeeBenefitsExpense" nillable="true"
+        substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"
+        xbrli:balance="debit" xbrli:periodType="duration"/>
+    <element id="ie-dpl_PurchasesRawMaterials"
+        name="PurchasesRawMaterials" nillable="true"
+        substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"
+        xbrli:balance="debit" xbrli:periodType="duration"/>
+    <element id="ie-dpl_PurchasesMerchandise"
+        name="PurchasesMerchandise" nillable="true"
+        substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"
+        xbrli:balance="debit" xbrli:periodType="duration"/>
+    <element id="ie-dpl_PurchasesProductionSupplies"
+        name="PurchasesProductionSupplies" nillable="true"
+        substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"
+        xbrli:balance="debit" xbrli:periodType="duration"/>
+    <element id="ie-dpl_PurchasesWorkInProgress"
+        name="PurchasesWorkInProgress" nillable="true"
+        substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"
+        xbrli:balance="debit" xbrli:periodType="duration"/>
+    <element id="ie-dpl_PurchasesFinishedGoods"
+        name="PurchasesFinishedGoods" nillable="true"
+        substitutionGroup="xbrli:item" type="xbrli:monetaryItemType"
+        xbrli:balance="debit" xbrli:periodType="duration"/>
+    <element id="ie-dpl_PurchasesServices" name="PurchasesServices"
+        nillable="true" substitutionGroup="xbrli:item"
+        type="xbrli:monetaryItemType" xbrli:balance="debit" xbrli:periodType="duration"/>
+    <element id="ie-dpl_PurchasesOther" name="PurchasesOther"
+        nillable="true" substitutionGroup="xbrli:item"
+        type="xbrli:monetaryItemType" xbrli:balance="debit" xbrli:periodType="duration"/>
 </schema>
